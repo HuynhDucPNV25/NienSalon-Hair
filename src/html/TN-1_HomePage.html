@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Nien-Salon</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="../css/TN-1_HomePage.css">
+  
+</head>
+
+<body>
+  <!-- Menu -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <a href=""><img id="logo" src="../../image/Logo.png" alt="Nien-Salon"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav form-inline mr-auto">
+          <li class="nav-item nav-item1 active">
+            <a class="nav-link" href="./TN-1_HomePage.html">
+              <b>
+                TRANG CHỦ
+              </b>
+            </a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a class="nav-link" href="#MauToc">
+              <b>
+                MẪU TÓC
+              </b>
+            </a>
+          </li>
+          <li class="nav-item nav-item3">
+            <a class="nav-link" href="#DatLich">
+              <b>
+                ĐẶT LỊCH
+              </b>
+            </a>
+          </li>
+          <li class="dropdown mt-3 ml-2">
+            <p class="form-inline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-location-dot pr-1" style="color: red;"></i>
+              <a href="" id="agency" data-agency="Thành phố Hà Nội">Thành phố Hà Nội</a>
+            </p>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="container-fluid rounded">
+                <div class="row">
+                  <div class="col">
+                    <h4>
+                      Khu vực của bạn
+                      <i class="fa-solid fa-location-dot pl-1" style="color: red;"></i>
+                    </h4>
+                  </div>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col">
+                    <form class="form">
+                      <select class="form-control text-dark mb-1" id="city"></select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      <!-- Login -->
+      <center>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="./TN-17_loginPage.html">
+              <button class="btn btn-outline" id="login">
+                <i class="fa-regular fa-user"></i>
+                Đăng Nhập
+              </button>
+            </a>
+          </li>
+        </ul>
+      </center>  
+      </div>
+    </nav>
+  </div>
+  <!-- Banner -->
+    <div class="banner container-fluid">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col col-bannerForm ">
+          <!-- Form tìm kiếm và đặt lịch -->
+          <div class="Rectangle">
+            <div class="searchBook">Tìm kiếm và đặt lịch </div>
+            <center>
+              <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+                <i class="fa-solid fa-magnifying-glass" style="color:#E55247D9;"></i>
+                <input placeholder="Tìm Kiếm " class="searchSalon"></input>
+              </p>
+              <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+                <i class="fa-solid fa-wand-magic-sparkles" style="color:#E55247D9;"></i>
+                <input placeholder="Tìm Kiếm Mẫu Tóc" class="searchSalon"></input>
+              </p>
+              <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+                <i class="fa-solid fa-bars" style="color: #E55247D9;"></i>
+                <input placeholder="Tìm Kiếm Dịch Vụ" class="searchSalon"></input>
+              </p>
+              <button class="btn btn-outline" id="FocusSearch">
+                TÌM KIẾM
+              </button>
+            </center>
+          </div>
+        </div>
+
+        <div class="col col-bannerSlide d-none d-md-block">
+          <!-- Slider quảng cáo -->
+          <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="2500">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselId" data-slide-to="0"></li>
+              <li data-target="#carouselId" data-slide-to="1"></li>
+              <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" id="carouselInner">
+            </div>
+            <div id="sp-icon" class="carousel-control-prev" href="#carouselId" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </div>
+            <a id="sp-icon" class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+  <!-- Body -->
+   <button class="scroll-top-btn" onclick="scrollToTop()"><i class="fa fa-chevron-up"></i></button>
+    <div class="container slide-container bg-light">
+      <p id="topSalon"></p>
+      <div class="row slider" id="Hairmodel-Agency">
+        
+      </div>
+    </div>
+    <br>
+    <div class="container slide-container bg-light">
+      <p id="topMauToc"></p>
+      <div class="row slider" id="AllHair"></div>
+    </div>
+  <!--Footer  -->
+    <footer class="footer-tp" class="page-footer font-small indigo text-nowrap ">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+
+            <!-- QR code và Links flow -->
+            <p class="font-weight-bold text-uppercase mt-3 mb-4">QR code</p>
+            <ul class="list-group list-unstyled ">
+              <li>
+                <a href="">
+                  <img class="list-group-item-img" src="https://res.cloudinary.com/duas1juqs/image/upload/v1696624774/hair-models/ne2lleidgsrdohoxzanj.png" alt="QRcode">
+                </a>
+              </li>
+              <li>
+                <p>Follow salon</p>
+
+                <a class=" mb-3" href="https://www.facebook.com/nien.salon" target="_blank">
+                  <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/nien.salon/" target="_blank">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@niensalon" target="_blank">
+                  <i class="fa fa-youtube-play"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+
+          <!--Chi nhánh của Salon  -->
+          <div class="col-md-3 mx-auto">
+            <p class="font-weight-bold text-uppercase mt-3 mb-4">Chi nhánh</p>
+            <ul class="list-group list-unstyled ">
+              <li>
+                <p>Thành phố Hồ Chí Minh</p>
+              </li>
+              <li>
+                <p>Thành phố Đà Nẵng</p>
+              </li>
+              <li>
+                <p>Thành phố Hồ Chí Minh </p>
+              </li>
+            </ul>
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+          <div class="col-md-3 mx-auto">
+            <p class="font-weight-bold text-uppercase mt-3 mb-4">
+              Thông tin chung
+            </p>
+
+            <ul class="list-group list-unstyled ">
+              <li>
+                <a href="./TN-1_HomePage.html">
+                  Trang chủ
+                </a>
+              </li>
+              <li>
+                <a href="#!">Mẫu tóc </a>
+              </li>
+              <li>
+                <a href="./TN-2_BookingPage.html">Đặt lịch</a>
+              </li>
+              <li>
+                <a href="https://thuvienlamdep.vn/bai-viet-ve-toc-dep" target="_blank">Tin tức</a>
+              </li>
+            </ul>
+
+          </div>
+          <hr class="clearfix w-100 d-md-none">
+
+          <div class="col-md-3 mx-auto">
+
+            <p class="font-weight-bold text-uppercase mt-3 mb-2">
+              Thông tin liên hệ
+            </p>
+            <ul class="list-group list-unstyled ">
+              <li>
+                <a href="mailto:niensalon@gmail.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  niensalon@gmail.com
+                </a>                
+              </li>
+              <li>
+                <a href="https://www.instagram.com/nien.salon/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  Niensalon265
+                </a>
+              </li>
+              <li>
+                <a href="tel:0385740373">
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  0385740373
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        <p>© 2020 niensalon.vn | Bản quyền thuộc về Công ty TNHH Đầu tư Công nghệ Salon</p>
+      </div>
+
+    </footer>
+  <!-- Optional JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../Js/TN-1_HomePage.js"></script>
+  <script src="../Js/AllPage.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

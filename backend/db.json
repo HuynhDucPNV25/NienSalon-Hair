@@ -1,0 +1,81 @@
+{
+  "slide-img":[
+    { "img1": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619841/hair-models/fadhdqixjqqewueeseti.png" },
+    { "img2": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619840/hair-models/apdrtjaphvvtaaoadzgs.png" },
+    { "img3": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/hn7nbd72kttqytzsf0uy.png"}
+  ],
+  "Hairs":[
+    {
+      "id":1,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name":"Layer ngắn Hàn Quốc",
+      "city":"Thành phố Hà Nội",
+      "address":"Ngô Quyền, Hà Nội",
+      "describe":"Layer ngắn Hàn Quốc được thiết kế với nhiều lớp tóc ngắn phủ lên nhau. Kiểu tóc này thường tạo nên sự phẳng và nhẹ nhàng cho mái tóc. Layer ngắn Hàn Quốc nữ phù hợp với nhiều hình dáng khuôn mặt và tôn lên vẻ đẹp tự nhiên của tóc. Kiểu tóc này thường được kết hợp với màu sắc tóc đơn giản, để tạo nên phong cách thanh lịch và trẻ trung.",
+      "price":79.9,
+      "discount": 15,
+      "service":["Gội đầu"," Ráy tai"],
+      "new":false
+    },
+    {
+      "id":2,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name":"Layer ngắn Hàn Quốc",
+      "city":"Thành phố Hà Nội",
+      "address":"Ngô Quyền, Hà Nội",
+      "describe":"Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
+      "price":79.9,
+      "discount": 20.5,
+      "service":[" Massage"],
+      "new":false
+    },
+    {
+      "id":3,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name":"Layer ngắn Hàn Quốc",
+      "city":"Thành phố Hà Nội",
+      "address":"Ngô Quyền, Hà Nội",
+      "describe":"Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
+      "price":79.9,
+      "discount": null,
+      "service":["Gội đầu"," Massage"," Ráy tai"],
+      "new":true
+    },
+    {
+      "id":4,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name":"Layer ngắn Hàn Quốc",
+      "city":"Thành phố Đà Nẵng",
+      "address":"Mỹ Khê 3, Đà Nẵng",
+      "describe":"Kiểu tóc layer ngắn Hàn Quốc cho nữ có lớp tóc chưa đồng đều và lông mái dài, kết hợp với màu nhẹ nhàng để tạo nét thanh lịch. Tóc hai bên cắt ngắn hơn phần giữa để tạo kiểu lớp. Phong cách này thường được kết hợp với phụ kiện để tạo nên phong cách nữ tính-tomboy.",
+      "price":20,
+      "service":[" Váy tai"],
+      "discount": null,
+      "new":true
+    },
+    {
+      "id":5,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name":"Layer ngắn Hàn Quốc",
+      "city":"Thành phố Hồ Chí Minh",
+      "address":"Hai Bà Trưng, Hồ Chí Minh",
+      "describe":"Kiểu tóc ngắn nữ Hàn Quốc có chiều dài tóc ở vai hoặc ngắn hơn, được cắt layer và thường kết hợp với lông mái dài. Màu sắc nhẹ nhàng và tạo điểm nhấn bằng phụ kiện nữ tính.",
+      "price":99.9,
+      "service":[" Massage"],
+      "discount": 30.5,
+      "new":false
+    },
+    {
+      "id":6,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name":"Layer ngắn Việt Nam",
+      "city":"Thành phố Hà Nội",
+      "address":"Ngô Quyền, Hà Nội",
+      "describe":"Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price":100.9,
+      "service":["Gội đầu"," Massage"," Váy tai"],
+      "discount": 90.5,
+      "new":false
+    }    
+  ]
+}

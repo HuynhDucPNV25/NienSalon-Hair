@@ -1,0 +1,254 @@
+body{
+    background-repeat: no-repeat;
+    background-color: #F2F2F2;
+}
+/* ...................Menu................................ */
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 80px;
+    }  
+    .nav-item1,.nav-item2,.nav-item3{
+        border-radius: 4px;
+        border-bottom: 1px solid rgba(229, 229, 229, 0.96);
+        height: auto;
+        width: 150px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10px;
+    }
+    #dropdownMenuButton:hover{
+        background: var(--main-color, linear-gradient(270deg, #ffea00 0.06%, rgba(177, 12, 0, 0.85) 97.68%));   
+    }
+    .active {
+        background: var(--main-color, linear-gradient(270deg, #ffb70095 0.06%, rgba(231, 25, 10, 0.867) 97.68%));
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
+    }
+    #logo{
+        width: 131px;
+        height: 70px;   
+    }
+    #dropdownMenuButton{
+        border-radius: 10px;
+        max-width: 220px;
+        width: 220px;
+        height: auto;
+        padding: 8px;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(188, 187, 187, 0.96);
+    }
+    #agency{
+        text-decoration: none;
+        color: #353535;
+    }
+    #city {
+        display: inline-block;
+        width: 250px;
+        background: var(--main-color, linear-gradient(270deg, #f1cf78 0.06%, rgba(226, 134, 128, 0.85) 97.68%));
+    }
+    #city:hover{
+        background: var(--main-color, linear-gradient(270deg, #ffb700 0.06%, rgba(231, 25, 10, 0.85) 97.68%));
+    }
+    #login{
+        border-radius: 20px;
+        background: var(--main-color, linear-gradient(270deg, #ffb700 0.06%, rgba(231, 25, 10, 0.85) 97.68%));
+        color: white;
+        height: 45px;
+        
+    }
+    #login:hover{
+        background: var(--main-color, linear-gradient(270deg, #ffe600 0.06%, rgba(231, 25, 10, 0.85) 97.68%));
+    }
+    @media(max-width: 768px) {
+        #navbar-collapse {
+            background-color: #1876f2e5;
+            box-shadow: rgb(50, 50, 93) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.993) 0px 18px 36px -18px inset;
+        }   
+        #agency,b{
+            color: #ffffff;
+        }
+        .navbar-nav li a {
+            font-size: 14px;
+        }
+        #login {
+            margin-top: 10px;
+        }
+        .navbar-nav {
+            padding: 0 10px;
+        }
+    }
+/* ........................Banner.......................... */
+.banner{
+    position: relative;
+    border-top: 1px solid rgba(188, 187, 187, 0.96);
+    border-bottom: 1px solid rgba(188, 187, 187, 0.96);
+    top: 80px; 
+    background: linear-gradient(90deg, rgba(254, 90, 58, 1) 0%, rgba(220, 22, 98, 1) 100%);
+    }
+    
+.col-bannerForm{
+    margin: 10px
+    
+    }
+    
+    .Rectangle{
+        width: 100%; 
+        height: 280px; 
+        background: white; 
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+    .searchBook {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Inter;
+        color: rgb(0, 0, 0);
+    }
+    #dropdownSearch{
+        width: 90%;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #AAA7A7;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .searchSalon{
+        width: 75%;
+        height: 100%;
+        border: none;
+    }
+    .searchSalon:focus{
+        outline: none;
+    }
+    #FocusSearch{
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+        background: var(--main-color, linear-gradient(270deg, #FBCB4F 0.06%, rgba(229, 82, 71, 0.85) 97.68%, rgba(229, 82, 71, 0.85) 97.68%));
+    }
+    
+.col-bannerSlide{
+    margin: 10px
+    }
+    .carousel-indicators li {
+        position: relative;
+        top: 20px;
+        height: 6px;
+        text-align: center;
+        background-color: #AAA7A7;
+    }
+    .carousel-item img{
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+    }
+/* ....................Body............................ */
+.slide-container{
+    position: relative;
+    top: 100px;
+    margin-top: 10px;
+    }
+    #topSalon,#topMauToc{
+        color: #CC2C2C;
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 700;
+
+    }
+    .card{
+        max-height: 360px;
+        height: 360px;
+    }
+    .cards:hover{
+        text-decoration: none;
+    }
+    .card:hover{
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        
+    }
+    .card-text--wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40px; /* Chiều cao được thiết lập là 2.5em để hiển thị 2 dòng */
+    }
+    .scroll-top-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        display: none;
+        background: #E55247D9;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        z-index: 1000;
+    }
+      
+      .scroll-top-btn:hover {
+        cursor: pointer;
+    }
+/* ....................Footer............................ */
+
+.footer-tp{
+    background-color: #D9D9D9;
+    position: relative;
+    top: 150px;
+    }
+
+    /* Text */
+    div .list-group li a{
+        color: #696464;
+    }
+    div .list-group li p{
+        color: #726e6e;
+    }
+    div .list-group li a:hover{
+        color: #DC2C2C;
+    }
+    /* QR code  */
+    div .list-group a img{
+        width: 10vh;
+        height: 10vh;
+        margin-bottom: 2vh;
+        background-repeat: no-repeat;
+    }
+
+    /* Icons */
+    div .list-group li a .fa-facebook-square{
+        color: #1877F2;
+        }
+        div .list-group li a .fa-youtube-play{
+            color: #DC2C2C;
+        }
+        div .list-group li a .fa-instagram{
+            color: #D82D7E;
+        }
+        div .list-group li a .fa{
+            width: 20px;
+            height: 20px;
+        }
+
+    /* Footer- coppyright */
+    .footer-tp .footer-copyright{
+        height: 8vh;
+        background-color: #B3ADAD;
+        color: white;
+        padding-bottom: 10px;   
+    }
+/* ................................................ */

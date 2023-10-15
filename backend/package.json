@@ -1,0 +1,26 @@
+{
+  "name": "Nien_Salon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "nodemon api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuynhDucPNV25/Website_Salon_Nien.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "server": "^1.0.38",
+    "sever": "^0.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

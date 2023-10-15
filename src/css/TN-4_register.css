@@ -1,0 +1,122 @@
+body {
+    background-image: url(../../image/1ae0f25c7d1651e828179aa965719925.jpg);
+    background-size: 145%;
+    margin: 0;
+}
+
+.form-register {
+    width: 30%;
+    height: 60%;
+    background-color: rgb(188, 185, 185);
+    border-radius: 20px;
+    position: relative;
+    top: 80px;
+}
+
+.cancel-icon-login img {
+    width: 30px;
+    height: 30px;
+    margin-left: 93%;
+    margin-top: 5px;
+}
+
+.register-text {
+    display: flex;
+    height: 58.803px;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: bold !important;
+}
+
+#register {
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+    background: var(--main-color, linear-gradient(270deg, #ffea00 0.06%, rgba(177, 12, 0, 0.85) 97.68%));   
+}
+
+.border-phone,
+.border-password {
+    width: 80%;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgb(87, 84, 84);
+    background: #FFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.border-password {
+    margin-top: 20px;
+}
+
+.border-email {
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    background: #FFF;   
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ask-have_account {
+    font-size: 18px;
+}
+
+.register-in {
+    position: relative;
+    top: -10px;
+    text-decoration: none;
+}
+
+/* media query */
+/* @media screen and (max-width: 480px) {
+    .form-login {
+        max-width: 240px;
+    }
+
+    .border-phone,
+    .border-password {
+        width: 240px;
+    }
+
+    .border-email {
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-login {
+        max-width: 300px;
+    }
+
+    .border-phone,
+    .border-password {
+        width: 300px;
+    }
+
+    .border-email {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form-login {
+        max-width: 496px;
+    }
+
+    .border-phone,
+    .border-password {
+        width: 496px;
+    }
+
+    .border-email {
+        width: 496px;
+    }
+} */
