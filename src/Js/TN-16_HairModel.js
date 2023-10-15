@@ -1,4 +1,4 @@
-const hairDataUrl = "http://localhost:4002/hairs";
+const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
 // Lấy id từ URL
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
