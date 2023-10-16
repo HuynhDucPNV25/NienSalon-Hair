@@ -8,7 +8,7 @@ function getHairIdFromURL() {
 
 // Sử dụng id lấy được để thực hiện các thay đổi và truy vấn dữ liệu tương ứng
 const currentHairId = getHairIdFromURL();
-console.log(currentHairId); // In ra kết quả: 4
+console.log(currentHairId); 
 
 // Lấy thẻ body
 const body = document.getElementById('DetailHair');
@@ -85,10 +85,6 @@ fetch(hairDataUrl)
           </div>
         </div>
       `;
-
-      // Thay đổi hình ảnh
-      img.src = currentHair.img;
-      img.alt = currentHair.name;
     } else {
       // Hiển thị thông báo khi không tìm thấy mẫu tóc
       div.innerHTML = `

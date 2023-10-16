@@ -222,11 +222,10 @@ body{
         color: #DC2C2C;
     }
     /* QR code  */
-    div .list-group a img{
-        width: 10vh;
-        height: 10vh;
-        margin-bottom: 2vh;
-        background-repeat: no-repeat;
+    div .list-group div img{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
     }
 
     /* Icons */

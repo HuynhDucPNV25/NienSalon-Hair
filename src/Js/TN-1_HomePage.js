@@ -1,5 +1,6 @@
 const host = "https://provinces.open-api.vn/api/";
 const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+// const hairDataUrl="http://localhost:4002/Hairs"//Làm ở localhost
 const hairModel = document.getElementById('Hairmodel-Agency');
 const hairAll = document.getElementById('AllHair');
 
