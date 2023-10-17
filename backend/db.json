@@ -86,7 +86,7 @@
       "describe":"",
       "price":20,
       "discount":10,
-      "new":true
+      "new":false
     },
     {
       "id":2,
@@ -94,7 +94,7 @@
       "name":"Keo vuốt tóc Black",
       "describe":"",
       "price":30,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -103,7 +103,7 @@
       "name":"Lakme",
       "describe":"Dầu gội đầu K.Therapy trị gàu dành cho tóc dầu",
       "price":470,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -112,7 +112,7 @@
       "name":"Gôm K.Style",
       "describe":"Tạo kiểu vừa tăng độ phồng",
       "price":430,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -121,7 +121,7 @@
       "name":"SUBLIME",
       "describe":"Nước hoa dành cho tóc và cơ thể, 50ml",
       "price":780,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -130,7 +130,7 @@
       "name":"Dầu gội Douyin Net Celebrate Kkono",
       "describe":"Kiểm soát chống gàu Bộ đồ đầu, 500ml",
       "price":410,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -139,7 +139,7 @@
       "name":"Serum mọc tóc dạng lỏng",
       "describe":"Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
       "price":1000,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -148,7 +148,7 @@
       "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
       "describe":"",
       "price":1000,
-      "discount":0,
+      "discount":10,
       "new":false
     },
     {
@@ -157,7 +157,7 @@
       "name":"Serum mọc tóc dạng lỏng",
       "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
       "price":1000,
-      "discount":0,
+      "discount":10,
       "new":false
     }
   ],
@@ -166,30 +166,7 @@
       "id":1,
       "role":true,
       "accountName":"admin",
-      "password":"adminstrator"
-    },
-    {
-      "id":2,
-      "role":false,
-      "accountName":"phat",
-      "password":"Phatdeptrai094532779410."
-    },
-    {
-      "id":3,
-      "role":false,
-      "accountName":"duc",
-      "password":"duc123"
-    },
-    {
-      "id":4,
-      "role":false,
-      "accountName":"nien",
-      "password":"nien123"
-    }
-  ],
-  "User":[
-    {
-      "id":1,
+      "password":"adminstrator",
       "name":"Huỳnh Đức",
       "email":"duc.huynh25@gmail.com",
       "phone":"0389086502",
@@ -197,6 +174,9 @@
     },
     {
       "id":2,
+      "role":false,
+      "accountName":"le",
+      "password":"NguyenThiLe2004",
       "name":"Nguyễn Thị Lệ",
       "email":"le.tear@gmail.com",
       "phone":"0389086520",
