@@ -17,9 +17,10 @@ const body = document.getElementById('DetailHair');
 const div = document.createElement('div');
 
 // Lấy dữ liệu từ mock API
-fetch(hairDataUrl)
-  .then(response => response.json())
-  .then(data => {
+async function getData() {
+  try {
+    const response = await axios.get(hairDataUrl);
+    const data = response.data;
     // Tìm mẫu tóc hiện tại dựa trên id
     const currentHair = data.find(hair => hair.id === currentHairId);
 
@@ -34,8 +35,8 @@ fetch(hairDataUrl)
           <div class="row">
             <div class="col-md-4" id="Hair-Model-Details-img">
               <img src="${currentHair.img}" alt="${currentHair.name}">
+              <div id="discount">${currentHair.discount}%</div>
             </div>
-            <div id="discount">${currentHair.discount}%</div>
             <div class="col-md-8" id="Hair-Model-Details-text">
               <h3 class="Hair-Model-Details-title">Mẫu tóc: ${currentHair.name}</h3><br>
               <h6 class="font-weight-normal" id="text-describe">
@@ -97,9 +98,12 @@ fetch(hairDataUrl)
         </div>
       `;
     }
-  })
-  .catch(error => console.log(error));
+  } catch (error) {
+    console.log(error);
+  }
+}
 
+getData();
 // Thêm đối tượng div vào thẻ body
 body.appendChild(div);
 
