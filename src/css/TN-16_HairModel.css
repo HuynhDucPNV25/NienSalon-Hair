@@ -14,6 +14,7 @@
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
   #Hair-Model-Details-img{
+    position: relative;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;  }
    /* Chi tiết của sản phẩm--------------------------------- */
   #Hair-Model-Details-text h3 {
@@ -119,11 +120,9 @@
 
 #discount{
   position: absolute;
-  top: 20px;
-  left: 210px;
+  top: 0px;
   color: #ffffff;
   background-color: #fe302f;
   padding: 2px 8px;
   text-transform: uppercase;
-  font-size: 0.85rem;
 }

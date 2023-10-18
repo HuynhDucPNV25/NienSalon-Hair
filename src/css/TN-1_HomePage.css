@@ -12,77 +12,48 @@ body{
     z-index: 1030;
     height: 80px;
     }  
-    .nav-item1,.nav-item2,.nav-item3{
+    .nav-item1,.nav-item2,.nav-item3,.dropdown{
+        height: 40px;
+        margin-right: 10px;
+        border: 1px solid rgb(221, 221, 221);
         border-radius: 4px;
-        border-bottom: 1px solid rgba(229, 229, 229, 0.96);
-        height: auto;
-        width: 150px;
-        justify-content: center;
-        text-align: center;
-        margin-left: 10px;
+        padding: 0px 20px;
+        font-size: 14px;
+        display: flex; /* Sử dụng flexbox để canh giữa chiều ngang và chiều dọc */
+        justify-content: center; /* Canh giữa theo chiều ngang */
+        align-items: center; /* Canh giữa theo chiều dọc */
     }
-    #dropdownMenuButton:hover{
-        background: var(--main-color, linear-gradient(270deg, #ffea00 0.06%, rgba(177, 12, 0, 0.85) 97.68%));   
-    }
-    .active {
-        background: var(--main-color, linear-gradient(270deg, #ffb70095 0.06%, rgba(231, 25, 10, 0.867) 97.68%));
-    }
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        display: none;
+    .active{
+        background-color: rgb(254, 90, 58);
     }
     #logo{
         width: 131px;
         height: 70px;   
     }
-    #dropdownMenuButton{
-        border-radius: 10px;
-        max-width: 220px;
-        width: 220px;
-        height: auto;
-        padding: 8px;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(188, 187, 187, 0.96);
-    }
-    #agency{
-        text-decoration: none;
-        color: #353535;
-    }
-    #city {
-        display: inline-block;
-        width: 250px;
-        background: var(--main-color, linear-gradient(270deg, #f1cf78 0.06%, rgba(226, 134, 128, 0.85) 97.68%));
-    }
-    #city:hover{
-        background: var(--main-color, linear-gradient(270deg, #ffb700 0.06%, rgba(231, 25, 10, 0.85) 97.68%));
-    }
+    .dropdown{
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 4px;
+        color: rgba(0,0,0,.5);
+        }
+        #city{
+            border: none;
+            background: transparent;
+            border-radius: 4px;
+            color: rgba(0,0,0,.5); 
+            font-weight: bolder; 
+        }
+        #city:focus{
+            outline: none;
+        }
     #login{
-        border-radius: 20px;
-        background: var(--main-color, linear-gradient(270deg, #ffb700 0.06%, rgba(231, 25, 10, 0.85) 97.68%));
+        border-radius: 4px;
         color: white;
         height: 45px;
-        
+        width: 100%;
+        background-color: rgb(254, 90, 58);
     }
     #login:hover{
-        background: var(--main-color, linear-gradient(270deg, #ffe600 0.06%, rgba(231, 25, 10, 0.85) 97.68%));
-    }
-    @media(max-width: 768px) {
-        #navbar-collapse {
-            background-color: #1876f2e5;
-            box-shadow: rgb(50, 50, 93) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.993) 0px 18px 36px -18px inset;
-        }   
-        #agency,b{
-            color: #ffffff;
-        }
-        .navbar-nav li a {
-            font-size: 14px;
-        }
-        #login {
-            margin-top: 10px;
-        }
-        .navbar-nav {
-            padding: 0 10px;
-        }
+        background-color: rgb(253, 105, 75);
     }
 /* ........................Banner.......................... */
 .banner{
@@ -95,14 +66,13 @@ body{
     
 .col-bannerForm{
     margin: 10px
-    
     }
     
     .Rectangle{
         width: 100%; 
         height: 280px; 
         background: white; 
-        border-radius: 10px;
+        border-radius: 4px;
         padding-top: 10px;
     }
     .searchBook {
@@ -117,14 +87,14 @@ body{
     #dropdownSearch{
         width: 90%;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 4px;
         border: 1px solid #AAA7A7;
         justify-content: space-between;
-        padding-left: 10px;
+        padding-left: 20px;
         padding-right: 10px;
     }
     .searchSalon{
-        width: 75%;
+        width: 90%;
         height: 100%;
         border: none;
     }
@@ -134,12 +104,13 @@ body{
     #FocusSearch{
         width: 60%;
         height: 100%;
-        border-radius: 10px;
-        background: var(--main-color, linear-gradient(270deg, #FBCB4F 0.06%, rgba(229, 82, 71, 0.85) 97.68%, rgba(229, 82, 71, 0.85) 97.68%));
+        border-radius: 4px;
+        color: white;
+        background-color: rgb(254, 90, 58);
     }
     
 .col-bannerSlide{
-    margin: 10px
+    margin: 10px;
     }
     .carousel-indicators li {
         position: relative;
@@ -152,12 +123,117 @@ body{
         background-size: cover;
         height: 280px;
         width: 100%;
+        border-radius: 4px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
     }
 /* ....................Body............................ */
+/* ................. */
+.carousell {
+        overflow-x: scroll;
+        padding: 30px;
+        position: relative;
+        top: 40px;
+        border-radius: 4px;
+        border-bottom: 1px solid bisque;
+    }
+    .carouse2 {
+        overflow-x: scroll;
+        padding: 30px;
+        position: relative;
+        top: 40px;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    }
+    .carousel__container {
+        white-space: nowrap;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+        height: 180px;
+    }
+    .carousel__container2 {
+        white-space: nowrap;
+        margin-top: 30px;
+    }
+    .carousel-itemm {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        transition: 1000ms all;
+        transform-origin: center left;
+    }
+
+    .carousel-itemm:hover ~ .carousel-itemm {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    .carousel__container:hover .carousel-itemm {
+        opacity: 0.3;
+    }
+    .carousel__container:hover .carousel-itemm:hover {
+        opacity: 1;
+    }
+
+    .carousel-item__img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }   
+    .carousel-item__imgProduct{
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .carousel-item__text {
+        position: relative;
+        text-align: center; /* căn chữ theo giữa */
+        background-color: #6964648e;
+        color: white; /* màu chữ */
+        font-size: 24px; /* kích thước chữ */
+      }
+    .carousel-item__text2 {
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        border-bottom: 1px solid #ff2200;
+        color: #ff2200;
+        white-space: nowrap;          /* Không cho xuống dòng */
+        overflow: hidden;             /* Ẩn nội dung vượt khỏi kích thước của phần tử */
+        text-overflow: ellipsis;      /* Thêm dấu ba chấm (...) ở cuối khi bị giới hạn số ký tự */
+    } 
+    .carousel-item__img2 {
+        width: 200px;
+        height: 175px;
+    }   
+    .carousel-itemmm{
+        color:#CC2C2C;
+        width: 200px;
+        height: 200px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        transition: 1000ms all;
+        transform-origin: center left;
+    }
+    .carousel-itemmm:hover{
+        transform: scale(1.2);
+    }
+    .carousel-itemmm:hover ~ .carousel-itemmm {
+        transform: translate3d(50px, 0, 0);
+    }
+/* .................... */
 .slide-container{
     position: relative;
-    top: 100px;
+    top: 40px;
     margin-top: 10px;
+    border-radius: 4px;
     }
     #topSalon,#topMauToc{
         color: #CC2C2C;
@@ -222,7 +298,7 @@ body{
         color: #DC2C2C;
     }
     /* QR code  */
-    div .list-group div img{
+    div .list-group a img{
         width: 120px;
         height: 120px;
         margin-bottom: 20px;
@@ -251,3 +327,15 @@ body{
         padding-bottom: 10px;   
     }
 /* ................................................ */
+@media(max-width: 768px) {  
+    .fixed-top {
+        height: auto;
+        }
+        .nav-item1,.nav-item2,.nav-item3,.dropdown{
+            margin-bottom: 10px;
+        }
+        .searchSalon{
+            width:70%;
+        }
+}
+
