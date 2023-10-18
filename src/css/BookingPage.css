@@ -1,0 +1,29 @@
+
+.form-booking-hair{
+    border: 1px solid wheat;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(255, 255, 255, 1.7);
+    /* background-color: green; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-booking-hair input,
+.form-booking-hair select,
+.form-booking-hair textarea {
+    background: transparent;
+}
+
+
+.form-group #button-booking-hair{
+    width: 100px;
+    height: 40px;
+    background-color: #E86A60;
+    border: none;
+    border-radius: 10px;
+}
+.form-booking-hair h1{
+    color: #E86A60;
+}
