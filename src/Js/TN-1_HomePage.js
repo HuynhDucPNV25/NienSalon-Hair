@@ -167,7 +167,7 @@ const getProductData = async () => {
       const productItem = document.createElement("div");
       productItem.classList.add("carousel-itemmm");
       productItem.innerHTML = `
-      <a href="" class="text-decoration-none" style="position: relative;">
+      <a href="/src/html/TN-30-Detail-Product.html?id=${product.id}" class="text-decoration-none" style="position: relative;">
       <i class="fa-regular fa-heart mt-1" style="position: absolute; right:5px;"></i>
       <img class="carousel-item__img2" src="${product.img}" alt="${product.name}">
         <p class="carousel-item__text2">${product.name}</p>
