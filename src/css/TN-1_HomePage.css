@@ -327,7 +327,7 @@ body{
         padding-bottom: 10px;   
     }
 /* ................................................ */
-@media(max-width: 768px) {  
+@media(max-width: 1024px) {  
     .fixed-top {
         height: auto;
         }

@@ -83,7 +83,7 @@
       "id":1,
       "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
       "name":"Dầu gội đầu Sunsil",
-      "describe":"",
+      "describe":"Dầu gội đầu Sunsilk là một sản phẩm chăm sóc tóc chuyên nghiệp được thiết kế để làm sạch và nuôi dưỡng tóc. Dầu gội đầu này có chứa các thành phần làm sạch nhẹ nhàng nhưng hiệu quả, giúp loại bỏ các bụi bẩn và dầu thừa từ tóc. Ngoài ra, dầu gội đầu Sunsilk còn bổ sung các hoạt chất chăm sóc tóc, giúp nuôi dưỡng tóc mềm mượt, óng ả và khỏe mạnh hơn. Các thành phần này bao gồm: dầu hạt Jojoba, Keratin và dưỡng chất tóc. Ngoài ra, dầu gội đầu Sunsilk còn có nhiều loại sản phẩm khác nhau dành cho các nhu cầu chăm sóc tóc khác nhau. Với chất lượng đảm bảo và giá cả hợp lý, dầu gội đầu Sunsilk là sự lựa chọn tuyệt vời cho việc chăm sóc tóc hàng ngày của bạn.",
       "price":20,
       "discount":10,
       "new":false
@@ -92,7 +92,7 @@
       "id":2,
       "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
       "name":"Keo vuốt tóc Black",
-      "describe":"",
+      "describe":"Keo vuốt tóc Black là một sản phẩm styling tóc chuyên nghiệp, được thiết kế để giữ cho kiểu tóc của bạn luôn bền vững và tạo nên một diện mạo cá tính. Đây là một sản phẩm keo vuốt tóc chất lượng cao, có độ cứng trung bình và mùi thơm nhẹ, giúp tạo ra kiểu dáng tóc dễ dàng mà không làm tóc bị gãy, bết dính hay bị bết tự nhiên. Keo vuốt tóc Black có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
       "price":30,
       "discount":10,
       "new":false
@@ -100,8 +100,8 @@
     {
       "id":3,
       "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Lakme",
-      "describe":"Dầu gội đầu K.Therapy trị gàu dành cho tóc dầu",
+      "name":"Dầu gội đầu Lakme",
+      "describe":"Dầu gội đầu Lakme là một sản phẩm chăm sóc tóc chuyên nghiệp, được cung cấp bởi thương hiệu Lakme, một thương hiệu nổi tiếng trong lĩnh vực chăm sóc tóc.Dầu gội đầu Lakme được thiết kế để giúp làm sạch và nuôi dưỡng tóc một cách nhẹ nhàng và hiệu quả. Sản phẩm này chứa các thành phần tự nhiên như vitamin E, dầu Argan, dầu hạt Jojoba và tinh dầu hoa hồng. Những thành phần này giúp tóc trở nên khỏe mạnh, óng ả và mềm mượt.Dầu gội đầu Lakme có thể được sử dụng cho nhiều loại tóc khác nhau, bao gồm tóc khô, tổn thương và dầu. Sản phẩm này cũng có thể giúp giảm thiểu tình trạng chẻ ngọn và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.Với chất lượng tốt và giá cả hợp lý, dầu gội đầu Lakme là một lựa chọn tuyệt vời để giữ cho tóc của bạn luôn óng mượt và khỏe mạnh.",
       "price":470,
       "discount":10,
       "new":false
@@ -152,7 +152,106 @@
       "new":false
     },
     {
-      "id":7,
+      "id":9,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Serum mọc tóc dạng lỏng",
+      "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price":1000,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":10,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Dầu gội đầu Sunsil",
+      "describe":"Dầu gội đầu Sunsilk là một sản phẩm chăm sóc tóc chuyên nghiệp được thiết kế để làm sạch và nuôi dưỡng tóc. Dầu gội đầu này có chứa các thành phần làm sạch nhẹ nhàng nhưng hiệu quả, giúp loại bỏ các bụi bẩn và dầu thừa từ tóc. Ngoài ra, dầu gội đầu Sunsilk còn bổ sung các hoạt chất chăm sóc tóc, giúp nuôi dưỡng tóc mềm mượt, óng ả và khỏe mạnh hơn. Các thành phần này bao gồm: dầu hạt Jojoba, Keratin và dưỡng chất tóc. Ngoài ra, dầu gội đầu Sunsilk còn có nhiều loại sản phẩm khác nhau dành cho các nhu cầu chăm sóc tóc khác nhau. Với chất lượng đảm bảo và giá cả hợp lý, dầu gội đầu Sunsilk là sự lựa chọn tuyệt vời cho việc chăm sóc tóc hàng ngày của bạn.",
+      "price":20,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":11,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Keo vuốt tóc Black",
+      "describe":"Keo vuốt tóc Black là một sản phẩm styling tóc chuyên nghiệp, được thiết kế để giữ cho kiểu tóc của bạn luôn bền vững và tạo nên một diện mạo cá tính. Đây là một sản phẩm keo vuốt tóc chất lượng cao, có độ cứng trung bình và mùi thơm nhẹ, giúp tạo ra kiểu dáng tóc dễ dàng mà không làm tóc bị gãy, bết dính hay bị bết tự nhiên. Keo vuốt tóc Black có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
+      "price":30,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":12,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Dầu gội đầu Lakme",
+      "describe":"Dầu gội đầu Lakme là một sản phẩm chăm sóc tóc chuyên nghiệp, được cung cấp bởi thương hiệu Lakme, một thương hiệu nổi tiếng trong lĩnh vực chăm sóc tóc.Dầu gội đầu Lakme được thiết kế để giúp làm sạch và nuôi dưỡng tóc một cách nhẹ nhàng và hiệu quả. Sản phẩm này chứa các thành phần tự nhiên như vitamin E, dầu Argan, dầu hạt Jojoba và tinh dầu hoa hồng. Những thành phần này giúp tóc trở nên khỏe mạnh, óng ả và mềm mượt.Dầu gội đầu Lakme có thể được sử dụng cho nhiều loại tóc khác nhau, bao gồm tóc khô, tổn thương và dầu. Sản phẩm này cũng có thể giúp giảm thiểu tình trạng chẻ ngọn và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.Với chất lượng tốt và giá cả hợp lý, dầu gội đầu Lakme là một lựa chọn tuyệt vời để giữ cho tóc của bạn luôn óng mượt và khỏe mạnh.",
+      "price":470,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":13,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Gôm K.Style",
+      "describe":"Tạo kiểu vừa tăng độ phồng",
+      "price":430,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":14,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"SUBLIME",
+      "describe":"Nước hoa dành cho tóc và cơ thể, 50ml",
+      "price":780,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":15,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Dầu gội Douyin Net Celebrate Kkono",
+      "describe":"Kiểm soát chống gàu Bộ đồ đầu, 500ml",
+      "price":410,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":16,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Serum mọc tóc dạng lỏng",
+      "describe":"Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price":1000,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":17,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
+      "describe":"",
+      "price":1000,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":18,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"Serum mọc tóc dạng lỏng",
+      "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price":1000,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":19,
+      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
+      "describe":"",
+      "price":1000,
+      "discount":10,
+      "new":false
+    },
+    {
+      "id":20,
       "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
       "name":"Serum mọc tóc dạng lỏng",
       "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
@@ -183,20 +282,34 @@
       "sex":"Nữ"
     }
   ],
-  "comment":[
+  "Comment":[
     {
       "id":1,
-      "name":"Huỳnh Đức",
-      "email":"duc.huynh25@gmail.com",
-      "phone":"0389086502",
+      "userID":1,
       "massage":"Thật tuyệt vời!!"
     }
   ],
-  "rating":[
+  "Rating":[
     {
       "id":1,
       "userID":1,
       "ratingHair":5.0
+    }
+  ],
+  "Booking":[
+    {
+      "id":1,
+      "userID":1,
+      "hairID":1,
+      "time":"20/10/2023 Buổi sáng",
+      "massage":"Tôi khó tính lắm nha!!"
+    }
+  ],
+  "Cart":[
+    {
+      "id":1,
+      "productID":1,
+      "userID":1
     }
   ]
 }

@@ -1,4 +1,5 @@
 const hairDataUrl = "https://pnv-hair.onrender.com/Product";
+// const hairDataUrl = "http://localhost:4002/Product"
 // Lấy id từ URL
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -34,7 +35,7 @@ async function getData() {
         <div class="container" id="Hair-Model-Details">
           <div class="row">
             <div class="col-md-4" id="Hair-Model-Details-img">
-              <img src="${currentHair.img}" alt="${currentHair.name}">
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}">
               <div id="discount">${currentHair.discount}%</div>
             </div>
             <div class="col-md-8" id="Hair-Model-Details-text">
@@ -45,8 +46,13 @@ async function getData() {
                   ${currentHair.describe.length > 200 ? "..." : ""}.
                 </lable>
               </h6>
+              <div class="text-center">            
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}" style="width:200px;height:200px;">
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}" style="width:200px;height:200px;">
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}" style="width:200px;height:200px;">
+              </div>
               <pb class="text-secondary">Giá:</pb>
-              <pb class="text-warning" id="price">${currentHair.price.toFixed(3)}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
+              <pb class="text-warning" id="price" style="font-size: 24px;">${currentHair.price.toFixed(3)}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
               </pb>
               <div>
               <button id="schedule" type="button" class="btn btn-light mt-2" onclick="Calender()">
