@@ -12,7 +12,6 @@ function submitBooking() {
   const phoneNumber = document.getElementById('phoneNumber').value;
   const messageText = document.getElementById('message-text').value;
 
-  
 // Kiểm tra ngày nhập có rỗng không
   if(date==''){
       alert("Vui lòng điền thông tin ngày")
