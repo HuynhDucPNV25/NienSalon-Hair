@@ -1,4 +1,11 @@
-
+body {
+    background-image: url(../../image/1ae0f25c7d1651e828179aa965719925.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+} 
 .form-booking-hair{
     border: 1px solid wheat;
     padding: 20px;
@@ -9,13 +16,6 @@
     /* background-color: green; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-.form-booking-hair input,
-.form-booking-hair select,
-.form-booking-hair textarea {
-    background: transparent;
-}
-
 
 .form-group #button-booking-hair{
     width: 100px;
