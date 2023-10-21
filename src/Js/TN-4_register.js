@@ -1,38 +1,43 @@
 function register() {
-  let name = document.getElementById("name-f").value;
-  let accountName = document.getElementById("accountName").value;
-  let email = document.getElementById("email").value;
-  let phoneNumber = document.getElementById("tel").value;
-  let password = document.getElementById("pass").value;
-  let confirmPassword = document.getElementById("pass2").value;
-  let gender = document.querySelector('input[name="gender"]:checked').value;
-  let role = document.querySelector('input[name="role"]:checked').value;
+  const name = document.getElementById("name-f").value.trim();
+  const accountName = document.getElementById("accountName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phoneNumber = document.getElementById("tel").value.trim();
+  const password = document.getElementById("pass").value.trim();
+  const confirmPassword = document.getElementById("pass2").value.trim();
+  const gender = document.querySelector('input[name="gender"]:checked');
+  const role = document.querySelector('input[name="role"]:checked');
+  
+  let errorMsg = "";
 
-  console.log(role);
+  if (name === "" || accountName === "" || email === "" || phoneNumber === "" || password === "" || confirmPassword === "" || gender === null || role === null) {
+    errorMsg = "Xin hãy nhập đầy đủ thông tin!";
+  } else if (!isValidEmail(email)) {
+    errorMsg = "Vui lòng nhập địa chỉ email hợp lệ!";
+  } else if (!isValidPhoneNumber(phoneNumber)) {
+    errorMsg = "Vui lòng nhập số điện thoại hợp lệ!";
+  } else if (password !== confirmPassword) {
+    errorMsg = "Mật khẩu không khớp!";
+  }
 
-  if (name === "" || accountName === "" || email === "" || phoneNumber === "" || password === "" || confirmPassword === "" || gender === "" || role === "") {
-    alert("Xin hãy nhập đầy đủ thông tin!");
+  if (errorMsg !== "") {
+    alert(errorMsg);
     return;
   }
 
-  if (password !== confirmPassword) {
-    alert("Mật khẩu không khớp!");
-    return;
-  }
-
-  let userData = {
-    name: name,
-    accountName: accountName,
-    email: email,
-    phoneNumber: phoneNumber,
-    password: password,
-    gender: gender,
-    role: role
+  const userData = {
+    name,
+    accountName,
+    email,
+    phoneNumber,
+    password,
+    gender: gender.value,
+    role: role.value
   };
 
   console.log(userData);
 
-  let url = "https://pnv-hair.onrender.com/Account";
+  const url = "https://pnv-hair.onrender.com/Account";
   fetch(url, {
     method: "POST",
     body: JSON.stringify(userData),
@@ -49,8 +54,8 @@ function register() {
         document.getElementById("tel").value = "";
         document.getElementById("pass").value = "";
         document.getElementById("pass2").value = "";
-        document.querySelector('input[name="gender"]:checked').checked = false;
-        document.querySelector('input[name="role"]:checked').checked = false;
+        gender.checked = false;
+        role.checked = false;
         window.location.href = "";//Chuyển sang trang hoặc không
       } else {
         alert("Đăng Ký Thất Bại");
@@ -60,4 +65,14 @@ function register() {
       console.log(error);
       alert("Đã Xảy Ra Lỗi!");
     });
+}
+
+//Hàm kiểm tra định dạng
+function isValidPhoneNumber(phoneNumber) {
+  const phoneNumberRegex = /^\d{10}$/;
+  return phoneNumberRegex.test(phoneNumber);
+}
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
