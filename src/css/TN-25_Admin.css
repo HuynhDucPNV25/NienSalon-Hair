@@ -1,0 +1,62 @@
+/* ...................Menu................................ */
+.admin-body{
+    margin: 0;
+    padding: 0;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 80px;
+    background-color: white;
+    }  
+    .active {
+        border-bottom: 1px solid white;
+     }
+    .active lable{
+        color: white;
+    } 
+    #logo{
+        width: 131px;
+        height: 70px;   
+    }
+    
+    #login{
+        border-radius: 4px;
+        color: white;
+        height: 45px;
+        width: 100%;
+        background-color: rgb(254, 90, 58);
+    }
+    #login:hover{
+        background-color: rgb(253, 105, 75);
+    }
+
+/*----------------------Menu sidebar---------------------- */
+
+#sidebar-item-admin{
+    height: 100vh;
+    padding-top: 120px;
+    background-color: rgb(43, 41, 38);
+
+    }
+    .sidebar-header .sidebar-toggler i{
+        /* margin-top: 100px; */
+        color: aqua;
+    }
+
+    .sidebar-menu .menu 
+    .sidebar-item .sidebar-link{
+        text-decoration: none;
+        color: rgb(91, 95, 94);
+    }
+
+    .sidebar-menu .menu
+     .sidebar-title, .sidebar-item {
+        margin-bottom: 25px;
+        list-style-type: none;
+
+       
+    }

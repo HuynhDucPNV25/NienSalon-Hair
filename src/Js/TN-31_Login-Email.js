@@ -23,6 +23,7 @@ function loginWithEmail() {
         });
 }
 
+
 function authenticateUser(email, password) {
     return new Promise(function (resolve, reject) {
         if (email === "example@example.com" && password === "password") {
