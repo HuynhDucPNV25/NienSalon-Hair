@@ -1,315 +1,466 @@
 {
-  "slide-img":[
-    { "img1": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619841/hair-models/fadhdqixjqqewueeseti.png" },
-    { "img2": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619840/hair-models/apdrtjaphvvtaaoadzgs.png" },
-    { "img3": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/hn7nbd72kttqytzsf0uy.png"}
-  ],
-  "Hairs":[
+  "slide-img": [
     {
-      "id":1,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Layer ngắn Hàn Quốc được thiết kế với nhiều lớp tóc ngắn phủ lên nhau. Kiểu tóc này thường tạo nên sự phẳng và nhẹ nhàng cho mái tóc. Layer ngắn Hàn Quốc nữ phù hợp với nhiều hình dáng khuôn mặt và tôn lên vẻ đẹp tự nhiên của tóc. Kiểu tóc này thường được kết hợp với màu sắc tóc đơn giản, để tạo nên phong cách thanh lịch và trẻ trung.",
-      "price":79.9,
+      "img1": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619841/hair-models/fadhdqixjqqewueeseti.png"
+    },
+    {
+      "img2": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619840/hair-models/apdrtjaphvvtaaoadzgs.png"
+    },
+    {
+      "img3": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/hn7nbd72kttqytzsf0uy.png"
+    }
+  ],
+  "Hairs": [
+    {
+      "id": 1,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Layer ngắn Hàn Quốc được thiết kế với nhiều lớp tóc ngắn phủ lên nhau. Kiểu tóc này thường tạo nên sự phẳng và nhẹ nhàng cho mái tóc. Layer ngắn Hàn Quốc nữ phù hợp với nhiều hình dáng khuôn mặt và tôn lên vẻ đẹp tự nhiên của tóc. Kiểu tóc này thường được kết hợp với màu sắc tóc đơn giản, để tạo nên phong cách thanh lịch và trẻ trung.",
+      "price": 79.9,
       "discount": 15,
-      "service":["Gội đầu"," Ráy tai"],
-      "new":false
+      "service": [
+        "Gội đầu",
+        " Ráy tai"
+      ],
+      "new": false
     },
     {
-      "id":2,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
-      "price":79.9,
+      "id": 2,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
+      "price": 79.9,
       "discount": 20.5,
-      "service":[" Massage"],
-      "new":false
+      "service": [
+        " Massage"
+      ],
+      "new": false
     },
     {
-      "id":3,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
-      "price":79.9,
+      "id": 3,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
+      "price": 79.9,
       "discount": 0,
-      "service":["Gội đầu"," Massage"," Ráy tai"],
-      "new":true
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Ráy tai"
+      ],
+      "new": true
     },
     {
-      "id":4,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Đà Nẵng",
-      "address":"Mỹ Khê 3, Đà Nẵng",
-      "describe":"Kiểu tóc layer ngắn Hàn Quốc cho nữ có lớp tóc chưa đồng đều và lông mái dài, kết hợp với màu nhẹ nhàng để tạo nét thanh lịch. Tóc hai bên cắt ngắn hơn phần giữa để tạo kiểu lớp. Phong cách này thường được kết hợp với phụ kiện để tạo nên phong cách nữ tính-tomboy.",
-      "price":20,
-      "service":[" Váy tai"],
+      "id": 4,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Đà Nẵng",
+      "address": "Mỹ Khê 3, Đà Nẵng",
+      "describe": "Kiểu tóc layer ngắn Hàn Quốc cho nữ có lớp tóc chưa đồng đều và lông mái dài, kết hợp với màu nhẹ nhàng để tạo nét thanh lịch. Tóc hai bên cắt ngắn hơn phần giữa để tạo kiểu lớp. Phong cách này thường được kết hợp với phụ kiện để tạo nên phong cách nữ tính-tomboy.",
+      "price": 20,
+      "service": [
+        " Váy tai"
+      ],
       "discount": 0,
-      "new":true
+      "new": true
     },
     {
-      "id":5,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hồ Chí Minh",
-      "address":"Hai Bà Trưng, Hồ Chí Minh",
-      "describe":"Kiểu tóc ngắn nữ Hàn Quốc có chiều dài tóc ở vai hoặc ngắn hơn, được cắt layer và thường kết hợp với lông mái dài. Màu sắc nhẹ nhàng và tạo điểm nhấn bằng phụ kiện nữ tính.",
-      "price":99.9,
-      "service":[" Massage"],
+      "id": 5,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hồ Chí Minh",
+      "address": "Hai Bà Trưng, Hồ Chí Minh",
+      "describe": "Kiểu tóc ngắn nữ Hàn Quốc có chiều dài tóc ở vai hoặc ngắn hơn, được cắt layer và thường kết hợp với lông mái dài. Màu sắc nhẹ nhàng và tạo điểm nhấn bằng phụ kiện nữ tính.",
+      "price": 99.9,
+      "service": [
+        " Massage"
+      ],
       "discount": 30.5,
-      "new":false
+      "new": false
     },
     {
-      "id":6,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Việt Nam",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
-      "price":100.9,
-      "service":["Gội đầu"," Massage"," Váy tai"],
+      "id": 6,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
       "discount": 90.5,
-      "new":false
-    }    
-  ],
-  "Product":[
-    {
-      "id":1,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội đầu Sunsil",
-      "describe":"Dầu gội đầu Sunsilk là một sản phẩm chăm sóc tóc chuyên nghiệp được thiết kế để làm sạch và nuôi dưỡng tóc. Dầu gội đầu này có chứa các thành phần làm sạch nhẹ nhàng nhưng hiệu quả, giúp loại bỏ các bụi bẩn và dầu thừa từ tóc. Ngoài ra, dầu gội đầu Sunsilk còn bổ sung các hoạt chất chăm sóc tóc, giúp nuôi dưỡng tóc mềm mượt, óng ả và khỏe mạnh hơn. Các thành phần này bao gồm: dầu hạt Jojoba, Keratin và dưỡng chất tóc. Ngoài ra, dầu gội đầu Sunsilk còn có nhiều loại sản phẩm khác nhau dành cho các nhu cầu chăm sóc tóc khác nhau. Với chất lượng đảm bảo và giá cả hợp lý, dầu gội đầu Sunsilk là sự lựa chọn tuyệt vời cho việc chăm sóc tóc hàng ngày của bạn.",
-      "price":20,
-      "discount":10,
-      "new":false
+      "new": false
     },
     {
-      "id":2,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Keo vuốt tóc Black",
-      "describe":"Keo vuốt tóc Black là một sản phẩm styling tóc chuyên nghiệp, được thiết kế để giữ cho kiểu tóc của bạn luôn bền vững và tạo nên một diện mạo cá tính. Đây là một sản phẩm keo vuốt tóc chất lượng cao, có độ cứng trung bình và mùi thơm nhẹ, giúp tạo ra kiểu dáng tóc dễ dàng mà không làm tóc bị gãy, bết dính hay bị bết tự nhiên. Keo vuốt tóc Black có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
-      "price":30,
-      "discount":10,
-      "new":false
+      "id": 7,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":3,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội đầu Lakme",
-      "describe":"Dầu gội đầu Lakme là một sản phẩm chăm sóc tóc chuyên nghiệp, được cung cấp bởi thương hiệu Lakme, một thương hiệu nổi tiếng trong lĩnh vực chăm sóc tóc.Dầu gội đầu Lakme được thiết kế để giúp làm sạch và nuôi dưỡng tóc một cách nhẹ nhàng và hiệu quả. Sản phẩm này chứa các thành phần tự nhiên như vitamin E, dầu Argan, dầu hạt Jojoba và tinh dầu hoa hồng. Những thành phần này giúp tóc trở nên khỏe mạnh, óng ả và mềm mượt.Dầu gội đầu Lakme có thể được sử dụng cho nhiều loại tóc khác nhau, bao gồm tóc khô, tổn thương và dầu. Sản phẩm này cũng có thể giúp giảm thiểu tình trạng chẻ ngọn và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.Với chất lượng tốt và giá cả hợp lý, dầu gội đầu Lakme là một lựa chọn tuyệt vời để giữ cho tóc của bạn luôn óng mượt và khỏe mạnh.",
-      "price":470,
-      "discount":10,
-      "new":false
+      "id": 8,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":4,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Gôm K.Style",
-      "describe":"Tạo kiểu vừa tăng độ phồng",
-      "price":430,
-      "discount":10,
-      "new":false
+      "id": 9,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":5,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"SUBLIME",
-      "describe":"Nước hoa dành cho tóc và cơ thể, 50ml",
-      "price":780,
-      "discount":10,
-      "new":false
+      "id": 10,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":6,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội Douyin Net Celebrate Kkono",
-      "describe":"Kiểm soát chống gàu Bộ đồ đầu, 500ml",
-      "price":410,
-      "discount":10,
-      "new":false
+      "id": 11,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":7,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":8,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
-      "describe":"",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":9,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":10,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội đầu Sunsil",
-      "describe":"Dầu gội đầu Sunsilk là một sản phẩm chăm sóc tóc chuyên nghiệp được thiết kế để làm sạch và nuôi dưỡng tóc. Dầu gội đầu này có chứa các thành phần làm sạch nhẹ nhàng nhưng hiệu quả, giúp loại bỏ các bụi bẩn và dầu thừa từ tóc. Ngoài ra, dầu gội đầu Sunsilk còn bổ sung các hoạt chất chăm sóc tóc, giúp nuôi dưỡng tóc mềm mượt, óng ả và khỏe mạnh hơn. Các thành phần này bao gồm: dầu hạt Jojoba, Keratin và dưỡng chất tóc. Ngoài ra, dầu gội đầu Sunsilk còn có nhiều loại sản phẩm khác nhau dành cho các nhu cầu chăm sóc tóc khác nhau. Với chất lượng đảm bảo và giá cả hợp lý, dầu gội đầu Sunsilk là sự lựa chọn tuyệt vời cho việc chăm sóc tóc hàng ngày của bạn.",
-      "price":20,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":11,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Keo vuốt tóc Black",
-      "describe":"Keo vuốt tóc Black là một sản phẩm styling tóc chuyên nghiệp, được thiết kế để giữ cho kiểu tóc của bạn luôn bền vững và tạo nên một diện mạo cá tính. Đây là một sản phẩm keo vuốt tóc chất lượng cao, có độ cứng trung bình và mùi thơm nhẹ, giúp tạo ra kiểu dáng tóc dễ dàng mà không làm tóc bị gãy, bết dính hay bị bết tự nhiên. Keo vuốt tóc Black có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
-      "price":30,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":12,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội đầu Lakme",
-      "describe":"Dầu gội đầu Lakme là một sản phẩm chăm sóc tóc chuyên nghiệp, được cung cấp bởi thương hiệu Lakme, một thương hiệu nổi tiếng trong lĩnh vực chăm sóc tóc.Dầu gội đầu Lakme được thiết kế để giúp làm sạch và nuôi dưỡng tóc một cách nhẹ nhàng và hiệu quả. Sản phẩm này chứa các thành phần tự nhiên như vitamin E, dầu Argan, dầu hạt Jojoba và tinh dầu hoa hồng. Những thành phần này giúp tóc trở nên khỏe mạnh, óng ả và mềm mượt.Dầu gội đầu Lakme có thể được sử dụng cho nhiều loại tóc khác nhau, bao gồm tóc khô, tổn thương và dầu. Sản phẩm này cũng có thể giúp giảm thiểu tình trạng chẻ ngọn và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.Với chất lượng tốt và giá cả hợp lý, dầu gội đầu Lakme là một lựa chọn tuyệt vời để giữ cho tóc của bạn luôn óng mượt và khỏe mạnh.",
-      "price":470,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":13,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Gôm K.Style",
-      "describe":"Tạo kiểu vừa tăng độ phồng",
-      "price":430,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":14,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"SUBLIME",
-      "describe":"Nước hoa dành cho tóc và cơ thể, 50ml",
-      "price":780,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":15,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội Douyin Net Celebrate Kkono",
-      "describe":"Kiểm soát chống gàu Bộ đồ đầu, 500ml",
-      "price":410,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":16,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":17,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
-      "describe":"",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":18,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":19,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
-      "describe":"",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":20,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
+      "id": 12,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     }
   ],
-  "Account":[
+  "Product": [
     {
-      "id":1,
-      "role":true,
-      "accountName":"admin",
-      "password":"adminstrator",
-      "name":"Huỳnh Đức",
-      "email":"duc.huynh25@gmail.com",
-      "phone":"0389086502",
-      "sex":"Nam"
+      "id": 1,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Dầu gội đầu Sunsil",
+      "describe": "Dầu gội đầu Sunsilk là một sản phẩm chăm sóc tóc chuyên nghiệp được thiết kế để làm sạch và nuôi dưỡng tóc. Dầu gội đầu này có chứa các thành phần làm sạch nhẹ nhàng nhưng hiệu quả, giúp loại bỏ các bụi bẩn và dầu thừa từ tóc. Ngoài ra, dầu gội đầu Sunsilk còn bổ sung các hoạt chất chăm sóc tóc, giúp nuôi dưỡng tóc mềm mượt, óng ả và khỏe mạnh hơn. Các thành phần này bao gồm: dầu hạt Jojoba, Keratin và dưỡng chất tóc. Ngoài ra, dầu gội đầu Sunsilk còn có nhiều loại sản phẩm khác nhau dành cho các nhu cầu chăm sóc tóc khác nhau. Với chất lượng đảm bảo và giá cả hợp lý, dầu gội đầu Sunsilk là sự lựa chọn tuyệt vời cho việc chăm sóc tóc hàng ngày của bạn.",
+      "price": 20,
+      "discount": 10,
+      "new": false
     },
     {
-      "id":2,
-      "role":false,
-      "accountName":"le",
-      "password":"NguyenThiLe2004",
-      "name":"Nguyễn Thị Lệ",
-      "email":"le.tear@gmail.com",
-      "phone":"0389086520",
-      "sex":"Nữ"
+      "id": 2,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Keo vuốt tóc Black",
+      "describe": "Keo vuốt tóc Black là một sản phẩm styling tóc chuyên nghiệp, được thiết kế để giữ cho kiểu tóc của bạn luôn bền vững và tạo nên một diện mạo cá tính. Đây là một sản phẩm keo vuốt tóc chất lượng cao, có độ cứng trung bình và mùi thơm nhẹ, giúp tạo ra kiểu dáng tóc dễ dàng mà không làm tóc bị gãy, bết dính hay bị bết tự nhiên. Keo vuốt tóc Black có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
+      "price": 30,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 3,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Dầu gội đầu Lakme",
+      "describe": "Dầu gội đầu Lakme là một sản phẩm chăm sóc tóc chuyên nghiệp, được cung cấp bởi thương hiệu Lakme, một thương hiệu nổi tiếng trong lĩnh vực chăm sóc tóc.Dầu gội đầu Lakme được thiết kế để giúp làm sạch và nuôi dưỡng tóc một cách nhẹ nhàng và hiệu quả. Sản phẩm này chứa các thành phần tự nhiên như vitamin E, dầu Argan, dầu hạt Jojoba và tinh dầu hoa hồng. Những thành phần này giúp tóc trở nên khỏe mạnh, óng ả và mềm mượt.Dầu gội đầu Lakme có thể được sử dụng cho nhiều loại tóc khác nhau, bao gồm tóc khô, tổn thương và dầu. Sản phẩm này cũng có thể giúp giảm thiểu tình trạng chẻ ngọn và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.Với chất lượng tốt và giá cả hợp lý, dầu gội đầu Lakme là một lựa chọn tuyệt vời để giữ cho tóc của bạn luôn óng mượt và khỏe mạnh.",
+      "price": 470,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 4,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Gôm K.Style",
+      "describe": "Tạo kiểu vừa tăng độ phồng",
+      "price": 430,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 5,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "SUBLIME",
+      "describe": "Nước hoa dành cho tóc và cơ thể, 50ml",
+      "price": 780,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 6,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Dầu gội Douyin Net Celebrate Kkono",
+      "describe": "Kiểm soát chống gàu Bộ đồ đầu, 500ml",
+      "price": 410,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 7,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Serum mọc tóc dạng lỏng",
+      "describe": "Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 8,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
+      "describe": "",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 9,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Serum mọc tóc dạng lỏng",
+      "describe": "nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 10,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Dầu gội đầu Sunsil",
+      "describe": "Dầu gội đầu Sunsilk là một sản phẩm chăm sóc tóc chuyên nghiệp được thiết kế để làm sạch và nuôi dưỡng tóc. Dầu gội đầu này có chứa các thành phần làm sạch nhẹ nhàng nhưng hiệu quả, giúp loại bỏ các bụi bẩn và dầu thừa từ tóc. Ngoài ra, dầu gội đầu Sunsilk còn bổ sung các hoạt chất chăm sóc tóc, giúp nuôi dưỡng tóc mềm mượt, óng ả và khỏe mạnh hơn. Các thành phần này bao gồm: dầu hạt Jojoba, Keratin và dưỡng chất tóc. Ngoài ra, dầu gội đầu Sunsilk còn có nhiều loại sản phẩm khác nhau dành cho các nhu cầu chăm sóc tóc khác nhau. Với chất lượng đảm bảo và giá cả hợp lý, dầu gội đầu Sunsilk là sự lựa chọn tuyệt vời cho việc chăm sóc tóc hàng ngày của bạn.",
+      "price": 20,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 11,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Keo vuốt tóc Black",
+      "describe": "Keo vuốt tóc Black là một sản phẩm styling tóc chuyên nghiệp, được thiết kế để giữ cho kiểu tóc của bạn luôn bền vững và tạo nên một diện mạo cá tính. Đây là một sản phẩm keo vuốt tóc chất lượng cao, có độ cứng trung bình và mùi thơm nhẹ, giúp tạo ra kiểu dáng tóc dễ dàng mà không làm tóc bị gãy, bết dính hay bị bết tự nhiên. Keo vuốt tóc Black có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
+      "price": 30,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 12,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Dầu gội đầu Lakme",
+      "describe": "Dầu gội đầu Lakme là một sản phẩm chăm sóc tóc chuyên nghiệp, được cung cấp bởi thương hiệu Lakme, một thương hiệu nổi tiếng trong lĩnh vực chăm sóc tóc.Dầu gội đầu Lakme được thiết kế để giúp làm sạch và nuôi dưỡng tóc một cách nhẹ nhàng và hiệu quả. Sản phẩm này chứa các thành phần tự nhiên như vitamin E, dầu Argan, dầu hạt Jojoba và tinh dầu hoa hồng. Những thành phần này giúp tóc trở nên khỏe mạnh, óng ả và mềm mượt.Dầu gội đầu Lakme có thể được sử dụng cho nhiều loại tóc khác nhau, bao gồm tóc khô, tổn thương và dầu. Sản phẩm này cũng có thể giúp giảm thiểu tình trạng chẻ ngọn và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.Với chất lượng tốt và giá cả hợp lý, dầu gội đầu Lakme là một lựa chọn tuyệt vời để giữ cho tóc của bạn luôn óng mượt và khỏe mạnh.",
+      "price": 470,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 13,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Gôm K.Style",
+      "describe": "Tạo kiểu vừa tăng độ phồng",
+      "price": 430,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 14,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "SUBLIME",
+      "describe": "Nước hoa dành cho tóc và cơ thể, 50ml",
+      "price": 780,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 15,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Dầu gội Douyin Net Celebrate Kkono",
+      "describe": "Kiểm soát chống gàu Bộ đồ đầu, 500ml",
+      "price": 410,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 16,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Serum mọc tóc dạng lỏng",
+      "describe": "Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 17,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
+      "describe": "",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 18,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Serum mọc tóc dạng lỏng",
+      "describe": "nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 19,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
+      "describe": "",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 20,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Serum mọc tóc dạng lỏng",
+      "describe": "nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price": 1000,
+      "discount": 10,
+      "new": false
     }
   ],
-  "Comment":[
+  "Account": [
     {
-      "id":1,
-      "userID":1,
-      "massage":"Thật tuyệt vời!!"
+      "id": 1,
+      "role": true,
+      "accountName": "admin",
+      "password": "adminstrator",
+      "name": "Huỳnh Đức",
+      "email": "duc.huynh25@gmail.com",
+      "phone": "0389086502",
+      "sex": "Nam"
+    },
+    {
+      "id": 2,
+      "role": false,
+      "accountName": "le",
+      "password": "NguyenThiLe2004",
+      "name": "Nguyễn Thị Lệ",
+      "email": "le.tear@gmail.com",
+      "phone": "0389086520",
+      "sex": "Nữ"
     }
   ],
-  "Rating":[
+  "Comment": [
     {
-      "id":1,
-      "userID":1,
-      "ratingHair":5.0
+      "id": 1,
+      "userID": 1,
+      "massage": "Thật tuyệt vời!!"
     }
   ],
-  "Booking":[
+  "Rating": [
     {
-      "id":1,
-      "userID":1,
-      "hairID":1,
-      "time":"20/10/2023 Buổi sáng",
-      "massage":"Tôi khó tính lắm nha!!"
+      "id": 1,
+      "userID": 1,
+      "ratingHair": 5
     }
   ],
-  "Cart":[
+  "Booking": [
     {
-      "id":1,
-      "productID":1,
-      "userID":1
+      "customerName": "Huỳnh Đức",
+      "phone": "0389086502",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 79.9,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "11AM",
+      "date": "2023-10-22",
+      "message": "Tôi muốn Nhân viên chất lượng",
+      "createdAt": 1697926211675,
+      "updatedAt": 1697926211675,
+      "id": 1
+    },
+    {
+      "customerName": "Nguyễn Thị Lệ",
+      "phone": "0543671524",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 79.9,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "2PM",
+      "date": "2023-10-22",
+      "message": "Tôi có yêu cầu rất cao và rất khó tính, hãy sắp xếp cho tôi người tốt nhất",
+      "createdAt": 1697926688594,
+      "updatedAt": 1697926688594,
+      "id": 2
+    },
+    {
+      "customerName": "Huỳnh Đức",
+      "phone": "0389086502",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 79.9,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "10AM",
+      "date": "2023-10-22",
+      "message": "Anh Thành Deep Try",
+      "createdAt": 1697960329782,
+      "updatedAt": 1697960329782,
+      "id": 3
+    }
+  ],
+  "Cart": [
+    {
+      "id": 1,
+      "productID": 1,
+      "userID": 1
     }
   ]
 }

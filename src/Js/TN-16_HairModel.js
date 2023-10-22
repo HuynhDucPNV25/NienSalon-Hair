@@ -19,14 +19,13 @@ const div = document.createElement('div');
 // Lấy dữ liệu từ mock API
 async function getData() {
   try {
-    const response = await axios.get(hairDataUrl);
-    const data = response.data;
+    const response = await axios.get(`${hairDataUrl}/${currentHairId}`);
     // Tìm mẫu tóc hiện tại dựa trên id
-    const currentHair = data.find(hair => hair.id === currentHairId);
+    const currentHair = response.data;
 
     if (currentHair) {
       // Lấy thẻ img để thay đổi hình ảnh
-      const img = div.querySelector('#Hair-Model-Details-img img');
+      // const img = div.querySelector('#Hair-Model-Details-img img');  
       const discountPrice = (currentHair.price * (100 - currentHair.discount)) / 100;
       console.log(discountPrice);
       // Thay đổi mã HTML theo mẫu tóc hiện tại
