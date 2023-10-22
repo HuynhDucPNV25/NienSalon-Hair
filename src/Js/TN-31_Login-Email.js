@@ -5,7 +5,7 @@ const loginWithEmail = async () => {
   const accountData = response.data;
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("password").value;
-
+  
   if (email === "" || password === "") {
     alert("Xin hãy nhập email đăng nhập và mật khẩu!");
   } else {

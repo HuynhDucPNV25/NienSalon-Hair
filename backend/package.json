@@ -17,8 +17,7 @@
   },
   "dependencies": {
     "json-server": "^0.17.4",
-    "server": "^1.0.38",
-    "sever": "^0.0.2"
+    "query-string": "^7.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

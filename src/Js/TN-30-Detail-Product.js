@@ -1,4 +1,5 @@
-const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+const hairDataUrl = "https://pnv-hair.onrender.com/Product";
+// const hairDataUrl = "http://localhost:4002/Product"
 // Lấy id từ URL
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -11,7 +12,7 @@ const currentHairId = getHairIdFromURL();
 console.log(currentHairId); 
 
 // Lấy thẻ body
-const body = document.getElementById('DetailHair');
+const body = document.getElementById('DetailProduct');
 
 // Tạo một đối tượng div để chứa mã HTML
 const div = document.createElement('div');
@@ -22,10 +23,9 @@ async function getData() {
     const response = await axios.get(`${hairDataUrl}/${currentHairId}`);
     // Tìm mẫu tóc hiện tại dựa trên id
     const currentHair = response.data;
-
     if (currentHair) {
       // Lấy thẻ img để thay đổi hình ảnh
-      // const img = div.querySelector('#Hair-Model-Details-img img');  
+      const img = div.querySelector('#Hair-Model-Details-img img');
       const discountPrice = (currentHair.price * (100 - currentHair.discount)) / 100;
       console.log(discountPrice);
       // Thay đổi mã HTML theo mẫu tóc hiện tại
@@ -33,7 +33,7 @@ async function getData() {
         <div class="container" id="Hair-Model-Details">
           <div class="row">
             <div class="col-md-4" id="Hair-Model-Details-img">
-              <img src="${currentHair.img}" alt="${currentHair.name}">
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}">
               <div id="discount">${currentHair.discount}%</div>
             </div>
             <div class="col-md-8" id="Hair-Model-Details-text">
@@ -44,15 +44,18 @@ async function getData() {
                   ${currentHair.describe.length > 200 ? "..." : ""}.
                 </lable>
               </h6>
-              <p class="text-secondary"><u>Dịch vụ :</u> ${currentHair.service} .</p>
-              <p>Địa chỉ: ${currentHair.address}</p>
+              <div class="text-center">            
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}" style="width:200px;height:200px;">
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}" style="width:200px;height:200px;">
+              <img class="rounded" src="${currentHair.img}" alt="${currentHair.name}" style="width:200px;height:200px;">
+              </div>
               <pb class="text-secondary">Giá:</pb>
-              <pb class="text-warning" id="price">${currentHair.price.toFixed(3)}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
+              <pb class="text-warning" id="price" style="font-size: 24px;">${currentHair.price.toFixed(3)}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
               </pb>
               <div>
               <button id="schedule" type="button" class="btn btn-light mt-2" onclick="Calender()">
-                <i class="fa-solid fa-calendar-days fa-beat-fade mr-3""></i>
-                Đặt lịch
+              <i class="fa-solid fa-basket-shopping fa-beat mr-3"></i>
+                Đặt mua
               </button>
               </div>
             </div>
