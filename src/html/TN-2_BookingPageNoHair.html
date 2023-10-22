@@ -69,11 +69,11 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Tên mẫu tóc:</label>
-                        <input type="text" class="form-control" id="NameHair" value=""  readonly>
+                        <input type="text" class="form-control" id="NameHair" value="" placeholder="Nhập mẫu tóc bạn muốn" oninput="searchHair()">
                     </div>
                     <div>
                         <label for="price" class="col-form-label">Giá mẫu:</label>
-                        <input type="text" class="form-control" id="price" value="" readonly>
+                        <input type="text" class="form-control" id="price" value="" readonly >
                     </div>
                     <div class="form-group">
                         <label for="arange" class="col-form-label">Địa chỉ:</label>
@@ -88,17 +88,8 @@
                             <div class="col">
                                 <label for="time-select" class="col-form-label">Thời gian:</label>
                                 <select class="form-control" id="time-select" required>
-                                    <option value="7AM">7 AM</option>
-                                    <option value="8AM">8 AM</option>
-                                    <option value="9AM">9 AM</option>
-                                    <option value="10AM">10 AM</option>
-                                    <option value="11AM">11 AM</option>
-                                    <option value="12PM">12 PM</option>
-                                    <option value="1PM">1 PM</option>
-                                    <option value="2PM">2 PM</option>
-                                    <option value="3PM">3 PM</option>
-                                    <option value="4PM">4 PM</option>
-                                    <option value="5PM">5 PM</option>
+                                    <option value="Buổi sáng">Buổi sáng</option>
+                                    <option value="Buổi chiều">Buổi chiều</option>
                                 </select>
                             </div>
                         </div>
@@ -117,7 +108,7 @@
 
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Những lưu ý cần thiết:</label>
-                        <textarea class="form-control" id="message-text" placeholder="Hãy ghi lưu ý của bạn đến với Shop" maxlength="120"></textarea>
+                        <textarea class="form-control" id="message-text" placeholder="Hãy ghi lưu ý của bạn đến với Shop" maxlength="200"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="button" id="button-booking-hair" onclick="submitBooking()"
