@@ -25,17 +25,29 @@ function register() {
     return;
   }
 
-  const userData = {
-    name,
-    accountName,
-    email,
-    phoneNumber,
-    password,
-    gender: gender.value,
-    role: role.value
-  };
+  if (password !== confirmPassword) {
+    alert("Mật khẩu không khớp!");
+    return;
+  }
 
-  console.log(userData);
+  if (role !== true) {
+    roles = "user";
+  } else if (role === false) {
+    roles = "admin";
+  } else {
+    alert("Xin hãy chọn quyền truy cập!");
+    return;
+  }
+
+  const userData = {
+    name: name,
+    accountName: accountName,
+    email: email,
+    phoneNumber: phoneNumber,
+    password: password,
+    gender: gender,
+    role: roles
+  };
 
   const url = "https://pnv-hair.onrender.com/Account";
   fetch(url, {
