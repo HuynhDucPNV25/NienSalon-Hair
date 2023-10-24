@@ -454,6 +454,19 @@
       "createdAt": 1697960329782,
       "updatedAt": 1697960329782,
       "id": 3
+    },
+    {
+      "customerName": "Duyen Deep Guy's",
+      "phone": "0123456789",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 79.9,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "10AM",
+      "date": "2023-10-23",
+      "message": "",
+      "createdAt": 1698029127289,
+      "updatedAt": 1698029127289,
+      "id": 4
     }
   ],
   "Cart": [
