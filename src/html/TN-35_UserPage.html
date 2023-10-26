@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nien-Salon</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/TN-1_HomePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+     integrity="sha512-jBkGbh5VuqEsP0x5s7tvxP3aNfvJxmxCQsrtransb1y7z7+g65VC7clOQ11qW/DPQD1yB+Kyvog+MfYo9kx3eQ==" crossorigin="anonymous" />
+     <script src="https://kit.fontawesome.com/9a5faea756.js" crossorigin="anonymous"></script>
+    <script src="/src/Js/TN-17_loginPage.js"></script>
+    </head>
+<body>
+    <!-- Menu -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <a href="./TN-1_HomePage.html"><img id="logo" src="../../image/Logo.png" alt="Nien-Salon"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="navbar-nav form-inline mr-auto">
+          <li class="nav-item nav-item1 active">
+            <a class="nav-link" href="./TN-1_HomePage.html">
+              <b>
+                TRANG CHỦ
+              </b>
+            </a>
+          </li>
+          <li class="nav-item nav-item2">
+            <a class="nav-link" href="./TN-16_Hair-Model.html">
+              <b>
+                MẪU TÓC
+              </b>
+            </a>
+          </li>
+          <li class="nav-item nav-item3">
+            <a class="nav-link" href="./TN-2_BookingPage.html">
+              <b>
+                ĐẶT LỊCH
+              </b>
+            </a>
+          </li>
+          <li class="dropdown ">
+            <a href="" class="d-none" id="agency"></a>
+            <i class="fa-solid fa-location-dot pr-1" style="color: red;"></i>
+            <select class="selectCity" id="city"></select>
+          </li>
+        </ul>
+        <!-- User Logged In -->
+        <center>
+          <ul id="icon-login" class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" id="logout">
+                <button class="btn btn-outline" id="login">
+                  <i class="fa-regular fa-user"></i>
+                  Đăng Xuất
+                </button>
+              </a>
+            </li>
+          </ul>
+        </center>
+      </div>
+    </nav>
+  </div>
+  <!-- Banner -->
+  <div class="banner container-fluid">
+    <div class="row">
+      <div class="col-1 d-none d-md-block" id="colbanner1"></div>
+      <div class="col col-bannerForm ">
+        <!-- Form tìm kiếm và đặt lịch -->
+        <div class="Rectangle">
+          <div class="searchBook">Tìm kiếm và đặt lịch </div>
+          <center>
+            <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+              <i class="fa-solid fa-magnifying-glass" style="color:#E55247D9;"></i>
+              <input placeholder="Tìm Kiếm ..." class="searchSalon"></input>
+            </p>
+            <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+              <i class="fa-solid fa-wand-magic-sparkles" style="color:#E55247D9;"></i>
+              <input placeholder="Mẫu Tóc ..." class="searchSalon"></input>
+            </p>
+            <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+              <i class="fa-solid fa-bars" style="color: #E55247D9;"></i>
+              <input placeholder="Dịch Vụ ..." class="searchSalon"></input>
+            </p>
+            <button class="btn btn-outline" id="FocusSearch">
+              TÌM KIẾM
+            </button>
+          </center>
+        </div>
+      </div>
+      <div class="col col-bannerSlide d-none d-md-block">
+        <!-- Slider quảng cáo -->
+        <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="2500">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox" id="carouselInner">
+          </div>
+          <div id="sp-icon" class="carousel-control-prev" href="#carouselId" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </div>
+          <a id="sp-icon" class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-1 d-none d-md-block" id="colbanner2"></div>
+    </div>
+  </div>
+</body>
+<!-- Optional JavaScript -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../Js/TN-1_HomePage.js"></script>
+<script src="../Js/AllPage.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
