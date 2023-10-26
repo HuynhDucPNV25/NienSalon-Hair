@@ -234,3 +234,8 @@ const getProductData = async () => {
 };
 
 getProductData();
+
+// let icon = document.getElementById("icon-login");
+
+//       console.log("ádjadsad");
+//       icon.style.display="none";
