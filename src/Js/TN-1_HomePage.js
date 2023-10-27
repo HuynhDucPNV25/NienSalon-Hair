@@ -1,6 +1,6 @@
 const host = "https://provinces.open-api.vn/api/";
-const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
-// const hairDataUrl=""
+// const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+const hairDataUrl = "http://localhost:4002/Hairs";
 const hairModel = document.getElementById('Hairmodel-Agency');
 const hairAll = document.getElementById('AllHair');
 
@@ -61,7 +61,10 @@ const fetchHairData = async (selectedCity) => {
         div.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-12');
         div.innerHTML = `
               <div class="card card" id="cards">
-                <img style="max-height:190.05px;" src="${item.img}" alt="${item.name}" class="card-img-top">
+              <b class="text-light px-1" id="discountP" style="position: absolute; top:5px;left:0px; background-color: rgb(254, 90, 58);">
+                ${item.discount}%
+              </b>
+                <img style="max-height:190px;" src="${item.img}" alt="${item.name}" class="card-img-center>
                 <div class="card-body">
                   <h5 class="card-title" style="color: #CC2C2C;">${item.name}</h5>
                   <p class="card-text" style="color: gray;">Địa chỉ: ${item.address}</p>
@@ -133,9 +136,12 @@ const fetchAllHairData = async () => {
       hairData.forEach((item) => {
         const div = $("<div>").addClass("col-lg-3 col-md-4 col-sm-6 col-12 col");
         div.html(`
-          <div class="card card" id="card-${item.id}">
-            <img style="max-height:190.05px;" src="${item.img}" alt="${item.name}" class="card-img-top">
-            <div class="card-body">
+          <div class="card card" id="card">
+          <b class="text-light px-1" id="discountP" style="position: absolute; top:5px;left:0px; background-color: rgb(254, 90, 58);">
+            ${item.discount}%
+          </b>
+          <img style="max-height:190px;" src="${item.img}" alt="${item.name}" class="card-img-center>
+          <div class="card-body">
               <h5 class="card-title" style="color: #CC2C2C;">${item.name}</h5>
               <p class="card-text" style="color: gray;">Địa chỉ: ${item.address}</p>
               <div class="d-flex flex-row">
@@ -183,7 +189,7 @@ const fetchAllHairData = async () => {
               <span aria-hidden="true">&raquo;</span>
               <span class="sr-only">Next</span>
             </a>
-          </li>
+          </li> 
         `);
         paginationElement.find("a.page-link").on("click", (e) => {
 e.preventDefault();
@@ -217,7 +223,8 @@ fetchAllHairData();
 
 
 // ..................................................................................................
-const productDataUrl = "https://pnv-hair.onrender.com/Product";
+// const productDataUrl = "https://pnv-hair.onrender.com/Product";
+const productDataUrl = "http://localhost:4002/Product";
 const getProductData = async () => {
   try {
     const response = await axios.get(productDataUrl);

@@ -1,6 +1,6 @@
-const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+// const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+const hairDataUrl= "http://localhost:4002/Hairs";
 const bookingDataUrl = "http://localhost:4002/Booking";
-
 // Lấy id trên url.
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -78,7 +78,7 @@ async function submitBooking() {
     if (!validateData()) {
       return;
     }
-
+    
     const NameHair = document.querySelector('#NameHair').value;
     const PriceHair = document.querySelector('#price').value;
     const AddressHair = document.querySelector('#address').value;
@@ -89,6 +89,7 @@ async function submitBooking() {
     const message = document.querySelector('#message-text').value;
     const price = parseFloat(PriceHair);
     const data = {
+      
       customerName,
       phone: phoneNumber,
       nameHair: NameHair,
@@ -98,6 +99,7 @@ async function submitBooking() {
       date: date,
       message: message,
     };
+    
     const messagee = `
     Đặt lịch thành công!\n\n
     Tên khách hàng: ${customerName}\n
@@ -109,7 +111,6 @@ async function submitBooking() {
     Ngày: ${date}`;
     alert(messagee);
     const response = await axios.post(bookingDataUrl, data);
-    console.log(response.data); // Log phản hồi từ API sau khi đẩy dữ liệu thành công
   } catch (error) {
     console.log(error);
   }

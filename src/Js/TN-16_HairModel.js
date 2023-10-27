@@ -88,13 +88,54 @@ async function getData() {
     } else {
       // Hiển thị thông báo khi không tìm thấy mẫu tóc
       div.innerHTML = `
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Không tìm thấy mẫu tóc</h2>
-            </div>
+      <div class="banner container-fluid">
+      <div class="row">
+        <div class="col-1" id="colbanner1"></div>
+        <div class="col col-bannerForm ">
+          <!-- Form tìm kiếm và đặt lịch -->
+          <div class="Rectangle">
+            <div class="searchBook">Tìm kiếm và đặt lịch </div>
+            <center>
+              <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+                <i class="fa-solid fa-magnifying-glass" style="color:#E55247D9;"></i>
+                <input placeholder="Tìm Kiếm ..." class="searchSalon"></input>
+              </p>
+              <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+                <i class="fa-solid fa-wand-magic-sparkles" style="color:#E55247D9;"></i>
+                <input placeholder="Mẫu Tóc ..." class="searchSalon"></input>
+              </p>
+              <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
+                <i class="fa-solid fa-bars" style="color: #E55247D9;"></i>
+                <input placeholder="Dịch Vụ ..." class="searchSalon"></input>
+              </p>
+              <button class="btn btn-outline" id="FocusSearch">
+                TÌM KIẾM
+              </button>
+            </center>
           </div>
         </div>
+  
+        <div class="col col-bannerSlide d-none d-md-block">
+          <!-- Slider quảng cáo -->
+          <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="2500">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselId" data-slide-to="0"></li>
+              <li data-target="#carouselId" data-slide-to="1"></li>
+              <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" id="carouselInner">
+            </div>
+            <div id="sp-icon" class="carousel-control-prev" href="#carouselId" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </div>
+            <a id="sp-icon" class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
       `;
     }
   } catch (error) {

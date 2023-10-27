@@ -13,14 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-  },
+  "bugs": {},
   "dependencies": {
-    "json-server": "^0.17.4",
-    "query-string": "^7.0.0",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "json-server": "^0.17.4",
     "nodemailer": "^6.7.0",
-    "cors": "^2.8.5"
+    "query-string": "^7.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
