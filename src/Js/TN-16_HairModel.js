@@ -8,7 +8,7 @@ function getHairIdFromURL() {
 
 // Sử dụng id lấy được để thực hiện các thay đổi và truy vấn dữ liệu tương ứng
 const currentHairId = getHairIdFromURL();
-console.log(currentHairId); 
+// console.log(currentHairId); 
 
 // Lấy thẻ body
 const body = document.getElementById('DetailHair');
@@ -22,6 +22,8 @@ async function getData() {
     const response = await axios.get(`${hairDataUrl}/${currentHairId}`);
     // Tìm mẫu tóc hiện tại dựa trên id
     const currentHair = response.data;
+    console.log(currentHair);
+    console.log(1);
 
     if (currentHair) {
       // Lấy thẻ img để thay đổi hình ảnh

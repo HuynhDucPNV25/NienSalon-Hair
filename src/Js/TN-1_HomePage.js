@@ -38,6 +38,7 @@ const callAPI = async () => {
   }
 };
 // Hàm gọi API để lấy danh sách các mẫu tóc tương ứng với thành phố được chọn
+//   const result = document.getElementById(DetailHair);
 const fetchHairData = async (selectedCity) => {
   try {
     const response = await axios.get(`${hairDataUrl}?city=${selectedCity}`);
@@ -61,7 +62,7 @@ const fetchHairData = async (selectedCity) => {
         div.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'col-12');
         div.innerHTML = `
               <div class="card card" id="cards">
-                <img style="max-height:190.05px;" src="${item.img}" alt="${item.name}" class="card-img-top">
+                <img style="max-height:75% ; width:72% ;" src="${item.img}" alt="${item.name}" class="card-img-center"> 
                 <div class="card-body">
                   <h5 class="card-title" style="color: #CC2C2C;">${item.name}</h5>
                   <p class="card-text" style="color: gray;">Địa chỉ: ${item.address}</p>
@@ -134,7 +135,7 @@ const fetchAllHairData = async () => {
         const div = $("<div>").addClass("col-lg-3 col-md-4 col-sm-6 col-12 col");
         div.html(`
           <div class="card card" id="card-${item.id}">
-            <img style="max-height:190.05px;" src="${item.img}" alt="${item.name}" class="card-img-top">
+            <img style="max-height:190px;" src="${item.img}" alt="${item.name}" class="card-img-center">
             <div class="card-body">
               <h5 class="card-title" style="color: #CC2C2C;">${item.name}</h5>
               <p class="card-text" style="color: gray;">Địa chỉ: ${item.address}</p>

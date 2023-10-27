@@ -11,30 +11,29 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Link CSS -->
-  <link rel="stylesheet" href="../css/TN-1_HomePage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="../css/TN-16_HairModel.css">
+  <link rel="stylesheet" href="demo.css">
+
 </head>
 
 <body>
   <!-- Menu -->
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <a href="./TN-1_HomePage.html"><img id="logo" src="../../image/Logo.png" alt="Nien-Salon"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="navbar-nav form-inline mr-auto">
-          <li class="nav-item nav-item1 ">
+          <li class="nav-item nav-item1 active">
             <a class="nav-link" href="./TN-1_HomePage.html">
               <b>
                 TRANG CHỦ
               </b>
             </a>
           </li>
-          <li class="nav-item nav-item2 active">
-            <a class="nav-link" href="/src/html/TN-16_Hair-Model2.html">
+          <li class="nav-item nav-item2">
+            <a class="nav-link" href="./TN-16_Hair-Model.html">
               <b>
                 MẪU TÓC
               </b>
@@ -48,29 +47,31 @@
             </a>
           </li>
           <li class="dropdown ">
-            <i class="fa-solid fa-store"style="color: red; font-size:20px;"></i>
-        </li>
-        </ul>
-      <!-- Login -->
-      <center>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="./TN-17_loginPage.html">
-              <button class="btn btn-outline" id="login">
-                <i class="fa-regular fa-user"></i>
-                Đăng Nhập
-              </button>
-            </a>
+            <a href="" class="d-none" id="agency"></a>
+            <i class="fa-solid fa-location-dot pr-1" style="color: red;"></i>
+            <select class="selectCity" id="city"></select>
           </li>
         </ul>
-      </center>  
+        <!-- Login -->
+        <center>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="./TN-17_loginPage.html">
+                <button class="btn btn-outline" id="login">
+                  <i class="fa-regular fa-user"></i>
+                  Đăng Nhập
+                </button>
+              </a>
+            </li>
+          </ul>
+        </center>
       </div>
     </nav>
   </div>
   <!-- Banner -->
   <div class="banner container-fluid">
     <div class="row">
-      <div class="col-1" id="colbanner1"></div>
+      <div class="col-1 d-none d-md-block" id="colbanner1"></div>
       <div class="col col-bannerForm ">
         <!-- Form tìm kiếm và đặt lịch -->
         <div class="Rectangle">
@@ -113,17 +114,87 @@
           </a>
         </div>
       </div>
-      <div class="col-1"></div>
+      <div class="col-1 d-none d-md-block" id="colbanner2"></div>
     </div>
   </div>
-<!-- Body -->
-<button class="scroll-top-btn" onclick="scrollToTop()"><i class="fa fa-chevron-up"></i></button>
+  <!-- Body -->
+  <button class="scroll-top-btn" onclick="scrollToTop()"><i class="fa fa-chevron-up"></i></button>
+  <!-- /........... -->
+  <section class="container carousell">
+    <div class="carousel__container">
+      <div></div>
+      <div class="carousel-itemm">
+        <a href="./TN-2_BookingPageNoHair.html" class="text-decoration-none">
+          <img class="carousel-item__img" src="../../image/booking.jpg" alt="people" />
+          <p class="carousel-item__text">Đặt lịch</p>
+        </a>
+      </div>
+      <div class="carousel-itemm">
+        <a href="" class="text-decoration-none">
+          <img class="carousel-item__img" src="../../image/Shop.jpg" alt="people" />
+          <p class="carousel-item__text">Sản phẩm</p>
+        </a>
+      </div>
+      <div class="carousel-itemm">
+        <a href="" class="text-decoration-none">
+          <img class="carousel-item__img" src="../../image/Gift.jpg" alt="people" />
+          <p class="carousel-item__text">Quà tặng</p>
+        </a>
 
-<bodys id="DetailHair" class="d-flex flex-wrap" >
-    <!--Detail  
-  
-    -->
-</bodys>
+      </div>
+      <div></div>
+    </div>
+  </section>
+  <!-- //............... -->
+  <div class="container slide-container bg-light">
+    <p id="topProduct"></p>
+    <div class="row slider" id="AllProduct"></div>
+  </div>
+  <br>
+
+  <div class="container slide-container bg-light">
+    <p id="topSalon"></p>
+    <div class="row slider" id="Hairmodel-Agency">
+    </div>
+  </div>
+  <!-- .................. -->
+  <div>
+    <p style=" 
+    position: relative; 
+    top: 110px;
+    left: 220px;
+    color: #CC2C2C;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    max-width: 150px;
+    ">Sản Phẩm</p>
+    <section class=" container carouse2 mt-4">
+      <div class="carousel__container2" id="product-Homepage">
+      </div>
+    </section>
+  </div>
+  <br>
+  <!-- ...................... -->
+  <div class="container slide-container bg-light">
+    <p id="topMauToc"></p>
+    <div class="row slider" id="AllHair">
+      <div class="col-12">
+        <div class="row" id="hairList">
+          <!-- Để mẫu tóc -->
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination" id="pagination">
+              <!--Để pagination  -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
   <!--Footer  -->
   <footer class="footer-tp" class="page-footer font-small indigo text-nowrap ">
     <!-- Footer Links -->
@@ -138,7 +209,9 @@
           <ul class="list-group list-unstyled ">
             <li>
               <a>
-                <img class="list-group-item-img" src="https://res.cloudinary.com/duas1juqs/image/upload/v1697437754/pnv/qrcode_pnv-hair.netlify.app_itgild.png" alt="QRcode">
+                <img class="list-group-item-img"
+                  src="https://res.cloudinary.com/duas1juqs/image/upload/v1696624774/hair-models/ne2lleidgsrdohoxzanj.png"
+                  alt="QRcode">
               </a>
             </li>
             <li>
@@ -163,13 +236,13 @@
           <p class="font-weight-bold text-uppercase mt-3 mb-4">Chi nhánh</p>
           <ul class="list-group list-unstyled ">
             <li>
-              <a href="#!">Thành phố Hồ Chí Minh</a>
+              <p>Thành phố Hồ Chí Minh</p>
             </li>
             <li>
-              <a href="#!">Thành phố Đà Nẵng</a>
+              <p>Thành phố Đà Nẵng</p>
             </li>
             <li>
-              <a href="#!">Thành phố Vinh </a>
+              <p>Thành phố Hồ Chí Minh </p>
             </li>
           </ul>
         </div>
@@ -186,7 +259,7 @@
               </a>
             </li>
             <li>
-              <a href="./TN-16_Hair-Model.html">Mẫu tóc </a>
+              <a href="./TN-16_Hair-Model.htmly">Mẫu tóc </a>
             </li>
             <li>
               <a href="./TN-2_BookingPage.html">Đặt lịch</a>
@@ -206,27 +279,30 @@
           </p>
           <ul class="list-group list-unstyled ">
             <li>
-              <a href="">
+              <a href="mailto:niensalon@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                niensalon@gmail.com
               </a>
-              <a href="#!">niensalon@gmail.com</a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/nien.salon/" target="_blank">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                Niensalon265
               </a>
-              <a href="#!">Niensalon265</a>
             </li>
             <li>
-              <a href="">
+              <a href="tel:0385740373">
                 <i class="fa fa-phone-square" aria-hidden="true"></i>
+                0385740373
               </a>
-              <a href="#!">0385740373</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
+
+
     <div class="footer-copyright text-center py-3">
       <p>© 2020 niensalon.vn | Bản quyền thuộc về Công ty TNHH Đầu tư Công nghệ Salon</p>
     </div>
@@ -236,12 +312,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../Js/TN-16_HairModel.js"></script>
+  <script src="../Js/TN-1_HomePage.js"></script>
   <script src="../Js/AllPage.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="../Js/TN-16_HairModel2.js"></script>
 </body>
+
 </html>

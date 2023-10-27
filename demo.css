@@ -149,19 +149,18 @@ body{
     }
     .carousel__container {
         white-space: nowrap;
-        margin-top: 150px;
+        margin-top: 50px;
         display: grid;
         grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-/*-------- New code for you ----------------*/
-        height: 150px;
+        height: 180px;
     }
     .carousel__container2 {
         white-space: nowrap;
         margin-top: 30px;
     }
     .carousel-itemm {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         overflow: hidden;
         margin-right: 10px;
@@ -182,10 +181,9 @@ body{
     }
 
     .carousel-item__img {
-        width: 150px;
-        height: 100px;
+        width: 200px;
+        height: 150px;
         object-fit: cover;
-        
     }   
     .carousel-item__imgProduct{
         width: 200px;
@@ -197,7 +195,7 @@ body{
         text-align: center; /* căn chữ theo giữa */
         background-color: #6964648e;
         color: white; /* màu chữ */
-        font-size: 15px; /* kích thước chữ */
+        font-size: 24px; /* kích thước chữ */
       }
     .carousel-item__text2 {
         position: relative;
@@ -235,7 +233,7 @@ body{
     position: relative;
     top: 40px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 4px;
     }
     #topSalon,#topMauToc{
         color: #CC2C2C;
@@ -245,21 +243,15 @@ body{
 
     }
     .card{
-        max-height: 380px;
-        height: 380px;
-       /* New code for you , if you want , I can train but you have to pay money for me , okey */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+        max-height: 360px;
+        height: 360px;
     }
     .cards:hover{
         text-decoration: none;
     }
     .card:hover{
         transition: all 0.2s ease-out;
-        /* box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2); */
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
         top: -4px;
         
     }
@@ -278,8 +270,8 @@ body{
         color: white;
         border: none;
         border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         font-size: 1.2rem;
         z-index: 1000;
     }
