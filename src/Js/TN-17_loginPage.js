@@ -1,5 +1,17 @@
 const accountDataUrl = "https://pnv-hair.onrender.com/Account";
 
+
+// Lấy id trên url.
+function getUserIdFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get('id');
+  return parseInt(id);
+}
+
+// Sử dụng id lấy được để thực hiện các thay đổi và truy vấn dữ liệu tương ứng
+const currentUserId = getUserIdFromURL();
+console.log(currentUserId);
+
 const login = async () => {
   try {
     const response = await axios.get(accountDataUrl);
@@ -36,18 +48,25 @@ const login = async () => {
   }
 };
 
-
 function checkLogin(accountData) {
   const current = JSON.parse(localStorage.getItem("userData"));
   const currentUser = accountData.find(
     (item) => item.accountName === current.accountName
   );
   if (currentUser) {
+  const name = current.accountName;
     if (currentUser.role) {
+      alert("Wellcome "+ name +"!")
       window.location.href = "/src/html/TN-1_HomePage.html";
     } else {
-      alert("User");
-      window.location.href = "/src/html/user.html";
+      alert("Wellcome "+ name +"!");
+      window.location.href = "/src/html/TN-35_UserPage.html";
     }
   }
+}
+
+function logout() {
+  localStorage.removeItem("userData");
+  console.log("Logged out successfully.");
+  window.location.href = "/src/html/TN-1_HomePage.html";
 }
