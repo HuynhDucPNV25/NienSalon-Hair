@@ -1,28 +1,29 @@
-// 
+// TN-25_Admin-User.js
 
-const userAPI = "https://pnv-hair.onrender.com/Account";
-
-const apppaerUsser =document.querySelector(getUsser); //('getUsser');
-
-const getUsers = async()=>{
-    const response= await axios.get(userAPI);
-    const table = document.createElement("tbody");
-    response.data.forEach(element => {
-        
-        if(element.role==false){
-            table.innerHTML +=`
-            <tr>
-                <th scope="row">${element.id}</th>
-                <td>${element.name}</td>
-                <td>${element.password}</td>
-                <td>${element.email}</td>
-                <td>${element.phone}</td>
-                <td>${element.sex}</td>
-            </tr>`;
-        };
-        apppaerUsser.appendChild(table);
-    });
-    table.innerHTML += "</tbody>";
-   
-}
-getUsers();
+const fetchData = async () => {
+    const endpoint = 'https://pnv-hair.onrender.com/Account'; // Replace with your JSON Server URL
+    try {
+      const response = await axios.get(endpoint);
+      const data = response.data;
+      let tableRows = '';
+      data.forEach(function (item) {
+        if(!item.role)
+        {
+          tableRows += '<tr>';
+          tableRows += '<td>' + item.id + '</td>';
+          tableRows += '<td>' + item.name + '</td>';
+          tableRows += '<td>' + item.phone + '</td>';
+          tableRows += '<td>' + item.password + '</td>';
+          tableRows += '<td>' + item.email + '</td>';
+          tableRows += '<td>' + item.sex + '</td>';
+          tableRows += '</tr>';
+        }
+      });
+      const tableBody = document.getElementById('resultUsers');
+      tableBody.innerHTML = tableRows;
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+  fetchData();
