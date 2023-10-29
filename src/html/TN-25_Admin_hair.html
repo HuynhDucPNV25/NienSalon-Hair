@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-    <title>Title</title>
+    <title>Hair</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,43 +17,49 @@
     <body>
         <div class="container-fluid pl-0" id="adminHair">   
             <div class="sidebar">
-            <!-- <div class="sidebar-menu"> -->
-            
+        
                 <ul class="menu">
-                <div class="imgaAdmin" style="margin-top:30px; margin-bottom:10px;">
+                <div class="imgaAdmin" style="margin-top:20px; margin-bottom:20px;">
                     <a>
-                    <img id="logo" src="../Image/frame.jpg" alt="Nien-Salon" >
+                    <img id="logo" src="/NienSalon-Hair/image/Mautoc2.png" alt="Nien-Salon" >
                     </a>
                 </div>
                     <li class="sidebar-item ">
-                        <a href="./TN-25_Admin.html" class='sidebar-link'>
+                        <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
                             <i class="fa-solid fa-house"></i>
                             <lable>Trang chủ</lable>
                         </a>
                     </li>
                     <li class="sidebar-item ">
-                    <a href="./TN-25_Admin.html" class='sidebar-link'>
+                    <a href="../html/TN-25_Admin-manage-booking.html" class='sidebar-link'>
                             <i class="fa-solid fa-calendar-days"></i>
                             <lable >Lịch cắt tóc</lable>
                         </a>
                     </li>
-                    
                     <li class="sidebar-item active">
-                        <a href="./TN-25_Admin-products.html" class='sidebar-link'>
-                            <i class="fa-brands fa-product-hunt "></i>
+                        <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
+                            <i class="fa-regular fa-user"></i>
                             <lable>Quản lý tóc</lable>
                         </a>
                     </li>
+                    <li class="sidebar-item ">
+                        <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
+                            <i class="fa-brands fa-product-hunt "></i>
+                            <lable>Quản lý sản phẩm</lable>
+                        </a>
+                    </li>
+
 
                     <li class="sidebar-item ">
-                        <a href="./TN-25_Admin-User.html" class='sidebar-link'>
+                        <a href="../html/TN-25_Admin-User.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Quản lý người dùng</lable>
                         </a>
                     </li>
+                   
 
                     <li class="sidebar-item ">
-                        <a href="./TN-25_Admin-User.html" class='sidebar-link'>
+                        <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Thông tin Admin</lable>
                         </a>
@@ -68,7 +74,7 @@
             </div>
             <div class="content">
                 <h2 class="table-title">Bảng quản lý tóc</h2>
-                <a href="../HTML/TN-25_Admin-add-hair-modal.html">
+                <a href="../html/TN-25_Admin-add-hair.html">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         Thêm mẫu tóc
                     </button>
@@ -80,9 +86,10 @@
                             <th scope="col">ID</th>
                             <th scope="col">Tên mẫu tóc</th>
                             <th scope="col">Giá</th>
+                            <th scope="col">Ảnh tóc</th>
                             <th scope="col">Địa chỉ</th>
                             <th scope="col">Giảm giá</th>
-                         
+                            <th scope="col">Hành động</th>
                         </tr>
                     </thead>
                     <tbody id="resultHair">                    
@@ -91,10 +98,11 @@
             </div>
     </div>
     
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="TN-25_Admin-hair.js"></script>
+    <script src="../Js/TN-25_Admin-hair.js"></script>
 </body>
 </html>  
