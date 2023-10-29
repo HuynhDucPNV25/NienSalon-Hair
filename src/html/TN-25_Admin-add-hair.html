@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add hair</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/TN-25_Admin-add-hair.css">
+   
+</head>
+<body >
+    
+    <div class="container" >
+        <!-- <h1></h1> -->
+        <a href="../html/TN-25_Admin_hair.html">
+            <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#exampleModal">
+                Quay lại
+            </button>
+        </a>
+        <form class="form-booking-hair">
+            <h1 class="text-center">Thêm mẫu tóc mới</h1>
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label for="nameHair" class="col-form-label">Tên mẫu tóc:</label>
+                        <input type="text" class="form-control" id="nameHair" >          
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label for="price" class="col-form-label" id="input-date">Giá</label>
+                                <input type="number" class="form-control" id="price" >
+                            </div>
+                            <div class="col">
+                                <label for="discount" class="col-form-label" id="input-date">Giảm giá</label>
+                                <input type="number" class="form-control" id="discount" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="col-form-label">Thành phố:</label>
+                        <input type="text" class="form-control" id="city" required >
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label for="image" class="col-form-label" id="input-date">Ảnh</label>
+                                <input type="file" class="form-control" id="image" required>
+                            </div>
+                            <div class="col">
+                                <label for="cuOrmoi" class="col-form-label" id="input-date">Cũ hay mới</label>
+                                <input type="text" class="form-control" id="cuOrmoi" required>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label for="services" class="col-form-label">Dịch vụ</label>
+                        <input type="text" class="form-control" id="services" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="col-form-label">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="messageText" class="col-form-label">Mô tả:</label>
+                        <textarea class="form-control" id="messageText"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="button-booking-hair" onclick="submitAddHair()" class="btn btn-primary">Thêm</button>
+                    </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../Js/TN-25_Admin-hair.js"></script>
+
+</body>
+</html>
+

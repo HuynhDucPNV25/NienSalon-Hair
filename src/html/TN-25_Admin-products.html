@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-    <title>Title</title>
+    <title>Products</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,43 +14,51 @@
 
     </head>
     <body>
-        <div class="container- pl-0" id="adminHair">   
-            <div class="sidebar">
+        <div class="container-fluid pl-0" id="adminHair">   
+            <div class="sidebar pl-0">
                 <ul class="menu">
                 <div class="imgaAdmin" style="margin-top:20px; margin-bottom:20px;">
                     <a>
-                    <img id="logo" src="../Image/Toc-layer-mai-bay-HairModel.jpg" alt="Nien-Salon" >
+                    <img id="logo" src="/NienSalon-Hair/image/Mautoc2.png" alt="Nien-Salon" >
                     </a>
+                    <p>Tên Admin</p>
                 </div>
                     <li class="sidebar-item ">
-                        <a href="#" class='sidebar-link'>
+                        <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
                             <i class="fa-solid fa-house"></i>
                             <lable>Trang chủ</lable>
                         </a>
                     </li>
                     <li class="sidebar-item ">
-                    <a href="./TN-25_Admin-manage-booking.html" class='sidebar-link'>
+                    <a href="../html/TN-25_Admin-manage-booking.html" class='sidebar-link'>
                             <i class="fa-solid fa-calendar-days"></i>
                             <lable >Lịch cắt tóc</lable>
                         </a>
                     </li>
                     
+                    <li class="sidebar-item ">
+                        <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
+                            <i class="fa-regular fa-user"></i>
+                            <lable>Quản lý tóc</lable>
+                        </a>
+                    </li>
+
                     <li class="sidebar-item active">
-                        <a href="../HTML/TN-25_Admin-products.html" class='sidebar-link'>
+                        <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
                             <i class="fa-brands fa-product-hunt "></i>
                             <lable>Quản lý sản phẩm</lable>
                         </a>
                     </li>
 
                     <li class="sidebar-item ">
-                        <a href="../HTML/TN-25_Admin-User.html" class='sidebar-link'>
+                        <a href="../html/TN-25_Admin-User.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Quản lý người dùng</lable>
                         </a>
                     </li>
-
+                 
                     <li class="sidebar-item ">
-                        <a href="#" class='sidebar-link'>
+                        <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Thông tin Admin</lable>
                         </a>
@@ -65,30 +73,52 @@
             </div>
             <div class="content">
                 <h2 class="table-title">Bảng quản lý sản phẩm</h2>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Thêm sản phẩm</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createData" data-whatever="@mdo">Thêm sản phẩm</button>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="createData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                         <div class="modal-body">
                             <form>
                                 <div class="form-group">
-                                    <label for="namePro" class="col-form-label">Tên sản phẩm:</label>
-                                    <input type="text" class="form-control" id="namePro">
+                                    <label for="nameProduct" class="col-form-label">Tên sản phẩm:</label>
+                                    <input type="text" class="form-control" id="nameProduct">
                                 </div>
                                 <div class="form-group">
-                                    <label for="price" class="col-form-label">Giá :</label>
-                                    <input type="number" class="form-control" id="price">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="price" class="col-form-label">Giá :</label>
+                                            <input type="number" class="form-control" id="priceProduct">    
+                                        </div>
+                                        <div class="col">
+                                            <label for="discount" class="col-form-label">Giảm giá:</label>
+                                            <input type="number" class="form-control" id="discount">    
+                                        </div>
+
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="message-text" class="col-form-label">Mô tả:</label>
-                                    <textarea class="form-control" id="message-text"></textarea>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="image" class="col-form-label">Ảnh :</label>
+                                            <input type="file" class="form-control" id="image">    
+                                        </div>
+                                        <div class="col">
+                                            <label for="moiCu" class="col-form-label">Mới (Cũ):</label>
+                                            <input type="text" class="form-control" id="moiCu">    
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="col-form-label">Mô tả:</label>
+                                    <textarea class="form-control" id="message"></textarea>
                                 </div>
                             </form>
                         </div>
@@ -99,7 +129,63 @@
                         </div>
                     </div>
                     </div>
-                
+                   
+                    <div class="modal fade" id="putData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nameProducts" class="col-form-label">Tên sản phẩm:</label>
+                                        <input type="text" class="form-control" id="nameProducts">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="price" class="col-form-label">Giá :</label>
+                                                <input type="number" class="form-control" id="priceProduct">    
+                                            </div>
+                                            <div class="col">
+                                                <label for="discounts" class="col-form-label">Giảm giá:</label>
+                                                <input type="number" class="form-control" id="discounts">    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="img" class="col-form-label">Ảnh :</label>
+                                                <input type="file" class="form-control" id="img">    
+                                            </div>
+                                            <div class="col">
+                                                <label for="moi" class="col-form-label">Mới (Cũ):</label>
+                                                <input type="text" class="form-control" id="moi">    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="discribe" class="col-form-label">Mô tả:</label>
+                                        <textarea class="form-control" id="discribe"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                <button type="button" class="btn btn-primary" onclick="addProduct()">Tạo</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+    
 
                 <table class="table table-hover" id="tableHair" style="position: relative; top: 10px">
                     
@@ -109,6 +195,7 @@
                             <th scope="col">Tên sản phẩm</th>
                             <th scope="col">Giá</th>
                             <th scope="col">Mô tả</th>
+                            <th scope="col">Hành động</th>
                         </tr>
                     </thead>
                     <tbody id="resultProducts">                    
@@ -121,7 +208,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- <script src="../JS/TN-25-Booking-page.js"></script> -->
-    <script src="../js/TN-25_Admin-product.js"></script>
+    <script src="../Js/TN-25_Admin-product.js"></script>
 
 </body>
 </html>  
