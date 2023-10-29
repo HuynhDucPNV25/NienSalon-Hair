@@ -30,7 +30,6 @@ const login = async () => {
             id: account.id,
             role: account.role,
             accountName: accountName,
-            // password: account.password,
           };
           localStorage.setItem("userData", JSON.stringify(userData));
           document.getElementById("out").innerHTML = "Đăng nhập thành công";
@@ -38,7 +37,6 @@ const login = async () => {
           document.getElementById("loginPassword").value = "";
 
           checkLogin(accountData);
-
         }
       }
     }
@@ -56,7 +54,7 @@ function checkLogin(accountData) {
   if (currentUser) {
   const name = current.accountName;
     if (currentUser.role) {
-      alert("Wellcome "+ name +"!")
+      alert("Wellcome "+ name +" admin!")
       window.location.href = "/src/html/TN-1_HomePage.html";
     } else {
       alert("Wellcome "+ name +"!");
@@ -69,4 +67,20 @@ function logout() {
   localStorage.removeItem("userData");
   console.log("Logged out successfully.");
   window.location.href = "/src/html/TN-1_HomePage.html";
+  const logoutIconContainer = document.getElementById("icon-logout-container");
+  logoutIconContainer.innerHTML = logoutHTML;
+  const logoutHTML = `
+  <center>
+    <ul id="icon-logout" class="navbar-nav ml-auto" onclick="logout()">
+      <li class="nav-item">
+        <a href="#" id="logout">
+          <button class="btn btn-outline" id="login">
+            <i class="fa-regular fa-user"></i>
+            Đăng Xuất
+          </button>
+        </a>
+      </li>
+    </ul>
+  </center>`;
+  document.getElementById("icon-login").style.display.none;
 }

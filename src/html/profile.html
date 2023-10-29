@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Profile</title>
+		<link rel="stylesheet" href="/src/css/profile.css">
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	</head>
+	<body>
+		<div class="container container-profile">
+			<div class="main-body">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card card-profile">
+							<div class="card-body">
+								<div class="title-user">
+									<p>user</p>
+								</div>
+								<div class="d-flex flex-column align-items-center text-center">
+									<!-- Image avatar -->
+									<img id="avatar-user" class="change-avt"
+										src="">
+									<input type="file" id="fileInput" onclick="getUserInfo()"								<p id="uploading_text"></p>
+									<div class="mt-3">
+										<h3 id="name-input"></h3>
+									</div>
+								</div>
+								<hr class="my-4">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="card card-profile">
+							<div class="card-body">
+								<div class="row mb-3">
+									<div class="col-sm-3">
+										<h6 class="mb-0">Full Name</h6>
+									</div>
+									<div class="col-sm-9 text-secondary">
+										<input type="text" class="form-control" placeholder="your name">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-sm-3">
+										<h6 class="mb-0">Email</h6>
+									</div>
+									<div class="col-sm-9 text-secondary">
+										<input type="text" class="form-control"
+											placeholder="example@example.com">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-sm-3">
+										<h6 class="mb-0">Phone</h6>
+									</div>
+									<div class="col-sm-9 text-secondary">
+										<input type="text" class="form-control" placeholder="xxxx-xx-xxx">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-sm-3">
+										<h6 class="mb-0">Address</h6>
+									</div>
+									<div class="col-sm-9 text-secondary">
+										<input type="text" class="form-control" placeholder="emxal, examlple">
+									</div>
+								</div>
+								<div class="col" style="display: flex;margin-left: 16.5%;">
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-9 text-secondary">
+											<input type="button" class="btn btn-primary px-4"
+												value="Save Changes" onclick="save()">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-3"></div>
+										<div class="col-sm-9 text-secondary">
+											<button class="btn btn-secondary px-4" onclick="cancelProfile()">Cancel</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="/src/Js/profile.js"></script>
+</html>

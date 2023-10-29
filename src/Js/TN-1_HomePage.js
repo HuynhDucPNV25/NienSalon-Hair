@@ -74,9 +74,7 @@ const fetchHairData = async (selectedCity) => {
                       </button> 
                   </div>   
                 </div>
-                
               </div><br>
-              
             </a>
           `;
         hairModel.appendChild(div);
@@ -100,23 +98,22 @@ const updateCityText = (selectedCity) => {
   topSalonElement.setAttribute('data-agency', selectedCity);
   localStorage.setItem('selectedCity', selectedCity);
 };
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Gọi API để lấy danh sách các tỉnh, thành phố và hiển thị dữ liệu lên thẻ select
   callAPI();
   // Xử lý sự kiện thay đổi của thẻ select
   const citySelectElement = document.getElementById('city');
-  citySelectElement.addEventListener('change', function() {
+  citySelectElement.addEventListener('change', function () {
     const selectedCity = citySelectElement.options[citySelectElement.selectedIndex].text;
     updateCityText(selectedCity);
     renderHairData(selectedCity);
   });
   // Xử lý sự kiện nhấp chuột vào thẻ select để mở hoặc đóng dropdown
-  citySelectElement.addEventListener('click', function() {
+  citySelectElement.addEventListener('click', function () {
     const dropdownToggleElement = document.querySelector('.dropdown-toggle');
     dropdownToggleElement.classList.toggle('show');
   });
 });
-
 // Hàm gọi API để lấy danh sách tất cả mẫu tóc
 const fetchAllHairData = async () => {
   try {
@@ -153,7 +150,6 @@ const fetchAllHairData = async () => {
   }
 };
 fetchAllHairData();
-
 // ................
 const productDataUrl = "https://pnv-hair.onrender.com/Product";
 const getProductData = async () => {
@@ -162,7 +158,7 @@ const getProductData = async () => {
     const data = response.data;
     const productContainer = document.getElementById("product-Homepage");
     data.forEach((product) => {
-      const discountProduct =(product.price * (100 - product.discount)) / 100;
+      const discountProduct = (product.price * (100 - product.discount)) / 100;
       console.log(discountProduct);
       const productItem = document.createElement("div");
       productItem.classList.add("carousel-itemmm");
@@ -234,8 +230,3 @@ const getProductData = async () => {
 };
 
 getProductData();
-
-// let icon = document.getElementById("icon-login");
-
-//       console.log("ádjadsad");
-//       icon.style.display="none";
