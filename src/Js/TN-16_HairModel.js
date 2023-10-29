@@ -74,18 +74,20 @@ async function getData() {
           </p>
         </div>
         <div class="col-md-12" id="Hair-Model-Details-icon">
-          <h3>Đánh giá mẫu tóc</h3>
-          <div class="col-md-12" id="Hair-Model-Details-star">
-            <p id="rating-text">0.0/5</p>
-            <i class="fa-regular fa-star" onclick="rateHair(1)"></i>
-            <i class="fa-regular fa-star" onclick="rateHair(2)"></i>
-            <i class="fa-regular fa-star" onclick="rateHair(3)"></i>
-            <i class="fa-regular fa-star" onclick="rateHair(4)"></i>
-            <i class="fa-regular fa-star" onclick="rateHair(5)"></i>
-            <p class="Evaluate" id="rating-count">(0 đánh giá)</p>
-            <p>Hãy đánh giá để có trải nghiệm tốt hơn</p>
+        <!-- <h1>Star rating </h1> -->
+          <button class="btn btn-sucessful" id="buttonRating" onclick="openRating()">Rating</button>
+          <div class="rating" style="font-size:30px; text-decoration: none">
+
+            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
           </div>
-        </div>
+          <p class="Evaluate" id="rating-count">(0 đánh giá)</p>
+          <p>Hãy đánh giá để có trải nghiệm tốt hơn</p>
+          </div>
+    </div>
       `;
     } else {
       // Hiển thị thông báo khi không tìm thấy mẫu tóc
