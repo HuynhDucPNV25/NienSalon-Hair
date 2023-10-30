@@ -1,128 +1,214 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+    <head>
+    <title>Products</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/css/TN-25_Admin.css">
-    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../css/TN-25_Admin.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-  <body>
-    <div class="contanier">
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg fixed-top">
-                    <a href="./TN-1_HomePage.html"><img id="logo" src="../../image/Logo.png" alt="Nien-Salon" style="width: 120px;"></a>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
-                      <ul class="navbar-nav form-inline mr-auto">
-                      <!-- Login -->
-                      </ul>
-                      <center>
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a href="./TN-17_loginPage.html">
-                              <button class="btn btn-outline" id="login">
-                                <i class="fa-regular fa-user"></i>
-                                Đăng Nhập
-                              </button>
-                            </a>
-                          </li>
-                        </ul>
-                      </center>
-                    </div>
-                  </nav>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3" id="sidebar-item-admin">
-                <div class="sidebar-menu">
-                    <ul class="menu">
-                        <!-- <li class="sidebar-title">Menu</li> -->
-                        
-                        <li class="sidebar-item ">
-                            <a href="./TN-25_Admin.html" class='sidebar-link'>
-                                <i class="fa-solid fa-house"></i>
-                                <lable>Trang chủ</lable>
-                            </a>
-                        </li>
-                        
-                        <li class="sidebar-item ">
-                            <a href="./TN-25_Admin_hair.html" class='sidebar-link'>
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <lable >Lịch cắt tóc</lable>
-                            </a>
-                        </li>
-                          
-                        <li class="sidebar-item active">
-                            <a href="./TN-25_Admin-products.html" class='sidebar-link'>
-                                <i class="fa-brands fa-product-hunt"></i>
-                                <lable>Quản lý sản phẩm</lable>
-                            </a>
-                        </li>
 
-                        <li class="sidebar-item ">
-                            <a href="./TN-25_Admin-User.html" class='sidebar-link'>
-                                <i class="fa-regular fa-user"></i>
-                                <lable>Quản lý người dùng</lable>
-                            </a>
-
-                        </li>
-
-                        <li class="sidebar-item  ">
-                            <a href="#" class='sidebar-link'>
-                                <i class="fa-solid fa-right-from-bracket"></i>
-                                <lable>Đăng xuất</lable>
-                            </a>
-                        </li>
+    </head>
+    <body>
+        <div class="container-fluid pl-0" id="adminHair">   
+            <div class="sidebar pl-0">
+                <ul class="menu">
+                <div class="imgaAdmin" style="margin-top:20px; margin-bottom:20px;">
+                    <a>
+                    <img id="logo" src="/NienSalon-Hair/image/Mautoc2.png" alt="Nien-Salon" >
+                    </a>
+                    <p>Tên Admin</p>
                 </div>
-                <button class="sidebar-toggler btn x"><i data-feather="x">XX</i></button>
+                    <li class="sidebar-item ">
+                        <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
+                            <i class="fa-solid fa-house"></i>
+                            <lable>Trang chủ</lable>
+                        </a>
+                    </li>
+                    <li class="sidebar-item ">
+                    <a href="../html/TN-25_Admin-manage-booking.html" class='sidebar-link'>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <lable >Lịch cắt tóc</lable>
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar-item ">
+                        <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
+                            <i class="fa-regular fa-user"></i>
+                            <lable>Quản lý tóc</lable>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item active">
+                        <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
+                            <i class="fa-brands fa-product-hunt "></i>
+                            <lable>Quản lý sản phẩm</lable>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item ">
+                        <a href="../html/TN-25_Admin-User.html" class='sidebar-link'>
+                            <i class="fa-regular fa-user"></i>
+                            <lable>Quản lý người dùng</lable>
+                        </a>
+                    </li>
+                 
+                    <li class="sidebar-item ">
+                        <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
+                            <i class="fa-regular fa-user"></i>
+                            <lable>Thông tin Admin</lable>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class='sidebar-link'>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <lable>Đăng xuất</lable>
+                        </a>
+                    </li>
             </div>
-            
-            <div class="col-9">  
-                <table class="table" style="position: relative; top: 80px;" >
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">STT</th>
-                        <th scope="col">Tên sản phẩm</th>
-                        <th scope="col">Giá</th>
-                        <th scope="col">Ảnh</th>
-                        <th scope="col">Số lượng</th>
-                        <th scope="col">Hành động</th>
-                    </tr>
+            <div class="content">
+                <h2 class="table-title">Bảng quản lý sản phẩm</h2>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createData" data-whatever="@mdo">Thêm sản phẩm</button>
+
+                    <div class="modal fade" id="createData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nameProduct" class="col-form-label">Tên sản phẩm:</label>
+                                    <input type="text" class="form-control" id="nameProduct">
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="price" class="col-form-label">Giá :</label>
+                                            <input type="number" class="form-control" id="priceProduct">    
+                                        </div>
+                                        <div class="col">
+                                            <label for="discount" class="col-form-label">Giảm giá:</label>
+                                            <input type="number" class="form-control" id="discount">    
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="image" class="col-form-label">Ảnh :</label>
+                                            <input type="file" class="form-control" id="image">    
+                                        </div>
+                                        <div class="col">
+                                            <label for="moiCu" class="col-form-label">Mới (Cũ):</label>
+                                            <input type="text" class="form-control" id="moiCu">    
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="col-form-label">Mô tả:</label>
+                                    <textarea class="form-control" id="message"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="addProduct()">Thêm</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    <div class="modal fade" id="putData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nameProducts" class="col-form-label">Tên sản phẩm:</label>
+                                        <input type="text" class="form-control" id="nameProducts">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="price" class="col-form-label">Giá :</label>
+                                                <input type="number" class="form-control" id="priceProduct">    
+                                            </div>
+                                            <div class="col">
+                                                <label for="discounts" class="col-form-label">Giảm giá:</label>
+                                                <input type="number" class="form-control" id="discounts">    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="img" class="col-form-label">Ảnh :</label>
+                                                <input type="file" class="form-control" id="img">    
+                                            </div>
+                                            <div class="col">
+                                                <label for="moi" class="col-form-label">Mới (Cũ):</label>
+                                                <input type="text" class="form-control" id="moi">    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="discribe" class="col-form-label">Mô tả:</label>
+                                        <textarea class="form-control" id="discribe"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                <button type="button" class="btn btn-primary" onclick="addProduct()">Tạo</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+    
+
+                <table class="table table-hover" id="tableHair" style="position: relative; top: 10px">
+                    
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Tên sản phẩm</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Mô tả</th>
+                            <th scope="col">Hành động</th>
+                        </tr>
                     </thead>
-                    <!-- <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody> -->
-                </table>
+                    <tbody id="resultProducts">                    
+                    </tbody>
+                    </table>
             </div>
-                  
-                  
-        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="../JS/TN-25-Booking-page.js"></script> -->
+    <script src="../Js/TN-25_Admin-product.js"></script>
+
 </body>
-</html>
+</html>  

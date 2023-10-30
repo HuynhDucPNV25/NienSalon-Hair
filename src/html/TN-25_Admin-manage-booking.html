@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-    <title>Hair</title>
+    <title>Booking</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,17 +12,17 @@
     <link rel="stylesheet" href="../css/TN-25_Admin.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     </head>
     <body>
         <div class="container-fluid pl-0" id="adminHair">   
             <div class="sidebar">
-        
                 <ul class="menu">
                 <div class="imgaAdmin" style="margin-top:20px; margin-bottom:20px;">
                     <a>
                     <img id="logo" src="/NienSalon-Hair/image/Mautoc2.png" alt="Nien-Salon" >
                     </a>
+                    <p>Tên Admin</p>
                 </div>
                     <li class="sidebar-item ">
                         <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
@@ -30,18 +30,21 @@
                             <lable>Trang chủ</lable>
                         </a>
                     </li>
-                    <li class="sidebar-item ">
+                    <li class="sidebar-item active">
                     <a href="../html/TN-25_Admin-manage-booking.html" class='sidebar-link'>
                             <i class="fa-solid fa-calendar-days"></i>
                             <lable >Lịch cắt tóc</lable>
                         </a>
                     </li>
-                    <li class="sidebar-item active">
+
+                    <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Quản lý tóc</lable>
                         </a>
                     </li>
+
+                    
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
                             <i class="fa-brands fa-product-hunt "></i>
@@ -49,14 +52,12 @@
                         </a>
                     </li>
 
-
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-User.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Quản lý người dùng</lable>
                         </a>
                     </li>
-                   
 
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
@@ -73,23 +74,20 @@
                     </li>
             </div>
             <div class="content">
-                <h2 class="table-title">Bảng quản lý tóc</h2>
-                <a href="../html/TN-25_Admin-add-hair.html">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Thêm mẫu tóc
-                    </button>
-                </a>
-                <table class="table table-hover" id="tableHair" style="position: relative; top:10px">
+                <h2 class="table-title">Bảng quản lý lịch cắt tóc</h2>
+        
+                <table class="table table-hover" id="tableHair" style="position: relative;">
                     
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Tên mẫu tóc</th>
+                            <th scope="col">Tên khách hàng</th>
+                            <th scope="col">Số điện thoại</th>
+                            <th scope="col">Tên tóc</th>
                             <th scope="col">Giá</th>
-                            <th scope="col">Ảnh tóc</th>
-                            <th scope="col">Địa chỉ</th>
-                            <th scope="col">Giảm giá</th>
-                            <th scope="col">Hành động</th>
+                            <th scope="col">Thời gian</th>
+                            <th scope="col">Ngày</th>
+                            <th scope="col">Địa điểm</th>
                         </tr>
                     </thead>
                     <tbody id="resultHair">                    
@@ -97,12 +95,12 @@
                     </table>
             </div>
     </div>
-    
-    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../Js/TN-25_Admin-hair.js"></script>
+    <!-- <script src="../JS/TN-25-Booking-page.js"></script> -->
+    <script src="../Js/TN-25_Admin-manage-booking.js"></script>
+
 </body>
 </html>  
