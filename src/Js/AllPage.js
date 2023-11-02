@@ -1,3 +1,59 @@
+function checkLogin() {
+  const check = localStorage.getItem('userData');
+  if (check != null) {
+    console.log(check);
+    const hide = document.getElementById('icon-login');
+    hide.style.display = 'none';
+    document.getElementById('a').innerHTML =`
+    <ul id="icon-login" class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="" id="hide"  onclick="logouttk()">
+        <button class="btn btn-outline" id="logout">
+          <i class="fa-regular fa-user"></i>
+          Đăng Xuất
+        </button>
+        </a>
+      </li>
+    </ul>
+     `
+  }
+}
+
+checkLogin();
+function logouttk() {
+  window.location.href = '/src/html/TN-1_HomePage.html';
+  localStorage.removeItem("userData");
+  const loginButton = document.getElementById('icon-login');
+  if (localStorage.getItem('userData')) {
+    loginButton.style.display = 'none';
+    document.getElementById('a').innerHTML = `
+      <ul id="icon-login" class="navbar-nav ml-auto" onclick="logouttk()">
+        <li class="nav-item">
+          <a href="" id="hide">
+            <button class="btn btn-outline" id="logout">
+              <i class="fa-regular fa-user"></i>
+              Đăng Xuất
+            </button>
+          </a>
+        </li>
+      </ul>
+    `;
+  } else {
+    loginButton.style.display = 'inline-block';
+    document.getElementById('a').innerHTML = `
+      <ul id="icon-login" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="./TN-16_LoginPage.html" id="show">
+            <button class="btn btn-outline" id="login">
+              <i class="fa-regular fa-user"></i>
+              Đăng Nhập
+            </button>
+          </a>
+        </li>
+      </ul>
+    `;
+  }
+}
 const slideData = [
     { imageSrc: "../../image/pd1.png" },
     { imageSrc: "../../image/pd2.png" },
@@ -74,42 +130,42 @@ window.addEventListener("scroll", onScroll);
 
 //.............................Uppload Hình Ảnh.......................................................
 //Code HTML 👇
-{/* <input type="file" id="fileInput" />
-<p id="uploading_text"></p> */}
+/* <input type="file" id="fileInput" />
+<p id="uploading_text"></p> */
 //Code HTML 👆
-const fileInput = document.getElementById("fileInput");
-const uploading_text = document.getElementById("uploading_text");
+// const fileInput = document.getElementById("fileInput");
+// const uploading_text = document.getElementById("uploading_text");
 
-// replace with your data 👇
-const cloud_name = "duas1juqs";
-const upload_preset = "pnvimage";
-// replace with your data 👆
+// // replace with your data 👇
+// const cloud_name = "duas1juqs";
+// const upload_preset = "pnvimage";
+// // replace with your data 👆
 
-fileInput.addEventListener("change", (e) => {
-  uploading_text.innerText = "uploading...";
-  const file = e.target.files[0];
-  const formData = new FormData();
-  formData.append("file", file);
-  formData.append("upload_preset", upload_preset);
-  const options = {
-    method: "POST",
-    body: formData,
-  };
+// fileInput.addEventListener("change", (e) => {
+//   uploading_text.innerText = "uploading...";
+//   const file = e.target.files[0];
+//   const formData = new FormData();
+//   formData.append("file", file);
+//   formData.append("upload_preset", upload_preset);
+//   const options = {
+//     method: "POST",
+//     body: formData,
+//   };
 
-  return fetch(
-    `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`,
-    options
-  )
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data.secure_url);
+//   return fetch(
+//     `https://api.cloudinary.com/v1_1/${cloud_name}/image/upload`,
+//     options
+//   )
+//     .then((res) => res.json())
+//     .then((data) => {
+//       console.log(data.secure_url);
 
-      uploading_text.innerHTML = `
-      <span>upload complete.</span>
-      <br />
-      <img style="max-width:300px" src="${data.secure_url}" alt="">
-      <a href="${data.secure_url}">${data.secure_url}</a>
-      `;
-    })
-    .catch((err) => console.log(err));
-});
+//       uploading_text.innerHTML = `
+//       <span>upload complete.</span>
+//       <br />
+//       <img style="max-width:300px" src="${data.secure_url}" alt="">
+//       <a href="${data.secure_url}">${data.secure_url}</a>
+//       `;
+//     })
+//     .catch((err) => console.log(err));
+// });

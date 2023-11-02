@@ -45,7 +45,7 @@ body{
         #city:focus{
             outline: none;
         }
-    #login{
+    #login,#logout{
         border-radius: 4px;
         color: white;
         height: 45px;
@@ -243,9 +243,14 @@ body{
 
     }
     .card{
-        max-height: 360px;
-        height: 360px;
+        max-height: 380px;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;        
     }
+
     .cards:hover{
         text-decoration: none;
     }
@@ -259,7 +264,7 @@ body{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 40px; /* Chiều cao được thiết lập là 2.5em để hiển thị 2 dòng */
+        height: 40px; 
     }
     .scroll-top-btn {
         position: fixed;
@@ -327,7 +332,7 @@ body{
         padding-bottom: 10px;   
     }
 /* ................................................ */
-@media(max-width: 768px) {  
+@media(max-width: 1024px) {  
     .fixed-top {
         height: auto;
         }

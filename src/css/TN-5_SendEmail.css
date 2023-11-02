@@ -1,0 +1,32 @@
+body {
+    background-image: url(https://res.cloudinary.com/duas1juqs/image/upload/v1697355433/pnv/1ae0f25c7d1651e828179aa965719925_jbalor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    position: relative;
+  }
+  
+  .border-container{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid wheat;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.856);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  #button button{
+    width: 100px;
+    height: 40px;
+    background-color: #E86A60;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  #nameH4{
+    color: #E86A60;
+  }

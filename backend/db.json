@@ -1,202 +1,557 @@
 {
-  "slide-img":[
-    { "img1": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619841/hair-models/fadhdqixjqqewueeseti.png" },
-    { "img2": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619840/hair-models/apdrtjaphvvtaaoadzgs.png" },
-    { "img3": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/hn7nbd72kttqytzsf0uy.png"}
-  ],
-  "Hairs":[
+  "slide-img": [
     {
-      "id":1,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Layer ngắn Hàn Quốc được thiết kế với nhiều lớp tóc ngắn phủ lên nhau. Kiểu tóc này thường tạo nên sự phẳng và nhẹ nhàng cho mái tóc. Layer ngắn Hàn Quốc nữ phù hợp với nhiều hình dáng khuôn mặt và tôn lên vẻ đẹp tự nhiên của tóc. Kiểu tóc này thường được kết hợp với màu sắc tóc đơn giản, để tạo nên phong cách thanh lịch và trẻ trung.",
-      "price":79.9,
+      "img1": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619841/hair-models/fadhdqixjqqewueeseti.png"
+    },
+    {
+      "img2": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619840/hair-models/apdrtjaphvvtaaoadzgs.png"
+    },
+    {
+      "img3": "https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/hn7nbd72kttqytzsf0uy.png"
+    }
+  ],
+  "Hairs": [
+    {
+      "id": 1,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "Layer dài Hàn Quốc",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Layer dài Hàn Quốc được thiết kế với nhiều lớp tóc ngắn phủ lên nhau. Kiểu tóc này thường tạo nên sự phẳng và nhẹ nhàng cho mái tóc. Layer ngắn Hàn Quốc nữ phù hợp với nhiều hình dáng khuôn mặt và tôn lên vẻ đẹp tự nhiên của tóc. Kiểu tóc này thường được kết hợp với màu sắc tóc đơn giản, để tạo nên phong cách thanh lịch và trẻ trung.",
+      "price": 500000,
       "discount": 15,
-      "service":["Gội đầu"," Ráy tai"],
-      "new":false
+      "service": [
+        "Gội đầu",
+        " Ráy tai"
+      ],
+      "new": false
     },
     {
-      "id":2,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
-      "price":79.9,
+      "id": 2,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254992/hair-models/Anh_mau_toc_8_lzaree.png",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
+      "price": 650000,
       "discount": 20.5,
-      "service":[" Massage"],
-      "new":false
+      "service": [
+        " Massage"
+      ],
+      "new": false
     },
     {
-      "id":3,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
-      "price":79.9,
+      "id": 3,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254992/hair-models/Anh_mau_toc_9_ofiucl.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
+      "price": 550000,
       "discount": 0,
-      "service":["Gội đầu"," Massage"," Ráy tai"],
-      "new":true
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Ráy tai"
+      ],
+      "new": true
     },
     {
-      "id":4,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Đà Nẵng",
-      "address":"Mỹ Khê 3, Đà Nẵng",
-      "describe":"Kiểu tóc layer ngắn Hàn Quốc cho nữ có lớp tóc chưa đồng đều và lông mái dài, kết hợp với màu nhẹ nhàng để tạo nét thanh lịch. Tóc hai bên cắt ngắn hơn phần giữa để tạo kiểu lớp. Phong cách này thường được kết hợp với phụ kiện để tạo nên phong cách nữ tính-tomboy.",
-      "price":20,
-      "service":[" Váy tai"],
+      "id": 4,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254990/hair-models/Anh_mau_toc_7_ekulln.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Đà Nẵng",
+      "address": "Mỹ Khê 3, Đà Nẵng",
+      "describe": "Kiểu tóc layer ngắn Hàn Quốc cho nữ có lớp tóc chưa đồng đều và lông mái dài, kết hợp với màu nhẹ nhàng để tạo nét thanh lịch. Tóc hai bên cắt ngắn hơn phần giữa để tạo kiểu lớp. Phong cách này thường được kết hợp với phụ kiện để tạo nên phong cách nữ tính-tomboy.",
+      "price": 700000,
+      "service": [
+        " Váy tai"
+      ],
       "discount": 0,
-      "new":true
+      "new": true
     },
     {
-      "id":5,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Hàn Quốc",
-      "city":"Thành phố Hồ Chí Minh",
-      "address":"Hai Bà Trưng, Hồ Chí Minh",
-      "describe":"Kiểu tóc ngắn nữ Hàn Quốc có chiều dài tóc ở vai hoặc ngắn hơn, được cắt layer và thường kết hợp với lông mái dài. Màu sắc nhẹ nhàng và tạo điểm nhấn bằng phụ kiện nữ tính.",
-      "price":99.9,
-      "service":[" Massage"],
+      "id": 5,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254990/hair-models/Anh_mau_toc_5_s79vmq.jpg",
+      "name": "Layer ngắn Hàn Quốc",
+      "city": "Thành phố Hồ Chí Minh",
+      "address": "Hai Bà Trưng, Hồ Chí Minh",
+      "describe": "Kiểu tóc ngắn nữ Hàn Quốc có chiều dài tóc ở vai hoặc ngắn hơn, được cắt layer và thường kết hợp với lông mái dài. Màu sắc nhẹ nhàng và tạo điểm nhấn bằng phụ kiện nữ tính.",
+      "price": 99.9,
+      "service": [
+        " Massage"
+      ],
       "discount": 30.5,
-      "new":false
+      "new": false
     },
     {
-      "id":6,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name":"Layer ngắn Việt Nam",
-      "city":"Thành phố Hà Nội",
-      "address":"Ngô Quyền, Hà Nội",
-      "describe":"Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
-      "price":100.9,
-      "service":["Gội đầu"," Massage"," Váy tai"],
+      "id": 6,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254989/hair-models/Anh_mau_toc_10_sejsro.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
       "discount": 90.5,
-      "new":false
-    }    
-  ],
-  "Product":[
-    {
-      "id":1,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội đầu Sunsil",
-      "describe":"",
-      "price":20,
-      "discount":10,
-      "new":false
+      "new": false
     },
     {
-      "id":2,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Keo vuốt tóc Black",
-      "describe":"",
-      "price":30,
-      "discount":10,
-      "new":false
+      "id": 7,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc uốn cụp đuôi có nhiều cách tạo kiểu khác nhau để phù hợp với xu hướng. Đây là kiểu tóc được uốn xoăn nhẹ 2/3 tính từ đuôi tóc trở lên ngọn và ôm nhẹ vào khuôn mặt, độ dài của tóc vừa phải chạm vào vai.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":3,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Lakme",
-      "describe":"Dầu gội đầu K.Therapy trị gàu dành cho tóc dầu",
-      "price":470,
-      "discount":10,
-      "new":false
+      "id": 8,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254989/hair-models/Anh_mau_toc_11_w0sqn9.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc tomboy cool ngầu sẽ thích hợp với những bạn có khuôn mặt trái xoan, cằm nhọn và gò má cao, giúp tôn lên đường nét gương mặt, ngoại hình nổi bật hơn.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":4,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Gôm K.Style",
-      "describe":"Tạo kiểu vừa tăng độ phồng",
-      "price":430,
-      "discount":10,
-      "new":false
+      "id": 9,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":5,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"SUBLIME",
-      "describe":"Nước hoa dành cho tóc và cơ thể, 50ml",
-      "price":780,
-      "discount":10,
-      "new":false
+      "id": 10,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254989/hair-models/Anh_mau_toc_2_iflqhe.webp",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":6,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Dầu gội Douyin Net Celebrate Kkono",
-      "describe":"Kiểm soát chống gàu Bộ đồ đầu, 500ml",
-      "price":410,
-      "discount":10,
-      "new":false
+      "id": 11,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698256696/hair-models/Anh_mau_toc_13_lffexh.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "Kiểu cắt tóc lỡ này, mái tóc sẽ được cắt tầng và uốn xoăn lơi tạo sóng tự nhiên. Kết hợp với đó là phần mái để dài tạo kiểu uốn lọn nhẹ nhàng, chắc chắn sẽ khiến các nàng không khỏi thất vọng.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     },
     {
-      "id":7,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":8,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"ComBo 1 bộ 4 món phụ kiện nhuộm tóc",
-      "describe":"",
-      "price":1000,
-      "discount":10,
-      "new":false
-    },
-    {
-      "id":7,
-      "img":"https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
-      "name":"Serum mọc tóc dạng lỏng",
-      "describe":"nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
-      "price":1000,
-      "discount":10,
-      "new":false
+      "id": 12,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698256852/hair-models/Anh_mau_toc_14_xnnoqp.jpg",
+      "name": "Layer ngắn Việt Nam",
+      "city": "Thành phố Hà Nội",
+      "address": "Ngô Quyền, Hà Nội",
+      "describe": "kiểu tóc này chính là độ xoăn không hề theo quy luật nào nên sẽ không khiến mặt bị dừ đi.",
+      "price": 100.9,
+      "service": [
+        "Gội đầu",
+        " Massage",
+        " Váy tai"
+      ],
+      "discount": 90.5,
+      "new": false
     }
   ],
-  "Account":[
+  "Product": [
     {
-      "id":1,
-      "role":true,
-      "accountName":"admin",
-      "password":"adminstrator",
-      "name":"Huỳnh Đức",
-      "email":"duc.huynh25@gmail.com",
-      "phone":"0389086502",
-      "sex":"Nam"
+      "id": 1,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261416/hair-models/Anh_dau_goi_1_buggr5.jpg",
+      "name": "Dầu gội Yves Rocher Purifying Shampoo",
+      "describe": "Dầu gội đầu cho da dầu Yves Rocher Purifying Shampoo có chiết xuất từ cây thùa giúp tăng vi tuần hoàn máu trong da đầu, nuôi dưỡng tóc tốt hơn. Cùng với đó là chiết xuất đậu Lupin trong sản phẩm có khả năng làm giảm rụng tóc, kiểm soát bã nhờn.",
+      "price": 350000,
+      "discount": 10,
+      "new": false
     },
     {
-      "id":2,
-      "role":false,
-      "accountName":"le",
-      "password":"NguyenThiLe2004",
-      "name":"Nguyễn Thị Lệ",
-      "email":"le.tear@gmail.com",
-      "phone":"0389086520",
-      "sex":"Nữ"
+      "id": 2,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261417/hair-models/Anh_dau_goi_2_png1w4.jpg",
+      "name": "Dầu gội The Body Shop Banana Shampoo For Oily Hair",
+      "describe": "Dầu gội cho da đầu nhờn The Body Shop Banana là sản phẩm thuần chay với chiết xuất lên đến 91% từ thiên nhiên. Thành phần chủ yếu là chuối xay hữu cơ, giúp khôi phục tóc từ gốc, tóc sẽ khỏe hơn, mượt mà và vẫn đảm bảo sạch gàu, giảm tiết dầu.",
+      "price": 400000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 3,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261417/hair-models/Anh_dau_goi_3_dw7q4h.jpg",
+      "name": "Dầu gội Thick & Full Biotin & Collagen Shampoo",
+      "describe": "Dầu gội cho da dầu Thick & Full Biotin & Collagen được bổ sung Biotin và Collagen giúp tóc bồng bềnh, mềm mượt, dày hơn, giảm tình trạng gãy rụng. Sản phẩm không chứa các thành phần có dầu nên sẽ không gây tình trạng bít tắc lỗ chân lông, hạn chế tiết bã nhờn.",
+      "price": 470000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 4,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261417/hair-models/Anh_dau_goi_4_zzlvff.jpg",
+      "name": "Dầu gội L’Oréal Expert Pure Resource",
+      "describe": "Bổ sung Protein Đậu Hà lan mượt tóc, phục hồi hư tổn Chiết xuất đậm đặc Bồ kết và 7 thảo dược quý Bổ sung Vitamin E, tinh dầu Bưởi nuôi dưỡng, kích thích nang tóc phát triển",
+      "price": 430000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 5,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261422/hair-models/Anh_dau_goi_55_gjn2pz.jpg",
+      "name": "Hair Serum Tóc Mây",
+      "describe": "Tăng cường dưỡng chất nuôi dưỡng tóc Chiết xuất Bạch quả lên men và Tinh dầu hương nhu, Vỏ bưởi, Hoắc hương, Mượt tóc, phục hồi hư tổn từ Chiết xuất từ Lông cừu và Protein đậu Hà Lan",
+      "price": 780000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 6,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261418/hair-models/Anh_dau_goi_6_jmyljo.webp",
+      "name": "Dầu Gội và Xả Thảo Dược Hà Thủ Ô Giảm Rụng Tóc.",
+      "describe": "Cân bằng nồng độ PH, ngăn ngừa bạc tóc và rụng tóc, trị gàu và làm sạch sâu da đầu, nuôi dưỡng tóc từ sâu bên trong.",
+      "price": 410,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 7,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261417/hair-models/Anh_dau_goi_7_py2sfk.webp",
+      "name": "Dầu Gội Clear Sạch Gàu",
+      "describe": "Chiết xuất từ bạc hà và các thành phần dưỡng chất thiên nhiên giúp tấn công nguồn gàu và ngăn ngừa da đầu khô và ngứa, hương thơm bạc hà tươi mát mang lại cảm giác sảng khoái lâu dài.",
+      "price": 1000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 8,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261417/hair-models/Anh_dau_goi_8_oecexz.webp",
+      "name": "DẦU GỘI XẢ ARTE COLLAGEN PURIFIER PHỤC HỒI 280ML*2",
+      "describe": "Xuất xứ:Korea Thương hiệu:ILJIN COSMETICS Trọng lượng:280ml - 1000ml - Dầu gội xả collagen dành cho tóc hư tổn do nhuộm, uốn duỗi và các tác nhân gây hại khác ngoài môi trường như khói bụi tia UV. - Sức mạnh từ chiết xuất..",
+      "price": 100000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 9,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261418/hair-models/Anh_dau_goi_9_dhago7.jpg",
+      "name": "Serum mọc tóc dạng lỏng",
+      "describe": "Sóng lơi chính là từ khóa kiểu tóc được tìm kiếm nhiều nhất trên mạng xã hội trong suốt thời gian dài nhưng làm sao để sóng tóc luôn giữ nếp mà không thẳng tuộc tại nhà chính là đều..",
+      "price": 100000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 10,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698263110/hair-models/Anh_dau_goi_10_yycytq.jpg",
+      "name": "Dầu gội đầu Sunsil",
+      "describe": "Sản phẩm có chứa các liên kết Polymers giúp tăng độ dày và tạo độ phồng cho tóc, giúp tóc trông bồng bềnh dày dặn hơn tức thì và gỗ trợ làm giảm rụng tóc, đồng",
+      "price": 600000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 11,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698263124/hair-models/Anh_dau_goi_11_obc2ll.jpg",
+      "name": "Keo vuốt tóc Black",
+      "describe": "Có thể sử dụng trên nhiều loại tóc, từ tóc dài đến tóc ngắn, sáng đến tối, và giúp tạo nên nhiều kiểu tóc khác nhau một cách dễ dàng, từ kiểu tóc búi cao đến kiểu tóc búi hạ hay tóc vuốt đều dễ dàng thực hiện được với sản phẩm này. Ngoài ra, sản phẩm còn được làm từ các thành phần tự nhiên như vitamin E, dầu dừa, giúp nuôi dưỡng và bảo vệ tóc khỏi các tác động tiêu cực từ môi trường bên ngoài.",
+      "price": 30,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 12,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261418/hair-models/Anh_dau_goi_9_dhago7.jpg",
+      "name": "Xịt Dưỡng Tóc TSUBAKI Premium Premium Repair Wate",
+      "describe": "Đứng đầu trong danh sách dầu dưỡng tóc tốt nhất hiện nay mà Hasaki muốn gợi ý đến bạn chính là em xịt dưỡng tóc Tsubaki Premium Premium Repair Water. Thuộc thương hiệu chăm sóc tóc nổi tiếng hàng đầu Nhật Bản Tsubaki và trực thuộc tập đoàn đình đám Shiseido.",
+      "price": 470000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 13,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261419/hair-models/Anh_dau_goi_13_xaweuz.jpg",
+      "name": "Xịt Dưỡng Tóc Some By Mi Cica Peptide ",
+      "describe": " Được chiết xuất từ tinh dầu bạc hà (Menthol) giúp giải nhiệt da đầu, ngăn ngừa tóc gãy rụng. Phức hợp CICA, phức hợp 11 loại Peptide, Biotin và Protein thực vật giúp dịu da, nuôi dưỡng và phục hồi tóc.",
+      "price": 430000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 14,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261420/hair-models/Anh_dau_goi_14_icobdo.jpg",
+      "name": "Dầu Xả Herbal Essences Bưởi và Bạc Hà",
+      "describe": "Loại dầu xả dưỡng tóc có 2 hương thơm nhẹ dịu rất phù hợp với cho những bạn thích xả để có được mùi hương lưu lại.",
+      "price": 780,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 15,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261420/hair-models/Anh_dau_goi_15_j44xrn.jpg",
+      "name": "1Dầu Xả TRESemmé Keratin Smooth",
+      "describe": "Với thành phần giàu protein và vitamin có một hương thơm dịu nhẹ, dễ chịu. Bên cạnh đó, nhờ có thành phần chính là keratin protein giúp cho việc bảo vệ khỏ quá trình hư tổn cũng như các vitamin giúp cho nuôi dưỡng tóc được suôn mượt.",
+      "price": 410,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 16,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261552/hair-models/Anh_Head_and_shoulder_qr3kpk.webp",
+      "name": "6Dầu xả Head & Shoulders",
+      "describe": "Nuôi dưỡng chân tóc phục hồi nang tóc chống rụng, 120ml",
+      "price": 100000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 17,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261782/hair-models/Anh_dau_goi_tsubaki_l6zf2m.webp",
+      "name": "Dầu xả Tsubaki",
+      "describe": "Dầu xả Tsubaki thương hiệu chăm sóc tóc khỏe đẹp của Nhật Bản. Dầu xả Tsubaki phục hồi hư tổn không silicon 490ml với sữa ong chúa, protein đậu nành, tinh dầu hoa trà, hợp chất Squalane. Dầu xả giúp phục hồi tóc hư tổn, mang đến sự mượt mà và vào nếp từ gốc đến ngọn",
+      "price": 650000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 18,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261421/hair-models/Anh_dau_goi_18_n7mqlz.jpg",
+      "name": "VACOSI HAIR CARE GROWTH TONIC, HERBAL SCALP FORMULA",
+      "describe": "Serum kích thích mọc tóc của Vacosi giúp giảm rụng tóc, tăng cường sức sống và số lượng nang tóc, cải thiện chân tóc mọc đều, làm cho mái tóc dày khỏe.",
+      "price": 400000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 19,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc4_aldprz.jpg",
+      "name": "ComBo bộ xả gội tóc thiên nhiên",
+      "describe": ". Dầu gội đầu bồ kết cô đặc được nấu từ những trái bồ kết tươi chín hái từ trên cây được trồng và chăm sóc kĩ lưỡng bởi bàn tay người nông dân chân chất, thật thà",
+      "price": 250000,
+      "discount": 10,
+      "new": false
+    },
+    {
+      "id": 20,
+      "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698261422/hair-models/Anh_dau_goi_20_ro56eb.webp",
+      "name": "Combo Chăm Sóc Tóc Toàn Diện Hairburst",
+      "describe": "Kích thích mọc tóc dễ dàng hơn với vị ngon tuyệt vời! Tóc mọc dài hơn, nhanh hơn. Tăng cường độ khỏe và độ đàn hồi cho tóc.",
+      "price": 550000,
+      "discount": 10,
+      "new": false
     }
   ],
-  "comment":[
+  "Account": [
     {
-      "id":1,
-      "name":"Huỳnh Đức",
-      "email":"duc.huynh25@gmail.com",
-      "phone":"0389086502",
-      "massage":"Thật tuyệt vời!!"
+      "id": 1,
+      "role": true,
+      "accountName": "admin",
+      "password": "admin",
+      "name": "Huỳnh Đức",
+      "email": "duc.huynh25@student.passerellesnumeriques.org",
+      "phone": "0389086502",
+      "sex": "Nam"
+    },
+    {
+      "id": 2,
+      "role": false,
+      "accountName": "le",
+      "password": "NguyenThiLe2004",
+      "name": "Nguyễn Thị Lệ",
+      "email": "le.tear@gmail.com",
+      "phone": "0389086520",
+      "sex": "Nữ"
     }
   ],
-  "rating":[
+  "Comment": [
     {
-      "id":1,
-      "userID":1,
-      "ratingHair":5.0
+      "id": 1,
+      "userID": 1,
+      "massage": "Thật tuyệt vời!!"
+    }
+  ],
+  "Rating": [
+    {
+      "id": 1,
+      "userID": 1,
+      "ratingHair": 5
+    }
+  ],
+  "Booking": [
+    {
+      "customerName": "Huỳnh Đức",
+      "phone": "0389086502",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 50000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "11AM",
+      "date": "2023-10-22",
+      "message": "Tôi muốn Nhân viên chất lượng",
+      "createdAt": 1697926211675,
+      "updatedAt": 1697926211675,
+      "id": 1
+    },
+    {
+      "customerName": "Nguyễn Thị Lệ",
+      "phone": "0543671524",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 50000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "2PM",
+      "date": "2023-10-22",
+      "message": "Tôi có yêu cầu rất cao và rất khó tính, hãy sắp xếp cho tôi người tốt nhất",
+      "createdAt": 1697926688594,
+      "updatedAt": 1697926688594,
+      "id": 2
+    },
+    {
+      "customerName": "Huỳnh Đức",
+      "phone": "0543671524",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 550000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-10-30",
+      "message": "",
+      "createdAt": 1698660915169,
+      "updatedAt": 1698660915169,
+      "id": 3
+    },
+    {
+      "customerName": "Huỳnh Đức",
+      "phone": "0122232253",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 550000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-10-30",
+      "message": "",
+      "createdAt": 1698661035724,
+      "updatedAt": 1698661035724,
+      "id": 4
+    },
+    {
+      "customerName": "le",
+      "phone": "0389086520",
+      "nameHair": "Layer ngắn Hàn Quốc",
+      "priceHair": 650000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-10-31",
+      "message": "",
+      "createdAt": 1698695170566,
+      "updatedAt": 1698695170566,
+      "id": 5
+    },
+    {
+      "customerName": "le",
+      "phone": "0389086520",
+      "nameHair": "Layer dài Hàn Quốc",
+      "priceHair": 500000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "12PM",
+      "date": "2023-11-01",
+      "message": "",
+      "createdAt": 1698812002943,
+      "updatedAt": 1698812002943,
+      "id": 6
+    },
+    {
+      "customerName": "le",
+      "phone": "0389086520",
+      "nameHair": "Layer dài Hàn Quốc",
+      "priceHair": 500000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-12-09",
+      "message": "",
+      "createdAt": 1698812311712,
+      "updatedAt": 1698812311712,
+      "id": 7
+    },
+    {
+      "customerName": "le",
+      "phone": "0389086520",
+      "nameHair": "Layer dài Hàn Quốc",
+      "priceHair": 500000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-11-01",
+      "message": "",
+      "createdAt": 1698812332957,
+      "updatedAt": 1698812332957,
+      "id": 8
+    },
+    {
+      "customerName": "le",
+      "phone": "0389086520",
+      "nameHair": "Layer dài Hàn Quốc",
+      "priceHair": 500000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-11-01",
+      "message": "đẹp",
+      "createdAt": 1698812560606,
+      "updatedAt": 1698812560606,
+      "id": 9
+    },
+    {
+      "customerName": "Huỳnh Đức",
+      "phone": "0543671524",
+      "nameHair": "Layer dài Hàn Quốc",
+      "priceHair": 500000,
+      "address": "Ngô Quyền, Hà Nội",
+      "time": "7AM",
+      "date": "2023-11-01",
+      "message": "hh",
+      "createdAt": 1698845858298,
+      "updatedAt": 1698845858298,
+      "id": 10
+    }
+  ],
+  "Cart": [
+    {
+      "id": 1,
+      "productID": 1,
+      "userID": 1
     }
   ]
 }

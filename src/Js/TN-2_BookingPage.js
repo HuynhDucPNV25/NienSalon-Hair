@@ -1,92 +1,157 @@
-// const { default: axios } = require("axios");
+const hairDataUrl= "http://localhost:4002/Hairs";
+const bookingDataUrl = "http://localhost:4002/Booking";
+const payments = "http://localhost:4002/payment";
 
-const { default: axios } = require("axios");
+function getHairIdFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = urlParams.get('id');
+  return parseInt(id);
+}
 
-const hairData = " https://pnv-hair.onrender.com/Hairs";
-
-function submitBooking() {
-  // Lấy giá trị từ các ô nhập liệu
-  const date = document.getElementById('date').value;
-  const timeSelect = document.getElementById('time-select').value;
-  const customerName = document.getElementById('customerName').value;
-  const phoneNumber = document.getElementById('phoneNumber').value;
-  const messageText = document.getElementById('message-text').value;
-
-// Kiểm tra ngày nhập có rỗng không
-  if(date==''){
-      alert("Vui lòng điền thông tin ngày")
-      return;
-  }else{
-     // Chuyển đổi định dạng ngày : 
-      const inputDate = new Date(date);
-      const formattedDate = `${inputDate.getDate()}/${inputDate.getMonth() + 1}/${inputDate.getFullYear()}`;
-      console.log(formattedDate);
-
-      // Tạo đối tượng ngày hiện tại 
-      const currentDate = new Date();
-    console.log("Thời gian hiện tại : "+currentDate);
-      currentDate.setHours(0,0,0,0); // Set thời gian giờ về bằng 0
-
-      // So sánh ngày nhập vào có nhỏ hơn ngày hiện tại (ngày quá khứ )
-      if (inputDate<currentDate){
-          alert("Thời gian không hợp lệ");
-      } 
-  }
-
-  if(customerName==='' || typeof customerName ==='number'){
-    alert("Tên bạn không nên để trống hoặc không nên ghi là số");
-  }
-  if(phoneNumber==""){
-    alert("Vui lòng điền số điện thoại của bạn");
-  }
-  if(phoneNumber.lenght!=10 || phoneNumber.charAt(0)=='0'){
-    alert("Số điện thoại không hợp lệ");
-  }
-  // confirm("Xác nhận lại thông tin đặt lịch : \n"+
-  // "Tên khách hàng : "+customerName+"\n Số điện thoại : "+phoneNumber+
-  // "\n Thời gian : "+timeSelect +"\n Ngày : "+formattedDate);
-
-    const obj ={
-          customerName:customerName,
-          phone: phoneNumber,
-          messageText:messageText,
-          date: date,
-          time: timeSelect
+const currentHairId = getHairIdFromURL();
+const check = localStorage.getItem('userData');
+    if (check != null) {
+      const userData = JSON.parse(check);
+      const name = userData.name;
+      const phone=userData.phone;
+      document.getElementById('customerName').value = name;
+      document.getElementById('phoneNumber').value = phone;
     }
-    console.log(obj);
-}
+      
+async function getData() {
+  try {
+    const response = await axios.get(`${hairDataUrl}/${currentHairId}`);
+    // Tìm mẫu tóc hiện tại dựa trên id
+    const currentHair = response.data;
+    if (currentHair) {
+      const nameInput = document.querySelector('#NameHair');
+      const priceInput = document.querySelector('#price');
+      const addressInput = document.querySelector('#address');
 
-
-// Đẩy  đối tượng lên mock API server
-function createCart(obj){
-  const options={
-      method:"POST",
-      headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-
-      body:JSON.stringify(obj)
+      nameInput.value = currentHair.name;
+      priceInput.value = `${currentHair.price}`+" VNĐ";
+      addressInput.value = currentHair.address;
+    } else {
+      // Hiển thị thông báo khi không tìm thấy mẫu tóc
+    }
+  } catch (error) {
+    console.log(error);
   }
-    fetch(url, options)
-    .then(response => response.json())
-    // .then(responseData => {
-    //   // Xử lý phản hồi từ mock API
-    //   console.log(responseData);
-    // })
-    .catch(error => {
-      // Xử lý lỗi nếu có
-      console.error("Error:", error);
-    });
 }
-createCart();
-					
-function callAPI(endpoint, method = "GET", body) {					
-  return axios({					
-    method: method,					
-    url: `${API_URL}/${endpoint}`,					
-    data: body,					
-  }).catch((err) => {					
-    console.log(err);					
-  });					
-  }					
+
+getData();
+
+function validateData() {
+  const customerName = document.querySelector('#customerName').value;
+  const phoneNumber = document.querySelector('#phoneNumber').value;
+  const timeSelect = document.querySelector('#time-select').value;
+  const date = document.querySelector('#date').value;
+
+  if (!customerName || !phoneNumber || !timeSelect || !date) {
+    // Hiển thị thông báo lỗi nếu các trường bắt buộc không được nhập
+    alert("Vui lòng nhập đầy đủ thông tin bắt buộc");
+    return false;
+  }
+  // Kiểm tra định dạng số điện thoại
+  const phoneRegex = /^\d{10}$/;
+  if (!phoneRegex.test(phoneNumber)) {
+    alert("Số điện thoại không hợp lệ, vui lòng nhập lại");
+    return false;
+  }
+
+  return true;
+}
+
+
+async function submitBooking() {
+  try {
+    if (!validateData()) {
+      return;
+    }
+    
+    const NameHair = document.querySelector('#NameHair').value;
+    const PriceHair = document.querySelector('#price').value;
+    const AddressHair = document.querySelector('#address').value;
+    const customerName = document.querySelector('#customerName').value;
+    const phoneNumber = document.querySelector('#phoneNumber').value;
+    const timeSelect = document.querySelector('#time-select').value;
+    const date = document.querySelector('#date').value;
+    const message = document.querySelector('#message-text').value;
+    const price = parseFloat(PriceHair);
+    const data = {
+      customerName,
+      phone: phoneNumber,
+      nameHair: NameHair,
+      priceHair: price,
+      address: AddressHair,
+      time: timeSelect,
+      date: date,
+      message: message,
+    };
+    
+    const amount = parseInt(price); 
+    const response = await payment(amount);
+    const messagee = `
+    Đặt lịch thành công!\n\n
+    Tên khách hàng: ${customerName}\n
+    Số điện thoại: ${phoneNumber}\n
+    Địa chỉ: ${AddressHair}\n
+    Tên mẫu tóc: ${NameHair}\n
+    Giá: ${PriceHair}\n
+    Thời gian: ${timeSelect}\n
+    Ngày: ${date}`;
+    alert(messagee);
+    await axios.post(bookingDataUrl, data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function payment(amount) {
+  try {
+    const response = await axios.post(payments, { amount });
+    if (response && response.data && response.data.payUrl) {
+        window.location.href = response.data.payUrl;
+    } else {
+      console.log("Error in payment!");
+    }
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+async function searchHair(event){
+  console.log(event.target.value);
+  if(event.target.value === ""){
+      return; 
+  }
+  const response = await axios.get(`${hairDataUrl}?name=${event.target.value}`);
+  const data = response.data;
+  let arr = []
+  data.forEach(element => {
+      if(element.name.includes(event.target.value)){
+          arr.push(element)
+      }
+  });
+  console.log(arr);
+  const hairList = document.getElementById("hair-list");
+  if(arr.length > 0){
+      hairList.innerHTML = "";
+      arr.forEach(hair => {
+          const listItem = document.createElement("button");
+          listItem.setAttribute("type", "button");
+          listItem.setAttribute("class", "list-group-item list-group-item-action");
+          listItem.textContent = hair.name;
+          listItem.addEventListener("click", () => {
+              document.getElementById("NameHair").value = hair.name;
+              document.getElementById("price").value = hair.price;
+              document.getElementById("address").value = hair.address;
+              hairList.innerHTML = "";
+          });
+          hairList.appendChild(listItem);
+      });
+  }else{
+      hairList.innerHTML = "Không tìm thấy mẫu tóc";
+  }
+}

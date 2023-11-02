@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/TN-2_BookingPage.css">
+    <link rel="stylesheet" href="../css/TN-1_HomePage.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
+            <a href="./TN-1_HomePage.html"><img id="logo" src="../../image/Logo.png" alt="Nien-Salon"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="navbar-nav form-inline mr-auto">
+                    <li class="nav-item nav-item1 ">
+                        <a class="nav-link" href="./TN-1_HomePage.html">
+                            <b>
+                                TRANG CHỦ
+                            </b>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item2 ">
+                        <a class="nav-link" href="./TN-16_Hair-Model2.html">
+                            <b>
+                                MẪU TÓC
+                            </b>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-item3 active">
+                        <a class="nav-link" href="./TN-2_BookingPageNoHair.html">
+                            <b>
+                                ĐẶT LỊCH
+                            </b>
+                        </a>
+                    </li>
+                    <li class="dropdown ">
+                        <i class="fa-solid fa-store" style="color: red; font-size:20px;"></i>
+                    </li>
+                </ul>
+                <!-- Login -->
+                <center id="a">
+                    <ul class="navbar-nav ml-auto" id="icon-login">
+                        <li class="nav-item">
+                            <a href="./TN-17_loginPage.html" id="hide">
+                                <button class="btn btn-outline" id="login">
+                                    <i class="fa-regular fa-user"></i>
+                                    Đăng Nhập
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </center>
+            </div>
+        </nav>
+    </div>
+    <div class="container" id="a">
+        <form class="form-booking-hair">
+            <h1 class="text-center">ĐẶT LỊCH</h1>
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Tên mẫu tóc:</label>
+                        <input type="text" class="form-control" id="NameHair" value=""
+                            placeholder="Nhập mẫu tóc bạn muốn" oninput="searchHair(event)">
+                        <div id="hair-list" class="list-group mt-3"></div>
+                    </div>
+                    <div>
+                        <label for="price" class="col-form-label">Giá mẫu:</label>
+                        <input type="text" class="form-control" id="price" value="" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="arange" class="col-form-label">Địa chỉ:</label>
+                        <input type="text" class="form-control" id="address" value="" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label for="date" class="col-form-label">Ngày:</label>
+                                <input type="date" class="form-control" value="a" id="date" required>
+                            </div>
+                            <div class="col">
+                                <label for="time-select" class="col-form-label">Thời gian:</label>
+                                <select class="form-control" id="time-select" required>
+                                    <option value="7AM">7 AM</option>
+                                    <option value="8AM">8 AM</option>
+                                    <option value="9AM">9 AM</option>
+                                    <option value="10AM">10 AM</option>
+                                    <option value="11AM">11 AM</option>
+                                    <option value="12PM">12 PM</option>
+                                    <option value="1PM">1 PM</option>
+                                    <option value="2PM">2 PM</option>
+                                    <option value="3PM">3 PM</option>
+                                    <option value="4PM">4 PM</option>
+                                    <option value="5PM">5 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label for="customerName" class="col-form-label">Người đặt lịch: </label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Nhập tên của bạn"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber" class="col-form-label">Số điện thoại:</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="Số điện thoại" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Những lưu ý cần thiết:</label>
+                        <textarea class="form-control" id="message-text"
+                            placeholder="Hãy ghi lưu ý của bạn đến với Shop" maxlength="200"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="button-booking-hair" onclick="submitBooking()"
+                            class="btn btn-primary">Đặt lịch</button>
+                    </div>
+
+                </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../Js/TN-2_BookingPage.js"></script>
+    <!-- <script src="../Js/TN-2_BookingPageNoHair.js"></script> -->
+    <script src="../Js/AllPage.js"></script>
+
+</body>
+
+</html>

@@ -1,27 +1,44 @@
-
-.form-booking-hair{
-    border: 1px solid wheat;
+body {
+    background-image: url(https://res.cloudinary.com/duas1juqs/image/upload/v1697355433/pnv/1ae0f25c7d1651e828179aa965719925_jbalor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    position: relative;
+  }
+  
+  .form-booking-hair{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-width: 100%;
     padding: 20px;
-    margin-top: 30px;
+    border: 1px solid wheat;
     border-radius: 20px;
-    /* backdrop-filter: blur(10px); */
-    background-color: rgba(255, 255, 255, 1.7);
-    /* background-color: green; */
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.form-booking-hair input,
-.form-booking-hair select,
-.form-booking-hair textarea {
-    background: transparent;
-}
-.form-group #button-booking-hair{
+    z-index: 1;
+  }
+  
+  .form-group #button-booking-hair{
     width: 100px;
     height: 40px;
     background-color: #E86A60;
     border: none;
     border-radius: 10px;
-}
-.form-booking-hair h1{
+  }
+  
+  .form-booking-hair h1{
     color: #E86A60;
-}
+  }
+  
+  @media (max-width: 1024px) {
+    .form-booking-hair {
+      width: 80%;
+      margin-top: 50px;
+      padding: 10px;
+    }
+    body{
+        background-image: none;
+    }
+  }
