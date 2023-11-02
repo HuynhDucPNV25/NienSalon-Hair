@@ -32,3 +32,25 @@ async function login(){
     }
   }
 }
+
+function logout() {
+  localStorage.removeItem("userData");
+  console.log("Logged out successfully.");
+  window.location.href = "/src/html/TN-1_HomePage.html";
+  const logoutIconContainer = document.getElementById("icon-logout-container");
+  logoutIconContainer.innerHTML = logoutHTML;
+  const logoutHTML = `
+  <center>
+    <ul id="icon-logout" class="navbar-nav ml-auto" onclick="logout()">
+      <li class="nav-item">
+        <a href="#" id="logout">
+          <button class="btn btn-outline" id="login">
+            <i class="fa-regular fa-user"></i>
+            Đăng Xuất
+          </button>
+        </a>
+      </li>
+    </ul>
+  </center>`;
+  document.getElementById("icon-login").style.display.none;
+}

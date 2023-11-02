@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -13,8 +12,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Link CSS -->
   <link rel="stylesheet" href="../css/TN-1_HomePage.css">
-
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+   integrity="sha512-jBkGbh5VuqEsP0x5s7tvxP3aNfvJxmxCQsrtransb1y7z7+g65VC7clOQ11qW/DPQD1yB+Kyvog+MfYo9kx3eQ==" crossorigin="anonymous" />
+   <script src="https://kit.fontawesome.com/9a5faea756.js" crossorigin="anonymous"></script>
+  <script src="/src/Js/TN-17_loginPage.js"></script>
+  <script src="/src/Js/TN-1_HomePage.js"></script>
+  </head>
 
 <body>
   <!-- Menu -->
@@ -34,14 +37,14 @@
             </a>
           </li>
           <li class="nav-item nav-item2">
-            <a class="nav-link" href="./TN-16_Hair-Model2.html">
+            <a class="nav-link" href="./TN-16_Hair-Model.html">
               <b>
                 MẪU TÓC
               </b>
             </a>
           </li>
           <li class="nav-item nav-item3">
-            <a class="nav-link" href="./TN-2_BookingPageNoHair.html">
+            <a class="nav-link" href="./TN-2_BookingPage.html">
               <b>
                 ĐẶT LỊCH
               </b>
@@ -53,14 +56,14 @@
             <select class="selectCity" id="city"></select>
           </li>
         </ul>
-        <!-- Login -->
-        <center id="a">
-          <ul class="navbar-nav ml-auto" id="icon-login">
+        <!-- User Logged In -->
+        <center>
+          <ul id="icon-login" class="navbar-nav ml-auto" onclick="logout()">
             <li class="nav-item">
-              <a href="./TN-17_loginPage.html" id="hide" >
+              <a href="#" id="logout">
                 <button class="btn btn-outline" id="login">
                   <i class="fa-regular fa-user"></i>
-                  Đăng Nhập
+                  Đăng Xuất
                 </button>
               </a>
             </li>
@@ -121,28 +124,20 @@
   <!-- Body -->
   <button class="scroll-top-btn" onclick="scrollToTop()"><i class="fa fa-chevron-up"></i></button>
   <!-- /........... -->
-  <button class="btn bg-dark" id="cssnone" ></button>
-  <section class="container carousell" id="tags">
+  <section class="container carousell">
     <div class="carousel__container">
       <div></div>
       <div class="carousel-itemm">
-        <a href="./TN-2_BookingPageNoHair.html" class="text-decoration-none">
-          <img class="carousel-item__img" src="../../image/booking.jpg" alt="people" />
-          <p class="carousel-item__text">Đặt lịch</p>
-        </a>
+        <img class="carousel-item__img" src="../../image/booking.jpg" alt="people"/>
+        <p class="carousel-item__text">Đặt lịch</p>
       </div>
       <div class="carousel-itemm">
-        <a href="" class="text-decoration-none">
-          <img class="carousel-item__img" src="../../image/Shop.jpg" alt="people" />
-          <p class="carousel-item__text">Sản phẩm</p>
-        </a>
+        <img class="carousel-item__img" src="../../image/Shop.jpg" alt="people" />
+        <p class="carousel-item__text">Sản phẩm</p>
       </div>
       <div class="carousel-itemm">
-        <a href="" class="text-decoration-none">
-          <img class="carousel-item__img" src="../../image/Gift.jpg" alt="people" />
-          <p class="carousel-item__text">Quà tặng</p>
-        </a>
-
+        <img class="carousel-item__img" src="../../image/Gift.jpg" alt="people" />
+        <p class="carousel-item__text">Quà tặng</p>
       </div>
       <div></div>
     </div>
@@ -171,31 +166,17 @@
     font-weight: 700;
     max-width: 150px;
     ">Sản Phẩm</p>
-    <section class=" container carouse2 mt-4">
-      <div class="carousel__container2" id="product-Homepage">
-      </div>
-    </section>
+  <section class=" container carouse2 mt-4">
+    <div class="carousel__container2" id="product-Homepage">
+    </div>
+  </section>
   </div>
   <br>
   <!-- ...................... -->
   <div class="container slide-container bg-light">
     <p id="topMauToc"></p>
-    <div class="row slider" id="AllHair">
-      <div class="col-12">
-        <div class="row" id="hairList">
-          <!-- Để mẫu tóc -->
-        </div>
-      </div>
-      <div class="col-12 d-flex justify-content-center">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination" id="pagination">
-              <!--Để pagination  -->
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <div class="row slider" id="AllHair"></div>
   </div>
-
 
   <!--Footer  -->
   <footer class="footer-tp" class="page-footer font-small indigo text-nowrap ">
@@ -261,7 +242,7 @@
               </a>
             </li>
             <li>
-              <a href="./TN-16_Hair-Model2.html">Mẫu tóc </a>
+              <a href="./TN-16_Hair-Model.htmly">Mẫu tóc </a>
             </li>
             <li>
               <a href="./TN-2_BookingPage.html">Đặt lịch</a>
@@ -302,9 +283,6 @@
         </div>
       </div>
     </div>
-
-
-
     <div class="footer-copyright text-center py-3">
       <p>© 2020 niensalon.vn | Bản quyền thuộc về Công ty TNHH Đầu tư Công nghệ Salon</p>
     </div>
@@ -321,5 +299,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
