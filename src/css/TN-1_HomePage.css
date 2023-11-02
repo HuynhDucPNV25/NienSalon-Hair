@@ -45,7 +45,7 @@ body{
         #city:focus{
             outline: none;
         }
-    #login{
+    #login,#logout{
         border-radius: 4px;
         color: white;
         height: 45px;

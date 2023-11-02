@@ -1,3 +1,59 @@
+function checkLogin() {
+  const check = localStorage.getItem('userData');
+  if (check != null) {
+    console.log(check);
+    const hide = document.getElementById('icon-login');
+    hide.style.display = 'none';
+    document.getElementById('a').innerHTML =`
+    <ul id="icon-login" class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="" id="hide"  onclick="logouttk()">
+        <button class="btn btn-outline" id="logout">
+          <i class="fa-regular fa-user"></i>
+          Đăng Xuất
+        </button>
+        </a>
+      </li>
+    </ul>
+     `
+  }
+}
+
+checkLogin();
+function logouttk() {
+  window.location.href = '/src/html/TN-1_HomePage.html';
+  localStorage.removeItem("userData");
+  const loginButton = document.getElementById('icon-login');
+  if (localStorage.getItem('userData')) {
+    loginButton.style.display = 'none';
+    document.getElementById('a').innerHTML = `
+      <ul id="icon-login" class="navbar-nav ml-auto" onclick="logouttk()">
+        <li class="nav-item">
+          <a href="" id="hide">
+            <button class="btn btn-outline" id="logout">
+              <i class="fa-regular fa-user"></i>
+              Đăng Xuất
+            </button>
+          </a>
+        </li>
+      </ul>
+    `;
+  } else {
+    loginButton.style.display = 'inline-block';
+    document.getElementById('a').innerHTML = `
+      <ul id="icon-login" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="./TN-16_LoginPage.html" id="show">
+            <button class="btn btn-outline" id="login">
+              <i class="fa-regular fa-user"></i>
+              Đăng Nhập
+            </button>
+          </a>
+        </li>
+      </ul>
+    `;
+  }
+}
 const slideData = [
     { imageSrc: "../../image/pd1.png" },
     { imageSrc: "../../image/pd2.png" },

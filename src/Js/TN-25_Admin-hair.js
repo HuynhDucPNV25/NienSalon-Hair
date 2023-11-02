@@ -17,7 +17,7 @@ const fetchData = async () => {
         tableRows += '<td>' + item.address + '</td>';
         tableRows += '<td>' + item.city + '</td>';
         tableRows += '<td>' + item.discount + '</td>';
-        tableRows += '<td> <a href="./TN-25_Admin-add-hair-modal.html"><button type="button" class="btn btn-primary ml-5" data-toggle="modal" data-target="#putData" onclick="updateProduct(' + item.id + ')" data-whatever="@mdo">Sửa</button> </a><button type="button" class="btn btn-primary top: 10px" data-toggle="modal" onclick="deleteHair(' + item.id + ')" data-whatever="@mdo">Xóa</button></td>';
+        tableRows += '<td> <a ><button type="button" class="btn btn-primary ml-5" data-toggle="modal" data-target="#putData" onclick="updateProduct(' + item.id + ')" data-whatever="@mdo">Sửa</button> </a><button type="button" class="btn btn-primary top: 10px" data-toggle="modal" onclick="deleteHair(' + item.id + ')" data-whatever="@mdo">Xóa</button></td>';
 
         tableRows += '</tr>';
       }

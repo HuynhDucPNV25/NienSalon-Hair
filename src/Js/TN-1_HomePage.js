@@ -1,6 +1,6 @@
 const host = "https://provinces.open-api.vn/api/";
-// const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
-const hairDataUrl = "http://localhost:4002/Hairs";
+const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+// const hairDataUrl = "http://localhost:4002/Hairs";
 const hairModel = document.getElementById('Hairmodel-Agency');
 const hairAll = document.getElementById('AllHair');
 
@@ -64,7 +64,7 @@ const fetchHairData = async (selectedCity) => {
               <b class="text-light px-1" id="discountP" style="position: absolute; top:5px;left:0px; background-color: rgb(254, 90, 58);">
                 ${item.discount}%
               </b>
-                <img style="max-height:190px;" src="${item.img}" alt="${item.name}" class="card-img-center>
+                <img style="max-height:190px; border-radius:4px" src="${item.img}" alt="${item.name}" class="card-img-center>
                 <div class="card-body">
                   <h5 class="card-title" style="color: #CC2C2C;">${item.name}</h5>
                   <p class="card-text" style="color: gray;">Địa chỉ: ${item.address}</p>
@@ -140,7 +140,7 @@ const fetchAllHairData = async () => {
           <b class="text-light px-1" id="discountP" style="position: absolute; top:5px;left:0px; background-color: rgb(254, 90, 58);">
             ${item.discount}%
           </b>
-          <img style="max-height:190px;" src="${item.img}" alt="${item.name}" class="card-img-center>
+          <img style="max-height:190px; border-radius:4px" src="${item.img}" alt="${item.name}" class="card-img-center>
           <div class="card-body">
               <h5 class="card-title" style="color: #CC2C2C;">${item.name}</h5>
               <p class="card-text" style="color: gray;">Địa chỉ: ${item.address}</p>

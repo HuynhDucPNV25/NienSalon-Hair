@@ -6,57 +6,57 @@ const middlewares = jsonServer.defaults();
 const queryString = require("query-string");
 const nodemailer = require("nodemailer");
 
-function sendEmail(message) {
-  return new Promise((res, rej) => {
+async function sendEmail(message) {
+  try {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
         user: process.env.GOOGLE_USER,
         pass: process.env.GOOGLE_PASSWORD,
       },
-      from:process.env.GOOGLE_USER
+      from: process.env.GOOGLE_USER,
     });
 
-    transporter.sendMail(message, function (err, info) {
-      if (err) {
-        rej(err);
-      } else {
-        res(info);
-      }
-    });
-  });
+    const info = await transporter.sendMail(message);
+    return info;
+  } catch (error) {
+    throw error;
+  }
 }
 
-function sendResetPassword({ toUser, pass }) {
+async function sendResetPassword({ toUser, pass }) {
   const message = {
-    from:  `"NienSalon" <${process.env.GOOGLE_USER}>`,
+    from: `"NienSalon" <${process.env.GOOGLE_USER}>`,
     to: toUser.email,
-    text: "Hello. This email is for your email verification.",
     subject: "PNV - Reset Password",
     html: `
     <div dir="ltr" class="es-wrapper-color" lang="en" style="background-color:#F4F4F4">
-    <!--[if gte mso 9]>
-    <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-        <v:fill type="tile" color="#f4f4f4"></v:fill>
-    </v:background>
-    <![endif]-->
-    <div style="padding: 20px;">
-        <h1 style="color: #333;">Niên Salon xin chào quý khách!</h1>
-        <p style="font-size: 18px; line-height: 1.5;"></p>
-        <p style="font-size: 18px; line-height: 1.5;"></p>
-        <lable>Mật khẩu mới của quý khách là: </lable>
-        <u> ${pass}</u>
-        <p style="font-size: 18px; line-height: 1.5;"></p>
-        <br>
-        <p style="font-size: 18px; line-height: 1.5;">Trân trọng,<br>Niên Salon Team</p>
+      <!--[if gte mso 9]>
+      <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+          <v:fill type="tile" color="#f4f4f4"></v:fill>
+      </v:background>
+      <![endif]-->
+      <div style="padding: 20px;">
+          <h1 style="color: #333;">Niên Salon xin chào quý khách!</h1>
+          <p style="font-size: 18px; line-height: 1.5;"></p>
+          <p style="font-size: 18px; line-height: 1.5;"></p>
+          <lable>Mật khẩu mới của quý khách là: </lable>
+          <u>${pass}</u>
+          <p style="font-size: 18px; line-height: 1.5;"></p>
+          <br>
+          <p style="font-size: 18px; line-height: 1.5;">Trân trọng,<br>Niên Salon Team</p>
+      </div>
     </div>
-    </div>   
       `,
   };
 
-  return sendEmail(message);
+  try {
+    const info = await sendEmail(message);
+    return info;
+  } catch (error) {
+    throw error;
+  }
 }
-
 
 server.use(middlewares);
 server.use(
@@ -65,6 +65,7 @@ server.use(
     "/blog/:resource/:id/show": "/:resource/:id",
   })
 );
+
 server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
   if (req.method === "POST") {
@@ -75,6 +76,7 @@ server.use((req, res, next) => {
   }
   next();
 });
+
 router.render = (req, res) => {
   const headers = res.getHeaders();
   const totalCount = headers["x-total-count"];
@@ -93,30 +95,36 @@ router.render = (req, res) => {
   res.jsonp(res.locals.data);
 };
 
-
 server.post("/reset", async (req, res) => {
- try {
-  const { email, name } = req.body; //lấy từ client
-  const crypto = require("crypto");
-  const pass = crypto.randomBytes(8).toString('hex');
-  const user = {
-    name,
-    email,
-  };
-  await sendResetPassword({ toUser: user, pass: pass });
-  const users = router.db.get("Account").value();
-  const userToUpdate = users.find((item) => item.email === email);
-  if (!userToUpdate) {
-    return res.status(404).json({ error: "Item not found" });
+  try {
+    const { email, name } = req.body; //lấy từ client
+    const crypto = require("crypto");
+    const pass = crypto.randomBytes(8).toString("hex");
+    const user = {
+      name,
+      email,
+    };
+    
+    const info = await sendResetPassword({ toUser: user, pass: pass });
+    
+    const users = router.db.get("Account").value();
+    const userToUpdate = users.find((item) => item.email === email);
+    
+    if (!userToUpdate) {
+      return res.status(404).json({ error: "Item not found" });
+    }
+    
+    userToUpdate.password = pass;
+    
+    router.db.get("Account").write();
+    res.jsonp({ message: "Please check your email!", info });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
+});
 
-  userToUpdate.password = pass;
-
-  router.db.get("Account").write();
-  res.jsonp({ message: "Please check your email!" });
- } catch (error) {
-  res.jsonp({error})
- }
+server.listen(3000, () => {
+  console.log("JSON Server is running");
 });
 
 //.......................MomoBanking......................
@@ -129,8 +137,8 @@ server.post("/payment", async (req, res) => {
   var requestId = partnerCode + new Date().getTime() + "id";
   var orderId = new Date().getTime();
   var orderInfo = "Thanh toán qua ví MoMo";
-  var redirectUrl = "http://127.0.0.1:5500/src/html/TN-1_HomePage.html";
-  var ipnUrl = "http://127.0.0.1:5500/src/html/TN-1_HomePage.html";
+  var redirectUrl = "http://127.0.0.1:5501/src/html/TN-1_HomePage.html";
+  var ipnUrl = "http://127.0.0.1:5501/src/html/TN-1_HomePage.html";
   // var ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
   // var amount = "50000";
   // var requestType = "payWithATM";
@@ -183,6 +191,7 @@ server.post("/payment", async (req, res) => {
     signature: signature,
     lang: "en",
   });
+
   //Create the HTTPS objects
   const https = require("https");
   const options = {
@@ -195,6 +204,7 @@ server.post("/payment", async (req, res) => {
       "Content-Length": Buffer.byteLength(requestBody),
     },
   };
+  
   //Send the request and get the response
   const reqq = https.request(options, (resMomo) => {
     // console.log(`Status: ${res.statusCode}`);
@@ -203,12 +213,13 @@ server.post("/payment", async (req, res) => {
     resMomo.on("data", (body) => {
       console.log(body);
       res.json({"payUrl":JSON.parse(body).payUrl,"statusCode":resMomo.statusCode});
-
+      
       // console.log("Body: ");
       // console.log(body);
       // console.log("payUrl: ");
       // console.log(JSON.parse(body).payUrl);
     });
+
     resMomo.on("end", () => {
 
       // console.log("No more data in response.");

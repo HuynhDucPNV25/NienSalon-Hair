@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/TN-2_BookingPage.css">
     <link rel="stylesheet" href="../css/TN-1_HomePage.css">
-    
+
 </head>
 
 <body>
@@ -47,10 +47,10 @@
                     </li>
                 </ul>
                 <!-- Login -->
-                <center>
-                    <ul class="navbar-nav ml-auto">
+                <center id="a">
+                    <ul class="navbar-nav ml-auto" id="icon-login">
                         <li class="nav-item">
-                            <a href="./TN-17_loginPage.html">
+                            <a href="./TN-17_loginPage.html" id="hide">
                                 <button class="btn btn-outline" id="login">
                                     <i class="fa-regular fa-user"></i>
                                     Đăng Nhập
@@ -62,14 +62,14 @@
             </div>
         </nav>
     </div>
-    <div class="container"  id="a">
+    <div class="container" id="a">
         <form class="form-booking-hair">
             <h1 class="text-center">ĐẶT LỊCH</h1>
             <div class="d-flex flex-wrap">
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Tên mẫu tóc:</label>
-                        <input type="text" class="form-control" id="NameHair" value=""  readonly>
+                        <input type="text" class="form-control" id="NameHair" value="" readonly>
                     </div>
                     <div>
                         <label for="price" class="col-form-label">Giá mẫu:</label>
@@ -82,7 +82,7 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col">
-                                <label for="date" class="col-form-label" >Ngày:</label>
+                                <label for="date" class="col-form-label">Ngày:</label>
                                 <input type="date" class="form-control" value="a" id="date" required>
                             </div>
                             <div class="col">
@@ -108,7 +108,8 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
                         <label for="customerName" class="col-form-label">Người đặt lịch: </label>
-                        <input type="text" class="form-control" id="customerName" placeholder="Nhập tên của bạn" required>
+                        <input type="text" class="form-control" id="customerName" placeholder="Nhập tên của bạn"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="phoneNumber" class="col-form-label">Số điện thoại:</label>
@@ -117,22 +118,24 @@
 
                     <div class="form-group">
                         <label for="message-text" class="col-form-label">Những lưu ý cần thiết:</label>
-                        <textarea class="form-control" id="message-text" placeholder="Hãy ghi lưu ý của bạn đến với Shop" maxlength="120"></textarea>
+                        <textarea class="form-control" id="message-text"
+                            placeholder="Hãy ghi lưu ý của bạn đến với Shop" maxlength="120"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="button" id="button-booking-hair" onclick="submitBooking()"
-                            class="btn btn-primary" >Đặt lịch</button>
+                            class="btn btn-primary">Đặt lịch</button>
                     </div>
 
                 </div>
-        </form>  
+        </form>
     </div>
-     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="../Js/TN-2_BookingPage.js"></script>
-    <!-- <script src="../Js/AllPage.js"></script> -->
+    <script src="../Js/AllPage.js"></script>
 
 </body>
+
 </html>

@@ -1,4 +1,5 @@
-const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+// const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
+const hairDataUrl = "http://localhost:4002/Hairs";
 // Lấy id từ URL
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -47,7 +48,7 @@ async function getData() {
               <p class="text-secondary"><u>Dịch vụ :</u> ${currentHair.service} .</p>
               <p>Địa chỉ: ${currentHair.address}</p>
               <pb class="text-secondary">Giá:</pb>
-              <pb class="text-warning" id="price">${currentHair.price.toFixed(3)}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
+              <pb class="text-warning" id="price">${currentHair.price}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
               </pb>
               <div>
               <button id="schedule" type="button" class="btn btn-light mt-2" onclick="Calender()">

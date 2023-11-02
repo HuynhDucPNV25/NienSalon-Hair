@@ -1,7 +1,8 @@
-const payments = "http://localhost:4002/payment";
 const amount = parseInt(price); 
 await payment(amount);
 console.log(payment(amount));
+
+const payments = "http://localhost:4002/payment";
 async function payment(amount) {
   try {
     const response = await axios.post(payments, { amount });
