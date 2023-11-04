@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -17,11 +16,11 @@
         <div class="container-fluid pl-0" id="adminHair">   
             <div class="sidebar">
                 <ul class="menu">
-                <div class="imgaAdmin" style="margin-top:20px; margin-bottom:20px;">
+                <div class="imgaAdmin">
                     <a>
                     <img id="logo" src="/NienSalon-Hair/image/Mautoc2.png" alt="Nien-Salon" >
                     </a>
-                    <p>Tên Admin</p>
+                
                 </div>
                     <li class="sidebar-item ">
                         <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
@@ -39,7 +38,7 @@
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
-                            <lable>Quản lý tóc</lable>
+                            <lable>Mẫu tóc</lable>
                         </a>
                     </li>
 
@@ -47,21 +46,21 @@
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
                             <i class="fa-brands fa-product-hunt "></i>
-                            <lable>Quản lý sản phẩm</lable>
+                            <lable>Sản phẩm</lable>
                         </a>
                     </li>
 
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-User.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
-                            <lable>Quản lý người dùng</lable>
+                            <lable>Khách hàng</lable>
                         </a>
                     </li>
 
                     <li class="sidebar-item active">
                         <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
-                            <lable>Thông tin Admin</lable>
+                            <lable>Admin</lable>
                         </a>
                     </li>
 
@@ -73,22 +72,45 @@
                     </li>
             </div>
             <div class="content p-5" id="profileAdmin">
-                <h2 class="table-title mb-5">Bảng quản lý lịch cắt tóc</h2>
+                
                 <div class="row">
+                    <!-- <div class="col-1"></div> -->
                     <div class="col-4" id="imageAdmin">
                         <div >
-                            <img src="/NienSalon-Hair/image/Mautoc1.png" alt="" style="width: 250px; height: 300px">
+                            <img src="./DichLeNhietBa.jpg" alt="" style="width: 250px; height: 300px">
                         </div>
                         <div>
                             <p>Name Admin</p>
                         </div>
                         <div>
                             <p>Admin of system</p>
-                        </div>
-                        
+                        </div> 
                     </div>
-                    <div class="col-5 pl-4" id="informationAdmin">
-                        
+                    <!-- <div class="col-1"></div> -->
+                    <div class="col-6 p-4" id="informationAdmin" style="width:150%; height: 150%; background: gainsboro;" >
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="fname" class="control-label">Full Name</label>
+                                <input type="text" class="form-control" id="fname">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="control-label">Email</label>
+                                <input type="email" class="form-control" id="email" >
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">Password</label>
+                                <input type="email" class="form-control" id="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="Phone" class="control-label">Phone Number</label>
+                                <input type="text" class="form-control" id="Phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="control-label">Message</label>
+                                <textarea type="text" class="form-control" id="message"></textarea>
+                            </div>
+                            <input type="submit" value="Submit">
+                        </form>
                     </div>
 
                 </div>
@@ -104,4 +126,4 @@
     <script src="../Js/AllPage.js"></script>
 
 </body>
-</html>  
+</html>

@@ -25,4 +25,5 @@ const fetchData = async () => {
     console.error(error);
   }
 };
-fetchData();
+fetchData()
+
