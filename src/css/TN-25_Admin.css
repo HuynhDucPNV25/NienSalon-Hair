@@ -123,3 +123,6 @@
     .form-booking-hair h1{
         color: #E86A60;
     }
+    #logo{
+        max-width: 100%;height:100%; border-radius: 50%;
+    }
