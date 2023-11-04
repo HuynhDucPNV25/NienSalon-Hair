@@ -15,16 +15,15 @@
     </head>
     <body>
         <div class="container-fluid pl-0" id="adminHair">   
-            <div class="sidebar pl-0">
+            <div class="sidebar">
                 <ul class="menu">
-                <div class="imgaAdmin" style="margin-top:20px; margin-bottom:20px;">
+                <div class="imgaAdmin">
                     <a>
-                    <img id="logo" src="/NienSalon-Hair/image/Mautoc2.png" alt="Nien-Salon" >
+                    <img id="logo" src="/NienSalon-Hair/image/Mautoc1.png" alt="Nien-Salon" >
                     </a>
-                    <p>Tên Admin</p>
                 </div>
                     <li class="sidebar-item ">
-                        <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
+                        <a href="#" class='sidebar-link'>
                             <i class="fa-solid fa-house"></i>
                             <lable>Trang chủ</lable>
                         </a>
@@ -39,28 +38,28 @@
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
-                            <lable>Quản lý tóc</lable>
+                            <lable>Mẫu tóc</lable>
                         </a>
                     </li>
 
                     <li class="sidebar-item active">
                         <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
                             <i class="fa-brands fa-product-hunt "></i>
-                            <lable>Quản lý sản phẩm</lable>
+                            <lable>Sản phẩm</lable>
                         </a>
                     </li>
 
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-User.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
-                            <lable>Quản lý người dùng</lable>
+                            <lable>Khách hàng</lable>
                         </a>
                     </li>
                  
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
-                            <lable>Thông tin Admin</lable>
+                            <lable>Admin</lable>
                         </a>
                     </li>
 
@@ -94,7 +93,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <label for="price" class="col-form-label">Giá :</label>
-                                            <input type="number" class="form-control" id="priceProduct">    
+                                            <input type="number" class="form-control" id="price">    
                                         </div>
                                         <div class="col">
                                             <label for="discount" class="col-form-label">Giảm giá:</label>
@@ -107,7 +106,8 @@
                                     <div class="row">
                                         <div class="col">
                                             <label for="image" class="col-form-label">Ảnh :</label>
-                                            <input type="file" class="form-control" id="image">    
+                                            <input id="image" type="file" accept="image/*" onchange="loadFile(event)">
+                                            <img style="width: 200px; height: 200px; list-style-type: none;"  id="output"/>   
                                         </div>
                                         <div class="col">
                                             <label for="moiCu" class="col-form-label">Mới (Cũ):</label>
@@ -142,13 +142,22 @@
                             <div class="modal-body">
                                 <form>
                                     <div class="form-group">
-                                        <label for="nameProducts" class="col-form-label">Tên sản phẩm:</label>
-                                        <input type="text" class="form-control" id="nameProducts">
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="id" class="col-form-label">ID</label>
+                                                <input type="text" class="form-control" id="id">
+                                            </div>
+                                            <div class="col">
+                                                <label for="nameProducts" class="col-form-label">Tên sản phẩm:</label>
+                                                <input type="text" class="form-control" id="nameProducts">
+                                            </div>
+                                        </div>
                                     </div>
+
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col">
-                                                <label for="price" class="col-form-label">Giá :</label>
+                                                <label for="priceProduct" class="col-form-label">Giá :</label>
                                                 <input type="number" class="form-control" id="priceProduct">    
                                             </div>
                                             <div class="col">
@@ -162,7 +171,8 @@
                                         <div class="row">
                                             <div class="col">
                                                 <label for="img" class="col-form-label">Ảnh :</label>
-                                                <input type="file" class="form-control" id="img">    
+                                                <!-- <input type="file" class="form-control" id="img">     -->
+                                                <img id="img">
                                             </div>
                                             <div class="col">
                                                 <label for="moi" class="col-form-label">Mới (Cũ):</label>
@@ -179,7 +189,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-                                <button type="button" class="btn btn-primary" onclick="addProduct()">Tạo</button>
+                                <button type="button" class="btn btn-primary" id="buttonUpdate" onclick="updateProduct(id)">Tạo</button>
                             </div>
                             </div>
                         </div>
@@ -191,11 +201,11 @@
                     
                     <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Tên sản phẩm</th>
-                            <th scope="col">Giá</th>
-                            <th scope="col">Mô tả</th>
-                            <th scope="col">Hành động</th>
+                            <th scope="col" style="width: 5%;">ID</th>
+                            <th scope="col"style="width: 12%;">Tên sản phẩm</th>
+                            <th scope="col"style="width: 5%;">Giá</th>
+                            <th id="limited-text" scope="col" style="width: 45%;">Mô tả</th>
+                            <th scope="col"style="width: 15%;">Hành động</th>
                         </tr>
                     </thead>
                     <tbody id="resultProducts">                    

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add hair</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/TN-25_Admin-add-hair.css">
+   <link rel="stylesheet" href="../css/TN-25_Admin.css">
    
 </head>
 <body >
-    
     <div class="container" >
         <!-- <h1></h1> -->
         <a href="../html/TN-25_Admin_hair.html">
@@ -23,8 +21,16 @@
             <div class="d-flex flex-wrap">
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label for="nameHair" class="col-form-label">Tên mẫu tóc:</label>
-                        <input type="text" class="form-control" id="nameHair" >          
+                        <div class="row">  
+                            <div class="col">
+                                <label for="nameHair" class="col-form-label">Tên mẫu tóc:</label>
+                                <input type="text" class="form-control" id="nameHair" >  
+                            </div>
+                            <div class="col">
+                                <label for="cuOrmoi" class="col-form-label" id="input-date">Cũ hay mới</label>
+                                <input type="text" class="form-control" id="cuOrmoi" required>
+                            </div>   
+                        </div>      
                     </div>
                     <div class="form-group">
                         <div class="row">
@@ -38,22 +44,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="city" class="col-form-label">Thành phố:</label>
-                        <input type="text" class="form-control" id="city" required >
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col">
-                                <label for="image" class="col-form-label" id="input-date">Ảnh</label>
-                                <input type="file" class="form-control" id="image" required>
-                            </div>
-                            <div class="col">
-                                <label for="cuOrmoi" class="col-form-label" id="input-date">Cũ hay mới</label>
-                                <input type="text" class="form-control" id="cuOrmoi" required>
-                            </div>
 
-                        </div>
+                    <div class="form-group">
+                                <label for="image" class="col-form-label">Ảnh :</label>
+                                <input id="image" type="file" accept="image/*" onchange="loadFile(event)">
+                                <img style="width: 200px; height: 200px; list-style-type: none;"  id="output"/>  
+
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -62,8 +58,16 @@
                         <input type="text" class="form-control" id="services" required>
                     </div>
                     <div class="form-group">
-                        <label for="address" class="col-form-label">Địa chỉ:</label>
-                        <input type="text" class="form-control" id="address" required>
+                        <div class="row">
+                            <div class="col">
+                                <label for="address" class="col-form-label">Địa chỉ:</label>
+                                <input type="text" class="form-control" id="address" required>
+                            </div>
+                            <div class="col">
+                                <label for="city" class="col-form-label">Thành phố:</label>
+                                <input type="text" class="form-control" id="city" required >
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="form-group">
