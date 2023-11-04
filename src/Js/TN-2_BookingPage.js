@@ -1,5 +1,5 @@
 const hairDataUrl= "http://localhost:4002/Hairs";
-const bookingDataUrl = "http://localhost:4002/Booking";
+// const bookingDataUrl = "http://localhost:4002/Booking";
 const payments = "http://localhost:4002/payment";
 
 function getHairIdFromURL() {
@@ -86,32 +86,37 @@ async function submitBooking() {
       address: AddressHair,
       time: timeSelect,
       date: date,
-      message: message,
+      messages: message,
     };
+    console.log(data.messages);
     
     const amount = parseInt(price); 
-    const response = await payment(amount);
-    const messagee = `
-    Đặt lịch thành công!\n\n
-    Tên khách hàng: ${customerName}\n
-    Số điện thoại: ${phoneNumber}\n
-    Địa chỉ: ${AddressHair}\n
-    Tên mẫu tóc: ${NameHair}\n
-    Giá: ${PriceHair}\n
-    Thời gian: ${timeSelect}\n
-    Ngày: ${date}`;
-    alert(messagee);
-    await axios.post(bookingDataUrl, data);
+    const response = await payment(amount,data);
+    localStorage.setItem('a', 'true');
+    
+    // const messagee = `
+    // Đặt lịch thành công!\n\n
+    // Tên khách hàng: ${customerName}\n
+    // Số điện thoại: ${phoneNumber}\n
+    // Địa chỉ: ${AddressHair}\n
+    // Tên mẫu tóc: ${NameHair}\n
+    // Giá: ${PriceHair}\n
+    // Thời gian: ${timeSelect}\n
+    // Ngày: ${date}`;
+    // alert(messagee);
+
+    // await axios.post(bookingDataUrl, data);
   } catch (error) {
     console.log(error);
   }
 }
 
-async function payment(amount) {
+async function payment(amount,data) {
   try {
-    const response = await axios.post(payments, { amount });
+    const response = await axios.post(payments, { amount,data });
     if (response && response.data && response.data.payUrl) {
         window.location.href = response.data.payUrl;
+
     } else {
       console.log("Error in payment!");
     }

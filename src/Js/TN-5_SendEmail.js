@@ -1,5 +1,5 @@
-const urlAccount="https://pnv-hair.onrender.com/Account"
-// const urlAccount = "http://localhost:4002/Account";
+// const urlAccount="https://pnv-hair.onrender.com/Account"
+const urlAccount = "http://localhost:4002/Account";
 const resetEmailUrl = "http://localhost:4002/reset";
 async function searchAccount() {
     const currentAccount = document.getElementById('searchInput').value;

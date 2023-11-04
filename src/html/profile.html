@@ -1,98 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Profile</title>
-		<link rel="stylesheet" href="/src/css/profile.css">
-		<link rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	</head>
-	<body>
-		<div class="container container-profile">
-			<div class="main-body">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="card card-profile">
-							<div class="card-body">
-								<div class="title-user">
-									<p>user</p>
-								</div>
-								<div class="d-flex flex-column align-items-center text-center">
-									<!-- Image avatar -->
-									<img id="avatar-user" class="change-avt"
-										src="">
-									<input type="file" id="fileInput" onclick="getUserInfo()"								<p id="uploading_text"></p>
-									<div class="mt-3">
-										<h3 id="name-input"></h3>
-									</div>
-								</div>
-								<hr class="my-4">
-							</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/src/css/profile.css">
+</head>
+<body>
+
+
+
+	<div class="container container-profile my-3">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="card card-profile">
+					<div class="card-body text-center">
+						<div class="title-user mb-3">
+							<p class="h4">User</p>
 						</div>
-					</div>
-					<div class="col-lg-8">
-						<div class="card card-profile">
-							<div class="card-body">
-								<div class="row mb-3">
-									<div class="col-sm-3">
-										<h6 class="mb-0">Full Name</h6>
-									</div>
-									<div class="col-sm-9 text-secondary">
-										<input type="text" class="form-control" placeholder="your name">
-									</div>
-								</div>
-								<div class="row mb-3">
-									<div class="col-sm-3">
-										<h6 class="mb-0">Email</h6>
-									</div>
-									<div class="col-sm-9 text-secondary">
-										<input type="text" class="form-control"
-											placeholder="example@example.com">
-									</div>
-								</div>
-								<div class="row mb-3">
-									<div class="col-sm-3">
-										<h6 class="mb-0">Phone</h6>
-									</div>
-									<div class="col-sm-9 text-secondary">
-										<input type="text" class="form-control" placeholder="xxxx-xx-xxx">
-									</div>
-								</div>
-								<div class="row mb-3">
-									<div class="col-sm-3">
-										<h6 class="mb-0">Address</h6>
-									</div>
-									<div class="col-sm-9 text-secondary">
-										<input type="text" class="form-control" placeholder="emxal, examlple">
-									</div>
-								</div>
-								<div class="col" style="display: flex;margin-left: 16.5%;">
-									<div class="row">
-										<div class="col-sm-3"></div>
-										<div class="col-sm-9 text-secondary">
-											<input type="button" class="btn btn-primary px-4"
-												value="Save Changes" onclick="save()">
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-3"></div>
-										<div class="col-sm-9 text-secondary">
-											<button class="btn btn-secondary px-4" onclick="cancelProfile()">Cancel</button>
-										</div>
-									</div>
-								</div>
+						<center>
+							<div class="change-avt mb-3 ">
+								<!-- Image avatar -->
+								<img id="avatar-user" class="w-100 " src="https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/pbvwtvlvar1hfsgyldrs.png">
 							</div>
+							<div class="mb-3">
+								<input type="file" id="fileInput" onclick="getUserInfo()" class="d-none">
+								<label for="fileInput" class="btn btn-outline-secondary btn-block">
+									<i class="fas fa-upload"></i> Change photo
+								</label>
+								<p id="uploading_text" class="text-muted text-center"></p>
+							</div>
+							
+						</center>
+						
+						
+						<div>
+							<h4 id="name-input"></h4>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-8">
+				<div class="card card-profile">
+					<div class="card-body">
+						<form>
+							<div class="form-group row">
+								<label for="fullname" class="col-sm-3 col-form-label">Full Name:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="fullname" placeholder="Your name">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="email" class="col-sm-3 col-form-label">Email:</label>
+								<div class="col-sm-9">
+									<input type="email" class="form-control" id="email" placeholder="example@example.com">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="phone" class="col-sm-3 col-form-label">Phone:</label>
+								<div class="col-sm-9">
+									<input type="phone" class="form-control" id="phone" placeholder="xxxx-xx-xxx">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="address" class="col-sm-3 col-form-label">Address:</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="address" placeholder="Example, Example">
+								</div>
+							</div>
+							<div class="form-group row">
+								<div class="col-sm-9 offset-sm-3">
+									<button type="button" class="btn btn-primary px-4" onclick="save()">Save Changes</button>
+									<button type="reset" class="btn btn-secondary px-4 ml-2" onclick="window.location.href='TN-1_HomePage.html'">Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-	</body>
-	<script src="/src/Js/profile.js"></script>
+	</div>
+
+<!-- Axios library -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/src/Js/profile.js"></script>
+</body>
 </html>
