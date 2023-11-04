@@ -130,15 +130,25 @@ server.listen(3000, () => {
 //.......................MomoBanking......................
 server.post("/payment", async (req, res) => {
 
-  const {amount} = req.body;
+  const {amount,data} = req.body;
   var partnerCode = "MOMO";
   var accessKey = "F8BBA842ECF85";
   var secretkey = "K951B6PE1waDMi640xX08PD3vg6EkVlz";
   var requestId = partnerCode + new Date().getTime() + "id";
   var orderId = new Date().getTime();
   var orderInfo = "Thanh toán qua ví MoMo";
-  var redirectUrl = "http://127.0.0.1:5501/src/html/TN-1_HomePage.html";
-  var ipnUrl = "http://127.0.0.1:5501/src/html/TN-1_HomePage.html";
+  const urlParams = new URLSearchParams();
+        urlParams.set('customerName', data.customerName);
+        urlParams.set('phone', data.phone);
+        urlParams.set('nameHair', data.nameHair);
+        urlParams.set('priceHair', data.priceHair);
+        urlParams.set('address', data.address);
+        urlParams.set('time', data.time);
+        urlParams.set('date', data.date);
+        urlParams.set('messages', data.messages);
+  // console.log(urlParams);
+  var redirectUrl = "http://127.0.0.1:5501/src/html/TN-38_DetailBooking.html"+'?'+urlParams.toString();
+  var ipnUrl = "http://127.0.0.1:5501/src/html/TN-38_DetailBooking.html"+'?'+urlParams.toString();
   // var ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
   // var amount = "50000";
   // var requestType = "payWithATM";
@@ -218,6 +228,9 @@ server.post("/payment", async (req, res) => {
       // console.log(body);
       // console.log("payUrl: ");
       // console.log(JSON.parse(body).payUrl);
+      // console.log(resMomo.statusCode);
+
+      
     });
 
     resMomo.on("end", () => {

@@ -5,16 +5,17 @@ function checkLogin() {
     const hide = document.getElementById('icon-login');
     hide.style.display = 'none';
     document.getElementById('a').innerHTML =`
-    <ul id="icon-login" class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a href="" id="hide"  onclick="logouttk()">
-        <button class="btn btn-outline" id="logout">
-          <i class="fa-regular fa-user"></i>
-          Đăng Xuất
-        </button>
-        </a>
-      </li>
-    </ul>
+      <a type="button" id="menuDropdown" class="btn btn-outline dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <img src="https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/pbvwtvlvar1hfsgyldrs.png"
+     alt="User Avatar"
+     style="max-width: 80px; height: 60px; object-fit: cover; border-radius: 50%;" />
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuDropdown">
+        <a class="dropdown-item" href="/src/html/profile.html">Thông tin cá nhân</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="" onclick="logouttk()">Đăng Xuất</a>
+      </div>
      `
   }
 }
@@ -27,16 +28,16 @@ function logouttk() {
   if (localStorage.getItem('userData')) {
     loginButton.style.display = 'none';
     document.getElementById('a').innerHTML = `
-      <ul id="icon-login" class="navbar-nav ml-auto" onclick="logouttk()">
-        <li class="nav-item">
-          <a href="" id="hide">
-            <button class="btn btn-outline" id="logout">
-              <i class="fa-regular fa-user"></i>
-              Đăng Xuất
-            </button>
-          </a>
-        </li>
-      </ul>
+      <a href="#" id="menuDropdown" class="dropdown-toggle">
+      <img src="https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/pbvwtvlvar1hfsgyldrs.png"
+      alt="User Avatar"
+      style="max-width: 80px; height: 60px; object-fit: cover; border-radius: 50%;" />
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuDropdown">
+        <a class="dropdown-item" href="/src/html/profile.html">Thông tin cá nhân</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#" onclick="logouttk()">Đăng Xuất</a>
+      </div>
     `;
   } else {
     loginButton.style.display = 'inline-block';

@@ -31,22 +31,31 @@ function register() {
   }
 
   if (role !== true) {
-    roles = "user";
+    roles = false;
   } else if (role === false) {
-    roles = "admin";
+    roles = true;
   } else {
     alert("Xin hãy chọn quyền truy cập!");
     return;
   }
-
+  function generateRandomId(length, characters) {
+    let result = '';
+    
+    for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    
+    return result;
+  }
   const userData = {
-    name: name,
+    id:generateRandomId(6, 'abcdefghijklmnopqrstuvwxyz'),
+    role: roles,
     accountName: accountName,
-    email: email,
-    phoneNumber: phoneNumber,
     password: password,
-    gender: gender,
-    role: roles
+    name: name,
+    email: email,
+    phone: phoneNumber,
+    sex: gender,
   };
 
   const url = "https://pnv-hair.onrender.com/Account";
@@ -68,7 +77,7 @@ function register() {
         document.getElementById("pass2").value = "";
         gender.checked = false;
         role.checked = false;
-        window.location.href = "";//Chuyển sang trang hoặc không
+        window.location.href = "TN-17_loginPage.html";//Chuyển sang trang hoặc không
       } else {
         alert("Đăng Ký Thất Bại");
       }
