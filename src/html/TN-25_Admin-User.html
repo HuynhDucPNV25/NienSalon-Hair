@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
     <title>Users</title>
@@ -22,29 +21,34 @@
                 <ul class="menu">
                 <div class="imgaAdmin">
                     <a>
-                    <img id="logo" src="/NienSalon-Hair/image/Mautoc1.png" alt="Nien-Salon" >
+                    <img id="logo" src="https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/pbvwtvlvar1hfsgyldrs.png" alt="Nien-Salon" >
                     </a>
                 </div>
-                    <li class="sidebar-item ">
+                    <!-- <li class="sidebar-item ">
                         <a href="../html/TN-1_HomePage.html" class='sidebar-link'>
                             <i class="fa-solid fa-house"></i>
                             <lable>Trang chủ</lable>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="sidebar-item ">
                     <a href="../html/TN-25_Admin-manage-booking.html" class='sidebar-link'>
                             <i class="fa-solid fa-calendar-days"></i>
                             <lable >Lịch cắt tóc</lable>
                         </a>
                     </li>
-                    
+                
+                    <!-- <li class="sidebar-item ">
+                        <a href="../html/TN-25_Admin_hair.html" class='sidebar-link>
+                            <i></i>
+                            <lable>Mẫu tóc</lable>
+                        </a>
+                    </li> -->
                     <li class="sidebar-item ">
-                        <a href="../html/TN-25_Admin_hair.html" class='sidebar-link'>
-                            <i class="fa-regular fa-user"></i>
+                        <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
+                            <i class="fa-brands fa-product-hunt "></i>
                             <lable>Mẫu tóc</lable>
                         </a>
                     </li>
-
                     <li class="sidebar-item ">
                         <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
                             <i class="fa-brands fa-product-hunt "></i>
@@ -60,7 +64,7 @@
                     </li>
 
                     <li class="sidebar-item ">
-                        <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
+                        <a href="../html/TN-25_Admin-profile.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Admin</lable>
                         </a>
@@ -75,8 +79,75 @@
             </div>
             <div class="content">
                 <h2 class="table-title">Bảng quản lý khách hàng</h2>
-                <table class="table table-hover" id="tableHair" style="position: relative;">
-                    
+                
+                <div class="modal fade" id="updateUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="nameUsers" class="col-form-label">Tên khách hàng</label>
+                                            <input type="text" class="form-control" id="nameUsers">
+                                        </div>
+                                        <div class="col">
+                                            <label for="idUser" class="col-form-label">ID</label>
+                                            <input type="text" class="form-control" id="idUser" readonly>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">  
+                                        <div class="col">
+                                            <label for="accountUser" class="col-form-label">Tên tài khoản</label>
+                                            <input type="text" class="form-control" id="accountUser">
+                                        </div>
+                                        <div class="col">
+                                            <label for="sexUser" class="col-form-label">Giới tính</label>
+                                            <input type="text" class="form-control" id="sexUser">
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="phoneUsers" class="col-form-label">Số điện thoại</label>
+                                            <input type="text" class="form-control" id="phoneUsers">
+                                        </div>
+                                        <div class="col">
+                                            <label for="role" class="col-form-label">Vai trò</label>
+                                            <input type="text" class="form-control" id="role">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -->
+                                <div class="form-group">
+                                    <label for="emailUser" class="col-form-label">Email</label>
+                                    <input type="text" class="form-control" id="emailUser">                            
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">Mật khẩu</label>
+                                    <input type="text" class="form-control" id="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="updateUser()">Thêm</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                <table class="table table-hover" id="tableHair" style="position: relative;">  
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
