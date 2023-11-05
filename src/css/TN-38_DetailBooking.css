@@ -1,0 +1,47 @@
+  
+  .form-login {
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  
+  thead th {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  tbody td {
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #F2F2F2;
+  }
+  
+  td.action-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-delete:hover {
+    background-color: #D32F2F;
+  }
+  
+  .btn-edit {
+    background-color: #2196F3;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-edit:hover {
+    background-color: #1976D2;
+  }

@@ -1,95 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Profile</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-		crossorigin="anonymous">
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="/src/css/profile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/src/css/profile.css">
 </head>
+
 <body>
+  <div class="container container-profile my-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-profile">
+          <div class="card-body text-center">
+            <div class="title-user mb-3">
+              <p class="h4">Ảnh đại diện</p>
+            </div>
+            <center>
+              <div class="change-avt mb-3 ">
+                <!-- Image avatar -->
+                <img id="avatar-user" class="w-100 "
+                  src="https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/pbvwtvlvar1hfsgyldrs.png">
+              </div>
+              <div class="mb-3">
+                <input type="file" id="fileInput" onclick="getUserInfo()" class="d-none">
+                <label for="fileInput" class="btn btn-outline-secondary btn-block">
+                  <i class="fas fa-upload"></i> Ảnh
+                </label>
+                <p id="uploading_text" class="text-muted text-center"></p>
+              </div>
+            </center>
+            <div>
+              <h4 id="name-input"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card card-profile">
+          <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <label for="fullname" class="col-sm-3 col-form-label">Họ Và Tên:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="fullname" placeholder="Your name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Email:</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="phone" class="col-sm-3 col-form-label">Số điện thoại:</label>
+                <div class="col-sm-9">
+                  <input type="phone" class="form-control" id="phone" placeholder="xxxx-xx-xxx">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="address" class="col-sm-3 col-form-label">Địa chỉ:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-9 offset-sm-3">
+                  <button type="button" class="btn btn-primary px-4" onclick="save()">Lưu Hồ Sơ</button>
+                  <button type="reset" class="btn btn-secondary px-4 ml-2" onclick="window.location.href='TN-1_HomePage.html'">Quay Về</button>
+                </div>	
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+	<br><br>
+	<center>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs mb-3" id="myTab" role="tablist" style="display: grid; grid-template-columns: 49.5% 1% 49.5%;">
+			<li class="nav-item">
+			  <a class="nav-link active" id="booking-tab" data-toggle="tab" href="#booking" role="tab" aria-controls="booking"
+				aria-selected="true">Lịch Sử Đặt Lịch</a>
+			</li>
+			<li></li>
+			<li class="nav-item">
+			  <a class="nav-link" id="cart-tab" data-toggle="tab" href="#cart" role="tab" aria-controls="cart"
+				aria-selected="false">Lịch Sử Giỏ Hàng</a>
+			</li>
+		  </ul>
+	</center>
+    
 
+    <!-- Tab panes -->
+    <div class="tab-content" >
+      <!-- Bảng lịch sử đặt lịch -->
+      <div class="tab-pane fade show active" id="booking" role="tabpanel" aria-labelledby="booking-tab">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Mẫu Tóc</th>
+              <th scope="col">Ngày</th>
+              <th scope="col">Thời Gian</th>
+            </tr>
+          </thead>
+          <tbody id="bookingStory">
+          </tbody>
+        </table>
+      </div>
 
+      <!-- Bảng giỏ hàng -->
+      <div class="tab-pane fade" id="cart" role="tabpanel" aria-labelledby="cart-tab">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Dịch vụ</th>
+              <th scope="col">Giá</th>
+              <th scope="col">Số lượng</th>
+            </tr>
+          </thead>
+          <tbody id="cartStory">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-top-btn" onclick="scrollToTop()"><i class="fa fa-chevron-up"></i></button>
 
-	<div class="container container-profile my-3">
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="card card-profile">
-					<div class="card-body text-center">
-						<div class="title-user mb-3">
-							<p class="h4">User</p>
-						</div>
-						<center>
-							<div class="change-avt mb-3 ">
-								<!-- Image avatar -->
-								<img id="avatar-user" class="w-100 " src="https://res.cloudinary.com/duas1juqs/image/upload/v1696619839/hair-models/pbvwtvlvar1hfsgyldrs.png">
-							</div>
-							<div class="mb-3">
-								<input type="file" id="fileInput" onclick="getUserInfo()" class="d-none">
-								<label for="fileInput" class="btn btn-outline-secondary btn-block">
-									<i class="fas fa-upload"></i> Change photo
-								</label>
-								<p id="uploading_text" class="text-muted text-center"></p>
-							</div>
-							
-						</center>
-						
-						
-						<div>
-							<h4 id="name-input"></h4>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-8">
-				<div class="card card-profile">
-					<div class="card-body">
-						<form>
-							<div class="form-group row">
-								<label for="fullname" class="col-sm-3 col-form-label">Full Name:</label>
-								<div class="col-sm-9">
-									<input type="text" class="form-control" id="fullname" placeholder="Your name">
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="email" class="col-sm-3 col-form-label">Email:</label>
-								<div class="col-sm-9">
-									<input type="email" class="form-control" id="email" placeholder="example@example.com">
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="phone" class="col-sm-3 col-form-label">Phone:</label>
-								<div class="col-sm-9">
-									<input type="phone" class="form-control" id="phone" placeholder="xxxx-xx-xxx">
-								</div>
-							</div>
-							<div class="form-group row">
-								<label for="address" class="col-sm-3 col-form-label">Address:</label>
-								<div class="col-sm-9">
-									<input type="text" class="form-control" id="address" placeholder="Example, Example">
-								</div>
-							</div>
-							<div class="form-group row">
-								<div class="col-sm-9 offset-sm-3">
-									<button type="button" class="btn btn-primary px-4" onclick="save()">Save Changes</button>
-									<button type="reset" class="btn btn-secondary px-4 ml-2" onclick="window.location.href='TN-1_HomePage.html'">Cancel</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- Axios library -->
 
-<!-- Axios library -->
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="/src/Js/profile.js"></script>
+  <!-- jQuery, Popper, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVpnbI9TQOF+QzmlM5zC9UksX7ZY7MfVGyf+Bi7AiNEb"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="/src/Js/profile.js"></script>
+
+  
 </body>
+
 </html>

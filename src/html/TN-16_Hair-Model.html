@@ -48,9 +48,6 @@
               </b>
             </a>
           </li>
-          <li class="dropdown ">
-            <i class="fa-solid fa-store"style="color: red; font-size:20px;"></i>
-        </li>
         </ul>
       <!-- Login -->
       <center id="a">
@@ -79,11 +76,13 @@
           <center>
             <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
               <i class="fa-solid fa-magnifying-glass" style="color:#E55247D9;"></i>
-              <input placeholder="Tìm Kiếm ..." class="searchSalon"></input>
+              <input placeholder="Tìm Kiếm ..." class="searchSalon" oninput="searchHair(event)"></input>
+              <div id="hair-list" class="list-group "  ></div>
             </p>
             <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
               <i class="fa-solid fa-wand-magic-sparkles" style="color:#E55247D9;"></i>
-              <input placeholder="Mẫu Tóc ..." class="searchSalon"></input>
+              <input placeholder="Mẫu Tóc ..." class="searchSalon" oninput="searchHair(event)"></input>
+              <div id="hair-list" class="list-group "  ></div> 
             </p>
             <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
               <i class="fa-solid fa-bars" style="color: #E55247D9;"></i>
@@ -124,6 +123,7 @@
     <!--Detail  -->
 </bodys>
 
+  
   <!--Footer  -->
   <footer class="footer-tp" class="page-footer font-small indigo text-nowrap ">
     <!-- Footer Links -->
@@ -138,20 +138,22 @@
           <ul class="list-group list-unstyled ">
             <li>
               <a>
-                <img class="list-group-item-img" src="https://res.cloudinary.com/duas1juqs/image/upload/v1697437754/pnv/qrcode_pnv-hair.netlify.app_itgild.png" alt="QRcode">
+                <img class="list-group-item-img"
+                  src="https://res.cloudinary.com/duas1juqs/image/upload/v1696624774/hair-models/ne2lleidgsrdohoxzanj.png"
+                  alt="QRcode">
               </a>
             </li>
             <li>
               <p>Follow salon</p>
 
               <a class=" mb-3" href="https://www.facebook.com/nien.salon" target="_blank">
-                <i class="fa fa-facebook-square"></i>
+                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
               </a>
               <a href="https://www.instagram.com/nien.salon/" target="_blank">
-                <i class="fa fa-instagram"></i>
+                <i class="fa-brands fa-instagram" style="color: #ff0019;"></i>
               </a>
               <a href="https://www.youtube.com/@niensalon" target="_blank">
-                <i class="fa fa-youtube-play"></i>
+                <i class="fa-brands fa-youtube" style="color: #ff0019;"></i>
               </a>
             </li>
           </ul>
@@ -163,13 +165,13 @@
           <p class="font-weight-bold text-uppercase mt-3 mb-4">Chi nhánh</p>
           <ul class="list-group list-unstyled ">
             <li>
-              <a href="#!">Thành phố Hồ Chí Minh</a>
+              <p>Thành phố Hồ Chí Minh</p>
             </li>
             <li>
-              <a href="#!">Thành phố Đà Nẵng</a>
+              <p>Thành phố Đà Nẵng</p>
             </li>
             <li>
-              <a href="#!">Thành phố Vinh </a>
+              <p>Thành phố Hồ Chí Minh </p>
             </li>
           </ul>
         </div>
@@ -206,27 +208,42 @@
           </p>
           <ul class="list-group list-unstyled ">
             <li>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="https://www.facebook.com/nien.salon" target="_blank">
+                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
+                Facebook.com/nien.salon
               </a>
-              <a href="#!">niensalon@gmail.com</a>
             </li>
             <li>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+              <a href="mailto:niensalon@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope" style="color: #005eff;"></i>
+                Niensalon@gmail.com
               </a>
-              <a href="#!">Niensalon265</a>
             </li>
             <li>
-              <a href="">
-                <i class="fa fa-phone-square" aria-hidden="true"></i>
+              <a href="tel:0385740373">
+                <i class="fa-solid fa-phone-volume" style="color: #005eff;"></i>
+                0385740373
               </a>
-              <a href="#!">0385740373</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/nien.salon/" target="_blank">
+                <i class="fa-brands fa-instagram" style="color: #ff0019;"></i>
+                Instagram.com/nien.salon/
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@niensalon" target="_blank">
+                <i class="fa-brands fa-youtube" style="color: #ff0019;"></i>
+                Youtube.com/@niensalon
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
+
+
     <div class="footer-copyright text-center py-3">
       <p>© 2020 niensalon.vn | Bản quyền thuộc về Công ty TNHH Đầu tư Công nghệ Salon</p>
     </div>

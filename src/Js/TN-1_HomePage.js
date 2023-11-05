@@ -220,11 +220,38 @@ e.preventDefault();
 
 fetchAllHairData();
 
-
+async function searchHair(event) {
+  const searchString = event.target.value.trim().toLowerCase();
+  console.log(searchString);
+  const hairList = document.getElementById("hair-list");
+  if (searchString === "") {
+    hairList.innerHTML = "";
+    return;
+  }
+  const response = await axios.get(`${hairDataUrl}`);
+  const data = response.data;
+  const arr = data.filter(hair => hair.name.toLowerCase().includes(searchString));
+  console.log(arr);
+  if (arr.length > 0) {
+    hairList.innerHTML = "";
+    arr.forEach(hair => {
+      const listItem = document.createElement("button");
+      listItem.setAttribute("type", "button");
+      listItem.setAttribute("class", "list-group-item list-group-item-action");
+      listItem.textContent = hair.name;
+      listItem.addEventListener("click", () => {
+        window.location.href=`TN-16_Hair-Model.html?id=${hair.id}`;
+        hairList.innerHTML = "";
+      });
+      hairList.appendChild(listItem);
+    });
+  } else {
+    hairList.innerHTML = "Không tìm thấy mẫu tóc";
+  }
+}
 
 // ..................................................................................................
-// const productDataUrl = "https://pnv-hair.onrender.com/Product";
-const productDataUrl = "http://localhost:4002/Product";
+const productDataUrl = "https://pnv-hair.onrender.com/Product";
 const getProductData = async () => {
   try {
     const response = await axios.get(productDataUrl);

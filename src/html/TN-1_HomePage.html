@@ -80,11 +80,13 @@
           <center>
             <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
               <i class="fa-solid fa-magnifying-glass" style="color:#E55247D9;"></i>
-              <input placeholder="Tìm Kiếm ..." class="searchSalon"></input>
+              <input placeholder="Tìm Kiếm ..." class="searchSalon" oninput="searchHair(event)"></input>
+              <div id="hair-list" class="list-group "  ></div>
             </p>
             <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
               <i class="fa-solid fa-wand-magic-sparkles" style="color:#E55247D9;"></i>
-              <input placeholder="Mẫu Tóc ..." class="searchSalon"></input>
+              <input placeholder="Mẫu Tóc ..." class="searchSalon" oninput="searchHair(event)"></input>
+              <div id="hair-list" class="list-group "  ></div> 
             </p>
             <p class="form-inline dropdown-toggle" type="button" id="dropdownSearch" data-toggle="dropdown">
               <i class="fa-solid fa-bars" style="color: #E55247D9;"></i>
@@ -95,6 +97,7 @@
             </button>
           </center>
         </div>
+        
       </div>
 
       <div class="col col-bannerSlide d-none d-md-block">
@@ -220,13 +223,13 @@
               <p>Follow salon</p>
 
               <a class=" mb-3" href="https://www.facebook.com/nien.salon" target="_blank">
-                <i class="fa fa-facebook-square"></i>
+                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
               </a>
               <a href="https://www.instagram.com/nien.salon/" target="_blank">
-                <i class="fa fa-instagram"></i>
+                <i class="fa-brands fa-instagram" style="color: #ff0019;"></i>
               </a>
               <a href="https://www.youtube.com/@niensalon" target="_blank">
-                <i class="fa fa-youtube-play"></i>
+                <i class="fa-brands fa-youtube" style="color: #ff0019;"></i>
               </a>
             </li>
           </ul>
@@ -281,21 +284,33 @@
           </p>
           <ul class="list-group list-unstyled ">
             <li>
-              <a href="mailto:niensalon@gmail.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                niensalon@gmail.com
+              <a href="https://www.facebook.com/nien.salon" target="_blank">
+                <i class="fa-brands fa-facebook" style="color: #005eff;"></i>
+                Facebook.com/nien.salon
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/nien.salon/" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                Niensalon265
+              <a href="mailto:niensalon@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope" style="color: #005eff;"></i>
+                Niensalon@gmail.com
               </a>
             </li>
             <li>
               <a href="tel:0385740373">
-                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <i class="fa-solid fa-phone-volume" style="color: #005eff;"></i>
                 0385740373
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/nien.salon/" target="_blank">
+                <i class="fa-brands fa-instagram" style="color: #ff0019;"></i>
+                Instagram.com/nien.salon/
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@niensalon" target="_blank">
+                <i class="fa-brands fa-youtube" style="color: #ff0019;"></i>
+                Youtube.com/@niensalon
               </a>
             </li>
           </ul>
