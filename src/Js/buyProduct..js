@@ -115,6 +115,8 @@ async function postCart() {
         userID:userData.id
       };
       const response = await axios.post(cartDataUrl, cartData);
+      alert("Đặt hàng thành công!! Bạn sẽ thanh toán trực tiếp!!");
+      window.location.href="profile.html"
       console.log("Đặt hàng thành công.");
     } else {
       console.log('Không tìm thấy tài khoản phù hợp!');
