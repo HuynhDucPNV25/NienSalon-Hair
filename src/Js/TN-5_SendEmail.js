@@ -1,9 +1,9 @@
 // const urlAccount="https://pnv-hair.onrender.com/Account"
-const urlAccount = "http://localhost:4002/Account";
-const resetEmailUrl = "http://localhost:4002/reset";
+const urlAccount = "https://pnv-hair.onrender.com/Account";
+const resetEmailUrl = "https://pnv-hair.onrender.com/reset";
 async function searchAccount() {
     const currentAccount = document.getElementById('searchInput').value;
-    // console.log(currentAccount);
+    console.log(currentAccount);
     try {
         const response = await axios.get(urlAccount);
         const data = response.data;
@@ -16,9 +16,8 @@ async function searchAccount() {
         }else if (foundAccount) {
             alert("Mời bạn kiểm tra Email!!")
             const email = currentAccount;
-            window.location.href='TN-17_loginPage.html';
             const data= await axios.post(resetEmailUrl, { email })
-            console.log(data)          
+            window.location.href='TN-17_loginPage.html';
         }
         else {
             alert("Không tìm thấy tài khoản!!")

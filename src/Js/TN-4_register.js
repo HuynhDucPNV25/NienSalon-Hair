@@ -1,3 +1,5 @@
+
+
 function register() {
   const name = document.getElementById("name-f").value.trim();
   const accountName = document.getElementById("accountName").value.trim();
@@ -5,9 +7,8 @@ function register() {
   const phoneNumber = document.getElementById("tel").value.trim();
   const password = document.getElementById("pass").value.trim();
   const confirmPassword = document.getElementById("pass2").value.trim();
-  const gender = document.querySelector('input[name="gender"]:checked');
+  const gender = document.querySelector('input[name="gender"]:checked').value;
   const role = document.querySelector('input[name="role"]:checked');
-  
   let errorMsg = "";
 
   if (name === "" || accountName === "" || email === "" || phoneNumber === "" || password === "" || confirmPassword === "" || gender === null || role === null) {

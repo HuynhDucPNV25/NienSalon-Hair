@@ -1,5 +1,4 @@
-// const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
-const hairDataUrl = "http://localhost:4002/Hairs";
+const hairDataUrl = "https://pnv-hair.onrender.com/Hairs";
 // Lấy id từ URL
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -50,11 +49,10 @@ async function getData() {
               <pb class="text-secondary">Giá:</pb>
               <pb class="text-warning" id="price">${currentHair.price}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
               </pb>
-              <div>
-              <button id="schedule" type="button" class="btn btn-light mt-2" onclick="Calender()">
-                <i class="fa-solid fa-calendar-days fa-beat-fade mr-3""></i>
-                Đặt lịch
-              </button>
+              <div class="mt-5">
+              <a id="schedule" href="/src/html/TN-2_BookingPage.html?id=${currentHair.id}" class="btn btn-danger mr-2" role="button">
+                  <i class="fa-solid fa-calendar-days fa-beat-fade mr-1"></i>Đặt lịch
+              </a>
               </div>
             </div>
           </div>      
@@ -158,5 +156,35 @@ function toggleMoreDescription() {
   } else {
     moreDescription.style.display = "none";
     showMoreBtn.style.display = "inline";
+  }
+}
+
+async function searchHair(event) {
+  const searchString = event.target.value.trim().toLowerCase();
+  console.log(searchString);
+  const hairList = document.getElementById("hair-list");
+  if (searchString === "") {
+    hairList.innerHTML = "";
+    return;
+  }
+  const response = await axios.get(`${hairDataUrl}`);
+  const data = response.data;
+  const arr = data.filter(hair => hair.name.toLowerCase().includes(searchString));
+  console.log(arr);
+  if (arr.length > 0) {
+    hairList.innerHTML = "";
+    arr.forEach(hair => {
+      const listItem = document.createElement("button");
+      listItem.setAttribute("type", "button");
+      listItem.setAttribute("class", "list-group-item list-group-item-action");
+      listItem.textContent = hair.name;
+      listItem.addEventListener("click", () => {
+        window.location.href=`TN-16_Hair-Model.html?id=${hair.id}`;
+        hairList.innerHTML = "";
+      });
+      hairList.appendChild(listItem);
+    });
+  } else {
+    hairList.innerHTML = "Không tìm thấy mẫu tóc";
   }
 }

@@ -53,10 +53,12 @@ async function getData() {
               <pb class="text-warning" id="price" style="font-size: 24px;">${currentHair.price.toFixed(3)}${currentHair.new ? "" : "&nbsp;&nbsp;-->&nbsp;"}${currentHair.new ? "" : discountPrice.toFixed(3)} <u>vnđ</u> 
               </pb>
               <div>
+              <a href="/src/html/buyProduct.html?id=${currentHairId}">
               <button id="schedule" type="button" class="btn btn-light mt-2" onclick="Calender()">
               <i class="fa-solid fa-basket-shopping fa-beat mr-3"></i>
                 Đặt mua
               </button>
+              </a>
               </div>
             </div>
           </div>      

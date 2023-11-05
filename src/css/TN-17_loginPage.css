@@ -7,10 +7,30 @@ body {
     width: 100vw;
     height: 97.8vh;
 } 
-#loginButton{
-    border-radius: 30px;
+
+#loginButton {
     margin: 20px;
-}
+    border: none;
+    border-radius: 40px;
+    width: 80%;
+    height: 50px;
+    background: linear-gradient(180deg, #2D80AC 0%, #1F6694 100%);
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  #loginButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  
 .form-login {
     width: 30%;
     height: 60%;

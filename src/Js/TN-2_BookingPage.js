@@ -1,7 +1,6 @@
-const hairDataUrl= "http://localhost:4002/Hairs";
+const hairDataUrl= "https://pnv-hair.onrender.com/Hairs";
 // const bookingDataUrl = "http://localhost:4002/Booking";
-const payments = "http://localhost:4002/payment";
-
+const payments = "https://pnv-hair.onrender.com/payment";
 function getHairIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get('id');
@@ -27,9 +26,9 @@ async function getData() {
       const nameInput = document.querySelector('#NameHair');
       const priceInput = document.querySelector('#price');
       const addressInput = document.querySelector('#address');
-
+      const discountPrice = (currentHair.price * (100 - currentHair.discount)) / 100;
       nameInput.value = currentHair.name;
-      priceInput.value = `${currentHair.price}`+" VNĐ";
+      priceInput.value = discountPrice+" VNĐ";
       addressInput.value = currentHair.address;
     } else {
       // Hiển thị thông báo khi không tìm thấy mẫu tóc
@@ -93,19 +92,6 @@ async function submitBooking() {
     const amount = parseInt(price); 
     const response = await payment(amount,data);
     localStorage.setItem('a', 'true');
-    
-    // const messagee = `
-    // Đặt lịch thành công!\n\n
-    // Tên khách hàng: ${customerName}\n
-    // Số điện thoại: ${phoneNumber}\n
-    // Địa chỉ: ${AddressHair}\n
-    // Tên mẫu tóc: ${NameHair}\n
-    // Giá: ${PriceHair}\n
-    // Thời gian: ${timeSelect}\n
-    // Ngày: ${date}`;
-    // alert(messagee);
-
-    // await axios.post(bookingDataUrl, data);
   } catch (error) {
     console.log(error);
   }
@@ -126,37 +112,35 @@ async function payment(amount,data) {
   }
 }
 
-async function searchHair(event){
-  console.log(event.target.value);
-  if(event.target.value === ""){
-      return; 
+async function searchHair(event) {
+  const searchString = event.target.value.trim().toLowerCase();
+  console.log(searchString);
+  if (searchString === "") {
+    document.getElementById("hair-list").innerHTML = "";
+    return ;
   }
-  const response = await axios.get(`${hairDataUrl}?name=${event.target.value}`);
+  const response = await axios.get(`${hairDataUrl}`);
   const data = response.data;
-  let arr = []
-  data.forEach(element => {
-      if(element.name.includes(event.target.value)){
-          arr.push(element)
-      }
-  });
+  const arr = data.filter(hair => hair.name.toLowerCase().includes(searchString));
   console.log(arr);
   const hairList = document.getElementById("hair-list");
-  if(arr.length > 0){
-      hairList.innerHTML = "";
-      arr.forEach(hair => {
-          const listItem = document.createElement("button");
-          listItem.setAttribute("type", "button");
-          listItem.setAttribute("class", "list-group-item list-group-item-action");
-          listItem.textContent = hair.name;
-          listItem.addEventListener("click", () => {
-              document.getElementById("NameHair").value = hair.name;
-              document.getElementById("price").value = hair.price;
-              document.getElementById("address").value = hair.address;
-              hairList.innerHTML = "";
-          });
-          hairList.appendChild(listItem);
+  if (arr.length > 0) {
+    hairList.innerHTML = "";
+    arr.forEach(hair => {
+      const discountPrice = (hair.price * (100 - hair.discount)) / 100;
+      const listItem = document.createElement("button");
+      listItem.setAttribute("type", "button");
+      listItem.setAttribute("class", "list-group-item list-group-item-action");
+      listItem.textContent = hair.name;
+      listItem.addEventListener("click", () => {
+        document.getElementById("NameHair").value = hair.name;
+        document.getElementById("price").value =discountPrice+" VNĐ";
+        document.getElementById("address").value = hair.address;
+        hairList.innerHTML = "";
       });
-  }else{
-      hairList.innerHTML = "Không tìm thấy mẫu tóc";
+      hairList.appendChild(listItem);
+    });
+  } else {
+    hairList.innerHTML = "Không tìm thấy mẫu tóc";
   }
 }

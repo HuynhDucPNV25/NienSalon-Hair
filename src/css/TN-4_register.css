@@ -1,9 +1,12 @@
 body {
-    background-image: url(/NienSalon-Hair/image/background.jpg);
+    background-image: url(../../image/1ae0f25c7d1651e828179aa965719925.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: 135%;
-}
+    max-width: 100vw;
+    max-height: 97.8vh;
+    width: 100vw;
+    height: 97.8vh;
+} 
 
 #container-register {
     margin-top: 13%;

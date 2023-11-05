@@ -2,7 +2,7 @@ const amount = parseInt(price);
 await payment(amount);
 console.log(payment(amount));
 
-const payments = "http://localhost:4002/payment";
+const payments = "http://pnv-hair.onrender.com/payment";
 async function payment(amount) {
   try {
     const response = await axios.post(payments, { amount });

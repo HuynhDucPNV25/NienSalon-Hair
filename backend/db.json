@@ -43,7 +43,7 @@
     {
       "id": 3,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254992/hair-models/Anh_mau_toc_9_ofiucl.jpg",
-      "name": "Layer ngắn Hàn Quốc",
+      "name": "Layer ngắn Nhật Bản",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu tóc được cắt và tỉa một cách tỉ mỉ và linh hoạt sao cho tạo thành nhiều lớp tóc khác nhau",
@@ -59,7 +59,7 @@
     {
       "id": 4,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254990/hair-models/Anh_mau_toc_7_ekulln.jpg",
-      "name": "Layer ngắn Hàn Quốc",
+      "name": "Layer ngắn Trung Quốc",
       "city": "Thành phố Đà Nẵng",
       "address": "Mỹ Khê 3, Đà Nẵng",
       "describe": "Kiểu tóc layer ngắn Hàn Quốc cho nữ có lớp tóc chưa đồng đều và lông mái dài, kết hợp với màu nhẹ nhàng để tạo nét thanh lịch. Tóc hai bên cắt ngắn hơn phần giữa để tạo kiểu lớp. Phong cách này thường được kết hợp với phụ kiện để tạo nên phong cách nữ tính-tomboy.",
@@ -73,7 +73,7 @@
     {
       "id": 5,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254990/hair-models/Anh_mau_toc_5_s79vmq.jpg",
-      "name": "Layer ngắn Hàn Quốc",
+      "name": "Layer Cá tính",
       "city": "Thành phố Hồ Chí Minh",
       "address": "Hai Bà Trưng, Hồ Chí Minh",
       "describe": "Kiểu tóc ngắn nữ Hàn Quốc có chiều dài tóc ở vai hoặc ngắn hơn, được cắt layer và thường kết hợp với lông mái dài. Màu sắc nhẹ nhàng và tạo điểm nhấn bằng phụ kiện nữ tính.",
@@ -87,7 +87,7 @@
     {
       "id": 6,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254989/hair-models/Anh_mau_toc_10_sejsro.jpg",
-      "name": "Layer ngắn Việt Nam",
+      "name": "Kiểu tóc ngắn Phổ biến",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
@@ -97,13 +97,13 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 40.5,
       "new": false
     },
     {
       "id": 7,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name": "Layer ngắn Việt Nam",
+      "name": "Layer hót trend",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu tóc uốn cụp đuôi có nhiều cách tạo kiểu khác nhau để phù hợp với xu hướng. Đây là kiểu tóc được uốn xoăn nhẹ 2/3 tính từ đuôi tóc trở lên ngọn và ôm nhẹ vào khuôn mặt, độ dài của tóc vừa phải chạm vào vai.",
@@ -113,13 +113,13 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 10.5,
       "new": false
     },
     {
       "id": 8,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254989/hair-models/Anh_mau_toc_11_w0sqn9.jpg",
-      "name": "Layer ngắn Việt Nam",
+      "name": "Layer phong cách Tomboy",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu tóc tomboy cool ngầu sẽ thích hợp với những bạn có khuôn mặt trái xoan, cằm nhọn và gò má cao, giúp tôn lên đường nét gương mặt, ngoại hình nổi bật hơn.",
@@ -129,13 +129,13 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 10.5,
       "new": false
     },
     {
       "id": 9,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1696642828/hair-models/Mautoc5_rgrmks.jpg",
-      "name": "Layer ngắn Việt Nam",
+      "name": "Layer Nhật Bản",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
@@ -145,13 +145,13 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 20.5,
       "new": false
     },
     {
       "id": 10,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698254989/hair-models/Anh_mau_toc_2_iflqhe.webp",
-      "name": "Layer ngắn Việt Nam",
+      "name": "Layer Layer 1",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu tóc layer Nhật Bản là một kiểu tóc dài với lớp tóc cắt thành các lớp nhỏ và đặc biệt phần phía trước được cắt thưa, tạo nên vẻ nữ tính và nhẹ nhàng.",
@@ -161,13 +161,13 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 30,
       "new": false
     },
     {
       "id": 11,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698256696/hair-models/Anh_mau_toc_13_lffexh.jpg",
-      "name": "Layer ngắn Việt Nam",
+      "name": "Tóc xõa đẹp ngất",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "Kiểu cắt tóc lỡ này, mái tóc sẽ được cắt tầng và uốn xoăn lơi tạo sóng tự nhiên. Kết hợp với đó là phần mái để dài tạo kiểu uốn lọn nhẹ nhàng, chắc chắn sẽ khiến các nàng không khỏi thất vọng.",
@@ -177,13 +177,13 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 5,
       "new": false
     },
     {
       "id": 12,
       "img": "https://res.cloudinary.com/duas1juqs/image/upload/v1698256852/hair-models/Anh_mau_toc_14_xnnoqp.jpg",
-      "name": "Layer ngắn Việt Nam",
+      "name": "UnderSalonCurt",
       "city": "Thành phố Hà Nội",
       "address": "Ngô Quyền, Hà Nội",
       "describe": "kiểu tóc này chính là độ xoăn không hề theo quy luật nào nên sẽ không khiến mặt bị dừ đi.",
@@ -193,7 +193,7 @@
         " Massage",
         " Váy tai"
       ],
-      "discount": 90.5,
+      "discount": 5,
       "new": false
     }
   ],
@@ -396,8 +396,8 @@
       "accountName": "le",
       "password": "NguyenThiLe2004",
       "name": "Nguyễn Thị Lệ",
-      "email": "le.tear@gmail.com",
-      "phone": "0389086520",
+      "email": "duch9707@gmail.com",
+      "phone": "0389086502",
       "sex": "Nữ"
     }
   ],
@@ -458,9 +458,11 @@
   ],
   "Cart": [
     {
-      "id": 1,
-      "productID": 1,
-      "userID": 1
+      "nameProduct":"",
+      "quantity":0,
+      "price":0,
+      "userID":0,  
+      "id": 1
     }
   ]
 }
