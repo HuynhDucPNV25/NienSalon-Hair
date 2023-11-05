@@ -39,17 +39,8 @@ function register() {
     alert("Xin hãy chọn quyền truy cập!");
     return;
   }
-  function generateRandomId(length, characters) {
-    let result = '';
-    
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    
-    return result;
-  }
+
   const userData = {
-    id:generateRandomId(6, 'abcdefghijklmnopqrstuvwxyz'),
     role: roles,
     accountName: accountName,
     password: password,

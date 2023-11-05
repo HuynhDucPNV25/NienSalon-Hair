@@ -206,7 +206,7 @@ async  function updateHair() {
     const price = document.getElementById('price_hair').value;
     const discount = document.getElementById('discount_hair').value;
     const news = document.getElementById('moiCu_hair').value;
-    const discribe = document.getElementById('message_hair').value;
+    const describe = document.getElementById('message_hair').value;
     const service = document.getElementById('service_hair').value;
     const city = document.getElementById('city_hair').value;
     const address = document.getElementById('address_hair').value;
@@ -218,7 +218,7 @@ async  function updateHair() {
       price: price,
       discount: discount,
       service: service,
-      discribe: discribe,
+      describe: describe,
       new: news
     };
   
