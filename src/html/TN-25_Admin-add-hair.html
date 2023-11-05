@@ -24,11 +24,14 @@
                         <div class="row">  
                             <div class="col">
                                 <label for="nameHair" class="col-form-label">Tên mẫu tóc:</label>
-                                <input type="text" class="form-control" id="nameHair" >  
+                                <input type="text" class="form-control" id="nameHair" placeholder="Tên mẫu tóc">  
                             </div>
                             <div class="col">
                                 <label for="cuOrmoi" class="col-form-label" id="input-date">Cũ hay mới</label>
-                                <input type="text" class="form-control" id="cuOrmoi" required>
+        
+                                    <input type="text" class="form-control" id="cuOrmoi" required placeholder="true/false">
+           
+                                
                             </div>   
                         </div>      
                     </div>
@@ -36,11 +39,11 @@
                         <div class="row">
                             <div class="col">
                                 <label for="price" class="col-form-label" id="input-date">Giá</label>
-                                <input type="number" class="form-control" id="price" >
+                                <input type="number" class="form-control" id="price" placeholder="Giá">
                             </div>
                             <div class="col">
                                 <label for="discount" class="col-form-label" id="input-date">Giảm giá</label>
-                                <input type="number" class="form-control" id="discount" required>
+                                <input type="number" class="form-control" id="discount" required placeholder="%">
                             </div>
                         </div>
                     </div>
@@ -55,24 +58,24 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
                         <label for="services" class="col-form-label">Dịch vụ</label>
-                        <input type="text" class="form-control" id="services" required>
+                        <input type="text" class="form-control" id="services" required placeholder="Dịch vụ">
                     </div>
                     <div class="form-group">
                         <div class="row">
                             <div class="col">
                                 <label for="address" class="col-form-label">Địa chỉ:</label>
-                                <input type="text" class="form-control" id="address" required>
+                                <input type="text" class="form-control" id="address" required placeholder="Địa chỉ Shop">
                             </div>
                             <div class="col">
                                 <label for="city" class="col-form-label">Thành phố:</label>
-                                <input type="text" class="form-control" id="city" required >
+                                <input type="text" class="form-control" id="city" required placeholder="Thành phố">
                             </div>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="messageText" class="col-form-label">Mô tả:</label>
-                        <textarea class="form-control" id="messageText"></textarea>
+                        <label for="message_hair" class="col-form-label">Mô tả:</label>
+                        <textarea class="form-control" id="message_hair" placeholder="Example"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="button" id="button-booking-hair" onclick="submitAddHair()" class="btn btn-primary">Thêm</button>

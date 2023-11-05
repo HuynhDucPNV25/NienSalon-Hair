@@ -66,7 +66,7 @@
                     </li>
 
                     <li class="sidebar-item ">
-                        <a href="../html/TN-25_Admin-products.html" class='sidebar-link'>
+                        <a href="./TN-25_Admin-profile.html" class='sidebar-link'>
                             <i class="fa-regular fa-user"></i>
                             <lable>Admin</lable>
                         </a>
@@ -86,7 +86,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Chỉnh sửa thông tin khách hàng</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
@@ -97,11 +97,11 @@
                                     <div class="row">
                                         <div class="col">
                                             <label for="nameUsers" class="col-form-label">Tên khách hàng</label>
-                                            <input type="text" class="form-control" id="nameUsers">
+                                            <input type="text" class="form-control" id="nameUsers" placeholder="Tên khách hàng">
                                         </div>
                                         <div class="col">
                                             <label for="idUser" class="col-form-label">ID</label>
-                                            <input type="text" class="form-control" id="idUser" readonly>
+                                            <input type="text" class="form-control" id="idUser" readonly placeholder="id">
                                         </div>
                                        
                                     </div>
@@ -110,11 +110,11 @@
                                     <div class="row">  
                                         <div class="col">
                                             <label for="accountUser" class="col-form-label">Tên tài khoản</label>
-                                            <input type="text" class="form-control" id="accountUser">
+                                            <input type="text" class="form-control" id="accountUser" readonly placeholder="Tên tài khoản">
                                         </div>
                                         <div class="col">
                                             <label for="sexUser" class="col-form-label">Giới tính</label>
-                                            <input type="text" class="form-control" id="sexUser">
+                                            <input type="text" class="form-control" id="sexUser" placeholder="Giới tính">
                                         </div>
                                        
                                     </div>
@@ -123,27 +123,27 @@
                                     <div class="row">
                                         <div class="col">
                                             <label for="phoneUsers" class="col-form-label">Số điện thoại</label>
-                                            <input type="text" class="form-control" id="phoneUsers">
+                                            <input type="text" class="form-control" id="phoneUsers" placeholder="Số điện thoại">
                                         </div>
                                         <div class="col">
                                             <label for="role" class="col-form-label">Vai trò</label>
-                                            <input type="text" class="form-control" id="role">
+                                            <input type="text" class="form-control" id="role" readonly placeholder="Vai trò">
                                         </div>
                                     </div>
                                 </div>
                                 <!-- -->
                                 <div class="form-group">
                                     <label for="emailUser" class="col-form-label">Email</label>
-                                    <input type="text" class="form-control" id="emailUser">                            
+                                    <input type="text" class="form-control" id="emailUser" placeholder="Email">                            
                                 </div>
                                 <div class="form-group">
                                     <label for="password" class="col-form-label">Mật khẩu</label>
-                                    <input type="text" class="form-control" id="password">
+                                    <input type="password" class="form-control" id="password" onmousedown="this.type='text'" onmouseup="this.type='password'" placeholder="Mật khẩu">
                                 </div>
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
                             <button type="button" class="btn btn-primary" onclick="updateUser()">Thêm</button>
                         </div>
                         </div>
