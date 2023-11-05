@@ -29,7 +29,8 @@ const fetchData = async () => {
     const tableBody = document.getElementById('resultHair');
     tableBody.innerHTML = tableRows;
     // console.log(tableRows);
-    
+
+
   } catch (error) {
     console.log("Error:", error);
   }
@@ -40,6 +41,7 @@ fetchData();
 // đẩy ảnh lên cloudinary 
 let file = null;
 var loadFile = function (event) {
+
 
   for (let i = 0; i <= event.target.files.length - 1; i++) {
          
@@ -90,6 +92,7 @@ if (file) {
 
   return;
 
+
 }
 
 // submitAddHair();
@@ -104,7 +107,9 @@ async  function submitAddHair(){
       const cuOrmoi_Hair = document.getElementById("cuOrmoi");
       const services_Hair = document.getElementById("services");
       const address_Hair = document.getElementById("address");
-      const messageText_Hair = document.getElementById("messageText");
+
+      const messageText_Hair = document.getElementById("message_hair");
+
   // console.log(name_Hair);
       // Kiểm tra các điều kiện
       if (!name_Hair || !price_Hair || !discount_Hair || !city_Hair || !dataImage || !cuOrmoi_Hair || !services_Hair || !address_Hair || !messageText_Hair) {
@@ -189,14 +194,12 @@ async function handleOnclick(id) {
     catch (error) {
       console.log(error);
     }
+
+
   }
   
-  
-  // document.getElementById("buttonUpdateHair").addEventListener("click", function () {
-  //   // Thực hiện cập nhật dữ liệu vào JSON
-  //   updateHair();
-  //   console.log()
-  // });
+
+
 async  function updateHair() {
     const ids = document.getElementById('id').value;
     const name = document.getElementById('nameHair').value;
@@ -232,14 +235,13 @@ async  function updateHair() {
   }
 
   function reset(){
-    const name_Hair = document.getElementById("nameHair").value="";
-      const price_Hair = document.getElementById("price").value="";
-      const discount_Hair = document.getElementById("discount").value="";
-      const city_Hair = document.getElementById("city").value="";
-      // const image = document.getElementById("image").value;
-      // const dataImage = await uploadImg();
-      const cuOrmoi_Hair = document.getElementById("cuOrmoi").value="";
-      const services_Hair = document.getElementById("services").value="";
-      const address_Hair = document.getElementById("address").value="";
-      const messageText_Hair = document.getElementById("messageText").value="";
+    const ids = document.getElementById('id').value="";
+    const name = document.getElementById('nameHair').value="";
+    const price = document.getElementById('price_hair').value="";
+    const discount = document.getElementById('discount_hair').value="";
+    const news = document.getElementById('moiCu_hair').value="";
+    const discribe = document.getElementById('message_hair').value="";
+    const city = document.getElementById('city_hair').value="";
+    const address = document.getElementById('address_hair').value="";
+
   }
