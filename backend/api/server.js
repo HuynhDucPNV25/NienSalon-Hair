@@ -147,8 +147,8 @@ server.post("/payment", async (req, res) => {
         urlParams.set('date', data.date);
         urlParams.set('messages', data.messages);
   // console.log(urlParams);
-  var redirectUrl = "http://127.0.0.1:5501/src/html/TN-38_DetailBooking.html"+'?'+urlParams.toString();
-  var ipnUrl = "http://127.0.0.1:5501/src/html/TN-38_DetailBooking.html"+'?'+urlParams.toString();
+  var redirectUrl = "https://pnv-hair.netlify.app/src/html/TN-38_DetailBooking.html"+'?'+urlParams.toString();
+  var ipnUrl = "https://pnv-hair.netlify.app/src/html/TN-38_DetailBooking.html"+'?'+urlParams.toString();
   // var ipnUrl = redirectUrl = "https://webhook.site/454e7b77-f177-4ece-8236-ddf1c26ba7f8";
   // var amount = "50000";
   // var requestType = "payWithATM";
