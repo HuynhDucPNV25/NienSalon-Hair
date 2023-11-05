@@ -17,7 +17,9 @@ const fetchData = async () => {
         tableRows += '<td><input readonly type="password" value="' + item.password + '" style="border: none;outline: none;"></td>';
         tableRows += '<td>' + item.email + '</td>';
         tableRows += '<td>' + item.sex + '</td>';
+
         tableRows += '<td><button type="button" id="hair" class="btn btn-primary" style=" background-color: #E86A60" data-toggle="modal" data-target="#updateUser" onclick="handleOnclickUser(' + item.id + ')" data-whatever="@mdo">Sửa</button><button type="button" id="hair" class="btn btn-primary "   style=" background-color: #E86A60" data-toggle="modal" data-target="#updateUser" onclick="deleteUser(' + item.id + ')" data-whatever="@mdo">Xóa</button></td>';
+
         tableRows += '</tr>';
       }
     });

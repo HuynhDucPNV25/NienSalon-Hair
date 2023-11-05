@@ -1,5 +1,6 @@
 const adminData = 'https://pnv-hair.onrender.com/Account';
 
+
 // const fetchData = async () => {
 //   try {
 //     const response = await axios.get(adminData);
@@ -28,21 +29,26 @@ const adminData = 'https://pnv-hair.onrender.com/Account';
 
 // fetchData();
 
+
 async function loadData() {
   try {
     const response = await axios.get(adminData);
     const data = response.data;
+
     // console.log(data);
     data.forEach(element => {
       if(element.role){
         document.querySelector('#idAdmin').value = element.id;
         document.querySelector('#accountName').value = element.accountName;
+
         document.querySelector('#fname').value = element.name;
         document.querySelector('#email').value = element.email;
         document.querySelector('#password').value = element.password;
         document.querySelector('#Phone').value = element.phone;
         document.querySelector('#sex').value = element.sex;
+
         document.querySelector('#role').value = element.role;
+
 
       }
     });
@@ -52,6 +58,7 @@ async function loadData() {
     console.error(error);
   }
 }
+
 
 loadData();
 
@@ -127,3 +134,4 @@ async function updateAdmin() {
     alert("Cập nhật thông tin không thành công");
   }
 }
+

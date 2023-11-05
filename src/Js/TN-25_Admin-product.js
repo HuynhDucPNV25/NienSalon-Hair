@@ -17,7 +17,9 @@ const fetchData = async () => {
           console.log(item.describe);
           // tableRows += '<td>' + limitText(item.describe, 15) + '</td>';
          
+
           tableRows += '<td><button type="button" id="hair" class="btn btn-primary" data-toggle="modal" data-target="#putData" onclick="handleOnclick(' + item.id + ')" data-whatever="@mdo">Sửa</button><button type="button" class="btn btn-primary top: 30px; ml-2" data-toggle="modal" onclick="deleteProduct(' + item.id + ')" data-whatever="@mdo">Xóa</button></td>';
+
           tableRows += '</tr>';
         // console.log(item.id);
         
@@ -85,6 +87,7 @@ if (file) {
 
 }
 
+
 async function addProduct() {
   const nameProductInput = document.getElementById('nameProduct');
   const priceProductInput = document.getElementById('price');
@@ -117,12 +120,15 @@ async function addProduct() {
 
     console.log(productData);
 
+
    await axios.post(products, productData)
       .then(async response => {
         // Xử lý phản hồi từ server
         alert("Thêm sản phẩm thành công");
         await fetchData(response.data); // Gọi hàm hiển thị sản phẩm với dữ liệu từ phản hồi
+
         reset();
+
       })
       .catch(error => {
         console.error('Error:', error);
@@ -172,9 +178,11 @@ async function handleOnclick(id) {
       const price = document.getElementById('priceProduct').value;
       const discounts = document.getElementById('discounts').value;
       const isNew = document.getElementById('moi').value;
+
       const booleanUpdate = isNew === 'true' ? true : false;
       const description = document.getElementById('discribe').value;
   console.log(booleanUpdate);
+
       // Tạo đối tượng dữ liệu cần cập nhật
       const updateData = {
         id: ids,
@@ -183,7 +191,9 @@ async function handleOnclick(id) {
         describe :description,
         price: price,
         discount: discounts,
+
         new : booleanUpdate,
+
         
       };
 

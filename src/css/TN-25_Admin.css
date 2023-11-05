@@ -18,7 +18,9 @@
  .active {
     height: height;
     border-bottom: 1px solid white;
+
     /* padding-right: 15px; */ 
+   
   
 
  }
@@ -72,6 +74,7 @@
     .menu{
         padding-left: 20px;
     }
+
     
     #imageAdmin{
         width: 70%;
@@ -81,6 +84,7 @@
         margin-top: 5px;
         justify-content: center;
         text-align: center;
+
     }
     #informationAdmin{
         height: 50%;
@@ -127,6 +131,7 @@
         color: #E86A60;
     }
     #logo{
+
         max-width: 100%;
         height: 100%;
         border-radius: 50%;
@@ -143,4 +148,5 @@
     }
     .btn {
         background-color:#E86A60 ;
+
     }

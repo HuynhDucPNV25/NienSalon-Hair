@@ -29,6 +29,8 @@ const fetchData = async () => {
     const tableBody = document.getElementById('resultHair');
     tableBody.innerHTML = tableRows;
     // console.log(tableRows);
+
+
   } catch (error) {
     console.log("Error:", error);
   }
@@ -39,6 +41,7 @@ fetchData();
 // đẩy ảnh lên cloudinary 
 let file = null;
 var loadFile = function (event) {
+
 
   for (let i = 0; i <= event.target.files.length - 1; i++) {
          
@@ -89,6 +92,7 @@ if (file) {
 
   return;
 
+
 }
 
 // submitAddHair();
@@ -103,7 +107,9 @@ async  function submitAddHair(){
       const cuOrmoi_Hair = document.getElementById("cuOrmoi");
       const services_Hair = document.getElementById("services");
       const address_Hair = document.getElementById("address");
+
       const messageText_Hair = document.getElementById("message_hair");
+
   // console.log(name_Hair);
       // Kiểm tra các điều kiện
       if (!name_Hair || !price_Hair || !discount_Hair || !city_Hair || !dataImage || !cuOrmoi_Hair || !services_Hair || !address_Hair || !messageText_Hair) {
@@ -188,8 +194,11 @@ async function handleOnclick(id) {
     catch (error) {
       console.log(error);
     }
+
+
   }
   
+
 
 async  function updateHair() {
     const ids = document.getElementById('id').value;
@@ -234,4 +243,5 @@ async  function updateHair() {
     const discribe = document.getElementById('message_hair').value="";
     const city = document.getElementById('city_hair').value="";
     const address = document.getElementById('address_hair').value="";
+
   }
