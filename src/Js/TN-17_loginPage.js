@@ -37,5 +37,5 @@ async function login(){
   setTimeout(function() {
     modal.classList.remove('show');
     modal.style.display = 'none';
-  }, 4000);
+  }, 3000);
 }
